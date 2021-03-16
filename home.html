@@ -1,0 +1,490 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>OWL</title>
+    <link rel="shortcut icon" href="/images/flavicon.ico" />
+    <!-- Links -->
+    <link rel="stylesheet" href="css/home.css" />
+    <link
+      rel="stylesheet"
+      href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"
+      integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p"
+      crossorigin="anonymous"
+    />
+    <link
+      rel="stylesheet"
+      href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"
+      integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p"
+      crossorigin="anonymous"
+    />
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"
+      integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN"
+      crossorigin="anonymous"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css"
+      integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2"
+      crossorigin="anonymous"
+    />
+
+    <script>
+      document.addEventListener("contextmenu", function (OWLwebsite) {
+        OWLwebsite.preventDefault();
+      });
+
+      var link = " ";
+      link.split(".html")[0];
+      window.history.replaceState(null, null, link);
+    </script>
+  </head>
+  <body>
+    <div class="container h-container">
+      <main role="main">
+        <header>
+          <a href="#" class="logo"><img src="images/flavicon.ico" class="owl-nav" />OWL</a>
+          <div class="menuToggle" onclick="toggleMenu();"></div>
+          <ul class="navigation">
+            <li><a href="#header">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#features">Features</a></li>
+            <li><a href="library.html">Library</a></li>
+            <li><a href="games.html">Games</a></li>
+            <li><a href="#contact">Contact</a></li>
+          </ul>
+        </header>
+        <div class="smooth-scroll">
+          <section id="header">
+            <div class="container">
+              <!-- <img src="images/circle-logo.png" class="logo" /> -->
+              <div class="header-text">
+                <h1>
+                  The purpose is to <br />
+                  bring <span class="typing">learning</span> <br />
+                  to people.
+                </h1>
+                <span class="square"></span>
+                <p>
+                  Health officials are currently taking steps to prevent the introduction and spread of Covid 19(Coronavirus) into communities across the world. The pandemic
+                  situation is affecting the lives of many students, families and communities. This is special collection of different sources and libraries of topics to bring
+                  learning to people.
+                </p>
+                <div class="line">
+                  <span class="line-1"></span><br />
+                  <span class="line-2"></span><br />
+                  <span class="line-3"></span>
+                </div>
+              </div>
+            </div>
+          </section>
+
+          <!--About-->
+          <section id="about">
+            <div class="about-left-col">
+              <div class="carousel-div">
+                <!-- Carousel Started -->
+                <div id="carouselExampleControls" class="carousel slide w-75 h-75 mx-auto" data-ride="carousel">
+                  <div class="carousel-inner">
+                    <div class="carousel-item active text-center">
+                      <!-- Card -->
+                      <div class="card bg-pink mr-1 d-inline-block shadow-lg">
+                        <div class="card-img-top">
+                          <img src="images/profiles/ani.jpg" alt="Member" class="img-fluid border-radius p-4" />
+                        </div>
+                        <div class="card-body">
+                          <h3 class="card-title">Christian Jethro Ani</h3>
+                          <p class="card-text">"Sometimes, when I close my eyes, I can't see."</p>
+                          <a href="#" class="text-secondary text-decoration-none"> Leader</a>
+                          <p class="text-pink"><i class="fa fa-heart" style="color: #f67c92"></i> HPM</p>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="carousel-item text-center">
+                      <!-- Card -->
+                      <div class="card bg-pink mr-1 d-inline-block shadow-lg">
+                        <div class="card-img-top">
+                          <img src="images/profiles/kim.jpg" alt="Member" class="img-fluid border-radius p-4" />
+                        </div>
+                        <div class="card-body">
+                          <h3 class="card-title">Kimberly Bueno</h3>
+                          <p class="card-text">"I can do all things through God who strengthens me."</p>
+                          <a href="#" class="text-secondary text-decoration-none"> Presentor</a>
+                          <p class="text-pink"><i class="fa fa-heart" style="color: #f67c92"></i> HPM</p>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="carousel-item text-center">
+                      <!-- Card -->
+                      <div class="card bg-pink mr-1 d-inline-block shadow-lg">
+                        <div class="card-img-top">
+                          <img src="images/profiles/oclinaria.jpg" alt="Member" class="img-fluid border-radius p-4" />
+                        </div>
+                        <div class="card-body">
+                          <h3 class="card-title">Jharel Oclinaria</h3>
+                          <p class="card-text">"Never let your best friends get lonely... keep disturbing them."</p>
+                          <a href="#" class="text-secondary text-decoration-none"> Presentor</a>
+                          <p class="text-pink"><i class="fa fa-heart" style="color: #f67c92"></i> HPM</p>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="carousel-item text-center">
+                      <!-- Card -->
+                      <div class="card bg-pink mr-1 d-inline-block shadow-lg">
+                        <div class="card-img-top">
+                          <img src="images/profiles/lalaine.jpg" alt="Member" class="img-fluid border-radius p-4" />
+                        </div>
+                        <div class="card-body">
+                          <h3 class="card-title">Lalaine Bonion</h3>
+                          <p class="card-text">"In the struggle we will eventually learn."</p>
+                          <a href="#" class="text-secondary text-decoration-none"> Writer</a>
+                          <p class="text-pink"><i class="fa fa-heart" style="color: #f67c92"></i> HPM</p>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="carousel-item text-center">
+                      <!-- Card -->
+                      <div class="card bg-pink mr-1 d-inline-block shadow-lg">
+                        <div class="card-img-top">
+                          <img src="images/profiles/shun.png" alt="Member" class="img-fluid border-radius p-4" />
+                        </div>
+                        <div class="card-body">
+                          <h3 class="card-title">Ygay Shun</h3>
+                          <p class="card-text">"If we shouldn't eat at night, why is there a light in the fridge?"</p>
+                          <a href="#" class="text-secondary text-decoration-none"> Writer</a>
+                          <p class="text-pink"><i class="fa fa-heart" style="color: #f67c92"></i> HPM</p>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="carousel-item text-center">
+                      <!-- Card -->
+                      <div class="card bg-pink mr-1 d-inline-block shadow-lg">
+                        <div class="card-img-top">
+                          <img src="images/profiles/galvez.png" alt="Member" class="img-fluid border-radius p-4" />
+                        </div>
+                        <div class="card-body">
+                          <h3 class="card-title">Clarisa Galvez</h3>
+                          <p class="card-text">"Doing nothing is hard, you never know when you're done."</p>
+                          <a href="#" class="text-secondary text-decoration-none"> Researcher</a>
+                          <p class="text-pink"><i class="fa fa-heart" style="color: #f67c92"></i> HPM</p>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="carousel-item text-center">
+                      <!-- Card -->
+                      <div class="card bg-pink mr-1 d-inline-block shadow-lg">
+                        <div class="card-img-top">
+                          <img src="images/profiles/claire.jpg" alt="Member" class="img-fluid border-radius p-4" />
+                        </div>
+                        <div class="card-body">
+                          <h3 class="card-title">Claire Montesa</h3>
+                          <p class="card-text">"I just rolled my eyes so hard, I saw my brain"</p>
+                          <a href="#" class="text-secondary text-decoration-none"> Researcher</a>
+                          <p class="text-pink"><i class="fa fa-heart" style="color: #f67c92"></i> HPM</p>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="carousel-item text-center">
+                      <!-- Card -->
+                      <div class="card bg-pink mr-1 d-inline-block shadow-lg">
+                        <div class="card-img-top">
+                          <img src="images/profiles/bacus.jpg" alt="Member" class="img-fluid border-radius p-4" />
+                        </div>
+                        <div class="card-body">
+                          <h3 class="card-title">Rhea Bacus</h3>
+                          <p class="card-text">"Roses are red and I'm going to bed."</p>
+                          <a href="#" class="text-secondary text-decoration-none"> Programmer</a>
+                          <p class="text-pink"><i class="fa fa-heart" style="color: #f67c92"></i> HPM</p>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="carousel-item text-center">
+                      <!-- Card -->
+                      <div class="card bg-pink mr-1 d-inline-block shadow-lg">
+                        <div class="card-img-top">
+                          <img src="images/profiles/yap.jpg" alt="Member" class="img-fluid border-radius p-4" />
+                        </div>
+                        <div class="card-body">
+                          <h3 class="card-title">Steven Yap</h3>
+                          <p class="card-text">"Life is short, so am I."</p>
+                          <a href="#" class="text-secondary text-decoration-none"> Programmer</a>
+                          <p class="text-pink"><i class="fa fa-heart" style="color: #f67c92"></i> HPM</p>
+                        </div>
+                      </div>
+                    </div>
+
+                    <div class="carousel-item text-center">
+                      <!-- Card -->
+                      <div class="card bg-pink mr-1 d-inline-block shadow-lg">
+                        <div class="card-img-top">
+                          <img src="images/profiles/sandiego.jpg" alt="Member" class="img-fluid border-radius p-4" />
+                        </div>
+                        <div class="card-body">
+                          <h3 class="card-title">Jerick Sandiego</h3>
+                          <p class="card-text">"I'm so good at sleeping that I can do it while my eyes closed."</p>
+                          <a href="#" class="text-secondary text-decoration-none"> Programmer</a>
+                          <p class="text-pink"><i class="fa fa-heart" style="color: #f67c92"></i> HPM</p>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="carousel-item text-center">
+                      <!-- Card -->
+                      <div class="card bg-pink mr-1 d-inline-block shadow-lg">
+                        <div class="card-img-top">
+                          <img src="images/profiles/sha.png" alt="Member" class="img-fluid border-radius p-4" />
+                        </div>
+                        <div class="card-body">
+                          <h3 class="card-title">Shahani Vicio</h3>
+                          <p class="card-text">"I know looks aren't everything, but I have them just in case"</p>
+                          <a href="#" class="text-secondary text-decoration-none">Programmer</a>
+                          <p class="text-pink"><i class="fa fa-heart" style="color: #f67c92"></i> HPM</p>
+                        </div>
+                      </div>
+                    </div>
+                    -->
+                  </div>
+                  <a class="carousel-control-prev" href="#carouselExampleControls" role="button" data-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="sr-only">Previous</span>
+                  </a>
+                  <a class="carousel-control-next" href="#carouselExampleControls" role="button" data-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="sr-only">Next</span>
+                  </a>
+                </div>
+              </div>
+            </div>
+            <div class="about-right-col">
+              <div class="about-text">
+                <h1>About Us</h1>
+                <span class="square"></span>
+                <p>
+                  OWL is the best website for the students in helping their studies despite all the things around us. This website will bring all the knowledge to all children
+                  in just a click. It is free and easy to use the website for all.
+                </p>
+                <br />
+                <br />
+                <div class="line">
+                  <span class="line-1"></span><br />
+                  <span class="line-2"></span><br />
+                  <span class="line-3"></span>
+                </div>
+
+                <h2>"An investment in knowledge pays the best interest"</h2>
+                <h3>----Benjamin Franklin</h3>
+              </div>
+            </div>
+          </section>
+
+          <!--FEATURES-->
+
+          <section id="features" class="section-2 container-fluid p-0">
+            <div class="cover">
+              <div class="overlay"></div>
+              <div class="content text-center">
+                <h1>Power at your fingertips</h1>
+                <p>
+                  Education is the passport to the future, for tomorrow belongs to those who prepare for it today. <br />
+                  -Malcolm X
+                </p>
+              </div>
+            </div>
+            <div class="container-fluid text-center">
+              <div class="numbers d-flex flex-md-row flex-wrap justify-content-center">
+                <div class="rect">
+                  <img src="images/pic-1.png" />
+                  <h4>Learn Anywhere</h4>
+                  <p>Switch between your computer, tablet or mobile device</p>
+                </div>
+                <div class="rect">
+                  <img src="images/pic-2.png" />
+                  <h4>High Quality Education</h4>
+                  <p>Ensure quality learning from hundred of sources and opproved platforms.</p>
+                </div>
+                <div class="rect">
+                  <img src="images/pic-3.png" />
+                  <h4>Ulimited Access</h4>
+                  <p>Learn what you'd like from different sources and platforms to choose in the library.</p>
+                </div>
+              </div>
+            </div>
+
+            <div class="feature-btn">
+              <div class="line">
+                <span class="line-1"></span><br />
+                <span class="line-2"></span><br />
+                <span class="line-3"></span>
+              </div>
+            </div>
+          </section>
+
+          <!--LIBRARY-->
+          <section id="courses">
+            <div class="container course-row">
+              <div class="course-left-col">
+                <div class="course-text mx-auto">
+                  <h1>
+                    Browse our top <br />
+                    modules
+                  </h1>
+                  <span class="square"></span>
+                  <p>
+                    Free Learning Modules from kindergarten to junior highschool that are available for you to refresh, expand and learn the skills and knowledge needed for
+                    your online or face-to-face classes.
+                  </p>
+                  <div class="line">
+                    <span class="line-1"></span><br />
+                    <span class="line-2"></span><br />
+                    <span class="line-3"></span>
+                  </div>
+                </div>
+              </div>
+              <div class="course-right-col">
+                <div class="module-vidiv">
+                  <img src="/images/phone.png" alt="phone" class="phone" />
+                </div>
+              </div>
+            </div>
+          </section>
+
+          <!-- Games -->
+          <section id="offer">
+            <div class="about-left-col">
+              <div class="games-vidiv">
+                <img src="/images/phone.png" alt="phone" class="phone" />
+              </div>
+            </div>
+            <div class="about-right-col">
+              <div class="about-text">
+                <h1>
+                  Interactive Games,<br />
+                  that will make your learning<br />
+                  experience more fun
+                </h1>
+                <span class="square"></span>
+                <p>
+                  Online learning games. The games are organized into categories that are easily navigated for you to find a suitable match that caters to either an
+                  instructional need or a child's sense of curiosity and thirst for knowledge and challenge.
+                </p>
+                <div class="line">
+                  <span class="line-1"></span><br />
+                  <span class="line-2"></span><br />
+                  <span class="line-3"></span>
+                </div>
+              </div>
+            </div>
+          </section>
+
+          <!--CONTACT-->
+          <section id="contact">
+            <div class="container contact-row">
+              <div class="contact-left-col">
+                <h1>We'd love to hear from you. Leave a comment!</h1>
+                <form action="https://formspree.io/f/moqplwqe" method="POST" id="my-form">
+                  <input style="margin-bottom: 7px" type="text" name="name" placeholder="Name" />
+                  <input style="margin-bottom: 7px" type="text" name="email" placeholder="Email" />
+                  <input style="margin-bottom: 7px" type="text" name="subject" placeholder="Subject" />
+                  <textarea name="message" placeholder="Message" rows="6"></textarea>
+                  <div id="form-status"></div>
+                  <input id="form-button" class="sendmsbtn" type="submit" value="Send Message" />
+                </form>
+                <div class="line">
+                  <span class="line-1"></span><br />
+                  <span class="line-2"></span><br />
+                  <span class="line-3"></span>
+                </div>
+              </div>
+              <div class="contact-right-col">
+                <img type="image/svg+xml" src="images/agreement.svg" />
+              </div>
+            </div>
+          </section>
+
+          <!--FOOTER-->
+          <section id="footer">
+            <div class="container footer-row">
+              <hr />
+              <div class="footer-left-col">
+                <div class="footer-links">
+                  <div class="link-title">
+                    <h4>Support</h4>
+                    <a href="/library_pages/resources.html" target="_blank"><small>Resources</small></a
+                    ><br />
+                    <a href="#contact"><small>Contact Us</small></a>
+                  </div>
+                  <div class="link-title">
+                    <h4>Legal</h4>
+                    <a href="/library_pages/TermsAndCondition.html" target="_blank"><small>Terms</small></a
+                    ><br />
+                    <a href="/library_pages/PrivacyPolicy.html" target="_blank"><small>Privacy</small></a>
+                  </div>
+                  <div class="link-title">
+                    <h4>Explore</h4>
+                    <a href="#header"><small>Home</small></a
+                    ><br />
+                    <a href="#about"><small>About</small></a>
+                  </div>
+                  <div class="link-title">
+                    <h4>&nbsp</h4>
+                    <a href="library.html"><small>Library</small></a
+                    ><br />
+                    <a href="games.html"><small>Games</small></a>
+                  </div>
+                </div>
+              </div>
+
+              <div class="footer-right-col">
+                <div class="footer-info">
+                  <div class="copyright-text">
+                    <div style="padding-left: 15px">
+                      <a href="https://www.facebook.com/hpmowl"><i class="fa fa-facebook fa-lg p-1" style="color: #f79eb4"></i></a>
+                      <i id="msgboxShowMessage" class="fa fa-phone fa-lg p-1" style="color: #f79eb4"></i>
+                      <i id="msgboxShowEmail" class="fa fa-envelope fa-lg p-1" style="color: #f79eb4"></i>
+                    </div>
+                    <br />
+                    <small>Copyright 2020 HPM</small>
+                  </div>
+                  <div class="footer-logo">
+                    <img src="images/owl-logo.png" />
+                  </div>
+                </div>
+              </div>
+            </div>
+          </section>
+
+          <div id="msgbox-area" class="msgbox-area"></div>
+        </div>
+      </main>
+    </div>
+
+    <!-- Jquery cdn -->
+    <script src="https://code.jquery.com/jquery-3.5.1.js"></script>
+    <!-- Scripts -->
+    <script src="home.js"></script>
+    <script src="/js/contact.js"></script>
+    <script src="https://cdn.jsdelivr.net/gh/cferdinandi/smooth-scroll/dist/smooth-scroll.polyfills.min.js"></script>
+    <!-- Bootstrap -->
+    <script
+      src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+      integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"
+      integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.min.js"
+      integrity="sha384-w1Q4orYjBQndcko6MimVbzY0tgp4pWB4lZ7lr30WKz0vr/aWKhXdBNmNb5D92v7s"
+      crossorigin="anonymous"
+    ></script>
+    <script>
+      var scroll = new SmoothScroll('a[href*="#"]');
+    </script>
+    <!-- Hiding the source code -->
+  </body>
+</html>

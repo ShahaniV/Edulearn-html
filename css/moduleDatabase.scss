@@ -1,0 +1,30 @@
+.Module-container{
+    table{
+        margin-top: 25px;
+    }
+    tr{
+        width: 50%;
+    }
+
+
+    input{
+        margin-bottom: 10px;
+    }
+
+    p{
+        margin-bottom: 3px;
+        width: 60% ;
+    }
+
+    hr{
+        background-color: black !important;
+    }
+
+    button{
+        height: 2.5em;
+        vertical-align: middle;
+        line-height: normal;
+        padding-left: 10px;
+        padding-right: 10px;
+    }
+}

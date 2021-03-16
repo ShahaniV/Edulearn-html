@@ -1,0 +1,534 @@
+<!DOCTYPE html>
+
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta content="ie=edge" http-equiv="x-ua-compatible" />
+    <meta content="width=device-width, initial-scale=1.0" name="viewport" />
+    <link rel="shortcut icon" href="/images/flavicon.ico" />
+    <title>OWL | Resources</title>
+    <style>
+      /* style.css */
+
+      @import url("https://fonts.googleapis.com/css?family=Days+One|Lora|Carme");
+
+      html {
+        width: 100%;
+      }
+      /* Make HTML5 layout elements block elements for older browsers */
+      header,
+      nav,
+      aside,
+      article,
+      section {
+        display: block;
+      }
+
+      .pagecontainer {
+        width: 100%;
+        overflow-x: hidden;
+        margin: 0px auto;
+      }
+
+      body {
+        font-size: 110%; /*14pt  19px */
+        font-family: "Lora", serif;
+        line-height: 1.375;
+        background-color: rgb(222, 176, 222);
+        background-image: url(images/wood.jpg);
+      }
+
+      /* styling for header - centers text and JG logo*/
+      header {
+        text-align: center;
+      }
+
+      header img {
+        max-width: 80%;
+      }
+
+      h1 {
+        text-align: center;
+        font-family: sans-serif;
+        line-height: 1.25;
+        font-size: 2.5em; /*32pt 42px */
+        font-style: normal;
+      }
+
+      h2 {
+        font-family: "Days One", serif;
+        line-height: 1.333;
+        font-size: 1.5em; /*18pt 24px */
+        font-weight: 700;
+      }
+
+      h3 {
+        font-family: "Lora", serif;
+        line-height: 1.333;
+        font-size: 1.2em; /*14pt 19px */
+        font-weight: 700;
+        font-style: italic;
+      }
+
+      header h3 {
+        font-style: normal;
+        margin: 0;
+      }
+
+      p {
+        font-size: 1em; /*12pt 16px */
+        font-weight: normal;
+        font-style: normal;
+      }
+
+      /*styling for footnotes*/
+      p.footnote {
+        font-size: 0.8em;
+        /*10 pt 13px */
+      }
+
+      /*styling for paragraph text links */
+      p a {
+        font-weight: 900;
+      }
+
+      p a:link,
+      a:visited {
+        color: #194a76;
+        text-decoration: underline;
+      }
+
+      p a:hover,
+      a:active {
+        color: #194a76;
+        text-decoration: underline;
+      }
+
+      /*styling for superscript footnotes*/
+      sup {
+        font-size: 0.75em;
+      }
+
+      /*styling for wrapper div */
+      #wrapper {
+        width: 90%;
+        /* min-width: 600px;*/
+        max-width: 1200px;
+        margin: 1em auto;
+        padding: 3em;
+        background-color: rgb(244, 247, 250);
+        margin: 0 auto;
+        display: block;
+      }
+
+      @media only screen and (max-width: 500px) {
+        div#wrapper {
+          padding: 0 !important;
+          padding-bottom: 20px !important;
+        }
+      }
+
+      /* styling large page photo captions */
+      .main-photo-caption {
+        font-family: "Lora", serif;
+        font-size: 1em;
+        font-style: italic;
+        text-align: center;
+      }
+
+      /* styling articles */
+      article {
+        clear: both;
+        padding: 0 1em;
+      }
+
+      /* styles for card navigations */
+      .cards {
+        display: flex;
+        flex-wrap: wrap;
+        align-items: stretch;
+        justify-content: center;
+        margin: 30px 0 0;
+      }
+
+      .card {
+        flex: 0 0 200px;
+        margin: 10px;
+        border: 1px solid #ccc;
+        box-shadow: 2px 2px 6px 0px rgba(0, 0, 0, 0.3);
+        text-decoration: none;
+      }
+
+      .card img {
+        max-width: 100%;
+      }
+
+      .card .text {
+        padding: 0px 10px 20px;
+      }
+
+      .card .text h4 {
+        font-family: "Lora", serif;
+        line-height: 1.333;
+        font-size: 1em;
+        font-weight: 700;
+        font-style: normal;
+        margin-top: 6px;
+        margin-bottom: 5px;
+        text-align: center;
+      }
+
+      .card .text p {
+        padding-top: 2px;
+      }
+
+      .card .text > button,
+      .card .text a {
+        background: #6e6b5c;
+        border: 0;
+        font-family: "Days One", sans-serif;
+        font-weight: 500;
+        color: lightgrey;
+        display: block;
+        font-size: 0.8em;
+        padding: 10px;
+        text-align: center;
+        width: 90%;
+      }
+
+      .card a {
+        text-decoration: none;
+      }
+
+      .card .text > a:link,
+      .card .text > a:visited {
+        background: #6e6b5c;
+        color: lightgrey;
+        text-decoration: none;
+      }
+
+      .card .text > a:hover,
+      .card .text > a:active {
+        background-color: #7d654b;
+        color: white;
+        text-decoration: none;
+      }
+
+      /*styling history and burials page images with text - Codepen by Jeff Weese*/
+      .container {
+        max-width: 1125px;
+        margin: 0 auto;
+      }
+
+      .gallery {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+      }
+
+      .gallery-item {
+        width: 330px;
+        height: 280px;
+        margin: 10px;
+        text-decoration: none;
+      }
+
+      .gallery-item img {
+        position: absolute;
+        width: 330px;
+        height: 280px;
+      }
+
+      .text-wrapper {
+        position: relative;
+        width: 330px;
+        height: 280px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        text-align: center;
+        color: #fff;
+        opacity: 0;
+      }
+
+      .text-wrapper:hover {
+        transition: all 0.8s ease;
+        background: rgba(0, 0, 0, 0.6);
+        opacity: 1;
+      }
+
+      .name {
+        font-size: 1.3em;
+      }
+
+      .title {
+        font-size: 0.9em;
+        padding: 0 0.6em;
+      }
+
+      /* because there is no hover on a touch device, need to move the text to the bottom of the image and display it by default */
+
+      @media only screen and (max-width: 1024px) {
+        .text-wrapper {
+          opacity: 1;
+          justify-content: flex-end;
+          text-shadow: 1px 1px 1px #000;
+        }
+        .title {
+          margin-bottom: 1em;
+        }
+      }
+
+      /* styling for colored page inserts from xopixel dot com */
+      #fullwidth-insert {
+        padding: 30px 0;
+        background: #7d654b;
+        text-align: center;
+        color: #fff;
+        font-family: "Carme", sans-serif;
+        font-size: 1em;
+        font-weight: 400;
+        line-height: 1.5;
+        text-rendering: optimizeLegibility;
+      }
+
+      .insert-container {
+        max-width: 85%;
+        width: 960px;
+        margin: 0 auto;
+      }
+
+      .insert-heading {
+        margin: 0;
+        font-size: 2rem;
+        font-weight: 300;
+        padding-bottom: 1rem;
+        letter-spacing: 0.08rem;
+      }
+
+      /* styling for full-width insert heading links */
+      .insert-heading a {
+        color: #fff;
+        font-family: "Days One", sans-serif;
+        font-weight: 300;
+        text-decoration: underline;
+      }
+
+      .insert-heading a:hover,
+      a:active {
+        text-decoration: underline;
+        color: #194a76;
+      }
+
+      /* styling for full-width insert paragraph links */
+      .insert-container p a:link,
+      a:visited {
+        color: white;
+        font-weight: 900;
+        text-decoration: underline;
+      }
+
+      .insert-container p a:hover,
+      a:active {
+        text-decoration: underline;
+        color: #194a76;
+      }
+
+      /* styling for iframe - embedded Youtube videos */
+      iframe {
+        display: block;
+        margin: 1em auto;
+        width: 60%;
+        height: calc(0.5625 * 60vw);
+      }
+
+      /* styling gallery page images, source w3schools how to-images-tab gallery */
+      .column {
+        box-sizing: border-box;
+      }
+
+      /* The grid: four equal columns that float next to each other */
+      .column {
+        float: left;
+        width: 25%;
+        padding: 10px;
+        height: 200px;
+        overflow: hidden;
+      }
+
+      /* styling images inside the grid */
+      .column img {
+        opacity: 0.8;
+        cursor: pointer;
+        max-width: 100%;
+        min-height: 189px;
+      }
+
+      .column img:hover {
+        opacity: 1;
+      }
+
+      /* clear floats after the columns */
+      .row:after {
+        content: "";
+        display: table;
+        clear: both;
+      }
+
+      /* styling the expanding image container */
+      .container-gallerypage {
+        position: relative;
+        display: none;
+        padding: 15px;
+        text-align: center;
+      }
+
+      /* styling expanding image text */
+      #imgtext {
+        text-align: center;
+        width: 100%;
+        padding: 10px;
+        color: #000;
+      }
+
+      /* styling closable button inside the expanded image */
+      .closebtn {
+        position: absolute;
+        top: 15px;
+        right: 220px;
+        color: black;
+        font-size: 40px;
+        font-weight: 900;
+        cursor: pointer;
+      }
+    </style>
+    <script>
+      document.addEventListener("contextmenu", function (LibraryV2) {
+        LibraryV2.preventDefault();
+      });
+
+      var link = "resources";
+      link.split(".html")[0];
+      window.history.replaceState(null, null, link);
+    </script>
+  </head>
+
+  <body>
+    <!--sets whole page for device viewport-->
+    <div class="pagecontainer" id="viewport">
+      <script>
+        //Make older browsers aware of new HTML5 layout tags
+        "header nav aside article footer section".replace(/\w+/g, function (n) {
+          document.createElement(n);
+        });
+      </script>
+
+      <!-- Wrapper -->
+      <div id="wrapper">
+        <!-- CHANGE reference img src for kehilalinks logo to "images/KehilaLinksLogo.transparent.png"-->
+        <header>
+          <a href="/home.html" target="_blank"><img alt="logo" src="/images/owl-logo.png" /></a>
+        </header>
+
+        <!-- Header - Page content-->
+        <article role="main">
+          <header>
+            <h1>Resources</h1>
+          </header>
+          <br />
+
+          <section>
+            The resources below are in addition to those cited throughout the website and in accompanying footnotes. I have tried to classify them by website page section,
+            covering several topics.
+          </section>
+
+          <section style="margin-top: 35px">
+            <h3>Home</h3>
+
+            <p>
+              <a href="https://undraw.co/illustrations" target="_blank">unDraw</a> Vector illustrations that fit your needs and click to download. Uses on-the-fly color image
+              generation to match your brand identity.
+            </p>
+
+            <p><a href="https://unsplash.com/" target="_blank">Unsplash</a> The internet's source of reely-usable images. Powered by creators everywhere.</p>
+          </section>
+
+          <section style="margin-top: 35px">
+            <h3>Library</h3>
+
+            <p>
+              <a href="https://commons.deped.gov.ph/" target="_blank">DepEd Commons</a> A platform built on the concept of our Grado Network where resources and learning
+              materials are being shared, discovered, reviewd and made alive.
+            </p>
+
+            <p>
+              <a
+                href="http://guroako.com/2020/08/16/deped-official-self-learning-modules-grade-4/?fbclid=IwAR1nJsBeAT0QCNlY9fCQekecqxVKas2DPf1HWn6t7QkP8-08Up3GEPYI9vA"
+                target="_blank"
+                >DepEd Official Self-Learning Modules- Grade4</a
+              >
+              Posted articles with free downloaded and compiled modules for grade 4 student from DepEd.
+            </p>
+
+            <p>
+              <a
+                href="http://guroako.com/2020/08/16/deped-official-self-learning-modules-grade-1/?fbclid=IwAR15LxcWmysiFyQpF2B4gHNuwNxoeSAOZxVjIKUVwhVzu5hUGJuzTNd3o-g"
+                target="_blank"
+                >DepEd Official Self-Learning Modules-Grade 1</a
+              >
+              Posted articles with free downloaded and compiled modules for grade 4 student from DepEd.
+            </p>
+
+            <p>
+              <a
+                href="https://drive.google.com/drive/folders/1q0wS56Xq2flF7N2lP0KiUVgxD1GCJuOh?fbclid=IwAR3Oy7xIMQw5VVw8JZaoneCbdVYOnB6vIAAGZuuIe6xREeg5k2aUY_L5M2Y"
+                target="_blank"
+                >Filipino Grade10 Modules</a
+              >
+              One Drive Link for Grade 10 Modules.
+            </p>
+
+            <p>
+              <a
+                href="https://drive.google.com/drive/folders/1MhU-XCzsPfflXpqaCZTFiRQgv8abuXKe?fbclid=IwAR1r6ZyESgUpFK6eSmnDGZ5iYdnsoUZUDh2DjXsaSEUEDneWicJrQ8jFp7E"
+                target="_blank"
+                >Filipino Grade 7 Modules</a
+              >
+              One Drive Link for Grade 10 Modules.
+            </p>
+
+            <p>
+              <a
+                href="https://www.depedlrmds.com/grade-8-learners-materials-learning-materials/?fbclid=IwAR3GC84blgreZCTwpBD2Megckpu0p3PhgY0a4wLzOnV0fxAL9CpE4aQZi34"
+                target="_blank"
+                >Deped Grade 8 Learning Materials</a
+              >
+              Grade 8 Learning Materials from DepEd.
+            </p>
+            <p>
+              <a href="https://www.merriam-webster.com/" target="_blank">Merriam-Webster Dictionary</a> Most useful and respected dictionary, optimized for your English
+              language reference, education,and vocabulary building.
+            </p>
+
+            <p>
+              <a href="https://www.google.com/maps" target="_blank">Google Map</a> Offers satellite, aerial photography, streen maps, interactive panoramic views of streets,
+              realtime traffic conditions, and route planning for traveling by foot, car, bicycle, air and public transportation.
+            </p>
+
+            <p>
+              <a href="https://www.canva.com/" target="_blank">Canva</a> Canva is a graphic design platform, used to create social media graphics, presentations, posters,
+              documents and other visual content. The platform is free to use and offers paid subscriptions like Canva Pro and Canva for Enterprise for additional
+              functionality.
+            </p>
+          </section>
+
+          <section style="margin-top: 35px">
+            <h3>Games</h3>
+
+            <p><a href="https://www.bored.com/" target="_blank">Bored</a> Free online games, fun, and interesting sites.</p>
+          </section>
+        </article>
+      </div>
+    </div>
+  </body>
+</html>

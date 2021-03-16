@@ -1,0 +1,301 @@
+<!DOCTYPE html>
+
+<html>
+  <head>
+    <title>Library | eBooks</title>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+    <link rel="shortcut icon" href="/images/flavicon.ico" />
+    <link rel="stylesheet" href="/css/library.css" />
+    <style>
+      .subheading {
+        text-transform: uppercase;
+      }
+      .books {
+        margin: 10px 0;
+        display: flex;
+        flex-wrap: wrap;
+        box-shadow: 0 0 2em 1em rgba(204, 189, 189, 0.2);
+        padding: 10px;
+        border-radius: 10px;
+      }
+      .ebooks {
+        padding-top: 0 !important;
+      }
+      .description,
+      .book-cover {
+        float: left;
+        margin: 0 10px;
+      }
+
+      .description p {
+        width: 650px;
+      }
+      @media only screen and (max-width: 900px) {
+        .description p {
+          width: 500px;
+        }
+      }
+
+      @media only screen and (max-width: 800px) {
+        .description p {
+          width: 400px;
+        }
+      }
+      @media only screen and (max-width: 650px) {
+        .description p {
+          width: 300px;
+        }
+      }
+      @media only screen and (max-width: 500px) {
+        .book-cover {
+          margin: 0 auto;
+        }
+        .description p {
+          width: auto;
+          text-align: center;
+        }
+        .description h2 {
+          text-align: center;
+        }
+        .description button {
+          margin: 0 auto;
+          display: block;
+        }
+      }
+    </style>
+    <script>
+      document.addEventListener("contextmenu", function (LibraryV2) {
+        LibraryV2.preventDefault();
+      });
+
+      var link = "ebooks";
+      link.split(".html")[0];
+      window.history.replaceState(null, null, link);
+    </script>
+  </head>
+  <body class="is-preload">
+    <!-- Wrapper -->
+    <div id="wrapper">
+      <!-- Main -->
+      <div id="main">
+        <div class="inner">
+          <!-- Header -->
+          <header id="header">
+            <a class="logo"><strong>Google eBooks</strong></a>
+            <div class="main-cont">
+              <div id="time-i">
+                <h1>Time</h1>
+              </div>
+              <div id="date-i">
+                <h1>Year</h1>
+              </div>
+              <div id="day-i">
+                <h1>Day</h1>
+              </div>
+            </div>
+          </header>
+
+          <!-- Content -->
+          <p class="subheading">Ebooks from <a href="https://books.google.com/">Google Books </a></p>
+          <section class="ebooks">
+            <div><i class="fa fa-bell" aria-hidden="true"></i> Make sure you are not browsing in an Incognito Mode.</div>
+
+            <div class="books">
+              <img style="width: 130px" src="/images/ebook-covers/greatExpectations.jfif" alt="Cover" class="book-cover" />
+              <div class="description">
+                <h2>Great Expectations</h2>
+                <p>
+                  One of the finest novels by iconic British author Charles Dickens, this Victorian tale follows the good-natured orphan Pip as he makes his way through life.
+                </p>
+                <button><a href="https://play.google.com/books/reader?id=fhUXAAAAYAAJ&hl=en_GB&pg=GBS.PA5.w.1.0.0" target="_blank">Read</a></button>
+              </div>
+            </div>
+
+            <div class="books">
+              <img style="width: 130px" src="/images/ebook-covers/aliceAdventure.jfif" alt="Cover" class="book-cover" />
+              <div class="description">
+                <h2>Alice's Adventures in Wonderland</h2>
+                <p>
+                  In the most renowned novel By English author Lewis Carroll, young Alice stumbles into adventure when she follows the hurried, time-obsessed White Rabbit down
+                  a hole and into a fantastical realm where animals are quite verbose, logic is in short supply and royalty tends to be exceedingly unpleasant.
+                </p>
+                <button><a href="https://play.google.com/books/reader?id=Y7sOAAAAIAAJ&hl=en_GB&pg=GBS.PA1" target="_blank">Read</a></button>
+              </div>
+            </div>
+
+            <div class="books">
+              <img style="width: 130px" src="/images/ebook-covers/signOfFour.jpg" alt="Cover" class="book-cover" />
+              <div class="description">
+                <h2>The Sign of Four</h2>
+                <p>
+                  The Sign of the Four is the second of Arthur Conan Doyle's Sherlock Holmes novels. In it, the detective and his companion Dr. Watson unravel a mystery of
+                  hidden treasure and murder.
+                </p>
+                <button><a href="https://play.google.com/books/reader?id=OBM3AAAAIAAJ&hl=en_GB&pg=GBS.PA1.w.2.0.0" target="_blank">Read</a></button>
+              </div>
+            </div>
+
+            <div class="books">
+              <img style="width: 130px" src="/images/ebook-covers/arabianNights.jpg" alt="Cover" class="book-cover" />
+              <div class="description">
+                <h2>The Arabian Nights</h2>
+                <p>Story straight our of a romance novel. It's an epic collection of Arabic folk tales written during the Islamic Golden Age.</p>
+                <button><a href="https://play.google.com/books/reader?id=48MXAAAAYAAJ&hl=en_GB&pg=GBS.PA7.w.2.1.0" target="_blank">Read</a></button>
+              </div>
+            </div>
+
+            <div class="books">
+              <img style="width: 130px" src="/images/ebook-covers/coralIsland.jpg" alt="Cover" class="book-cover" />
+              <div class="description">
+                <h2>The Coral Island</h2>
+                <p>
+                  Novel written by Scottish author R. M. Ballantyne. Featuring exclusively juvenile heroes, the story relates the adventures of three boys marooned on a South
+                  Pacific island, the only survivors of a shipwreck.
+                </p>
+                <button><a href="https://play.google.com/books/reader?id=lAYGAAAAQAAJ&hl=en_GB&pg=GBS.PP1.w.1.0.0" target="_blank">Read</a></button>
+              </div>
+            </div>
+
+            <div class="books">
+              <img style="width: 130px" src="/images/ebook-covers/scarletLetter.png" alt="Cover" class="book-cover" />
+              <div class="description">
+                <h2>The Scarlet Letter</h2>
+                <p>
+                  Hester believes herself a widow, but her husband, Roger Chillingworth, arrives in New England very much alive and conceals his identity. He finds his wife
+                  forced to wear the scarlet letter A on her dress as punishment for her adultery.
+                </p>
+                <button><a href="https://play.google.com/books/reader?id=QSUZAAAAYAAJ&hl=en_GB&pg=GBS.PA79.w.1.0.0" target="_blank">Read</a></button>
+              </div>
+            </div>
+
+            <div class="books">
+              <img style="width: 130px" src="/images/ebook-covers/huckleberryFinn.jpg" alt="Cover" class="book-cover" />
+              <div class="description">
+                <h2>The Adventures of Huckleberry Finn</h2>
+                <p>
+                  The story of Huckleberry Finn's escape from his alcoholic and abusive father and Huck's adventurous journey down the Mississippi River together witht he
+                  runaway slave Jim.
+                </p>
+                <button><a href="https://play.google.com/books/reader?id=S3JHAAAAYAAJ&hl=en_GB&pg=GBS.PA15.w.0.1.0" target="_blank">Read</a></button>
+              </div>
+            </div>
+
+            <div class="books">
+              <img style="width: 130px" src="/images/ebook-covers/emeraldCity.jpg" alt="Cover" class="book-cover" />
+              <div class="description">
+                <h2>The Emerald City of Oz</h2>
+                <p>
+                  Story of Dorothy Gale and her Uncle Henry and Aunt em coming to live in Oz permanently. While they are toured through the Quadling Country, the Nome King is
+                  assembling allies for an invasion of Oz.
+                </p>
+                <button><a href="https://play.google.com/books/reader?id=buAQAAAAYAAJ&hl=en_GB&pg=GBS.PA9.w.8.0.0" target="_blank">Read</a></button>
+              </div>
+            </div>
+
+            <div class="books">
+              <img style="width: 130px" src="/images/ebook-covers/floatingCity.jpg" alt="Cover" class="book-cover" />
+              <div class="description">
+                <h2>The Floating City and the Blockade Runners</h2>
+                <p>
+                  The blockade runner: James Playfair must run a Federalist blockade of a Charleston, South Carolina harbour in an effort to trade supplies for cotton and to
+                  rescue a young girl's father, a Confederate prisoner.
+                </p>
+                <button><a href="https://play.google.com/books/reader?id=mZURES_1HGcC&hl=en_GB&pg=GBS.PP17.w.1.0.0" target="_blank">Read</a></button>
+              </div>
+            </div>
+          </section>
+        </div>
+      </div>
+
+      <!-- Sidebar -->
+      <div id="sidebar">
+        <div class="inner">
+          <!-- Home Back Button -->
+          <a href="/home.html"
+            ><div class="home-back-button"><i class="fa fa-arrow-left fa-fw" aria-hidden="true"></i>Back</div></a
+          >
+
+          <!-- Menu -->
+          <nav id="menu">
+            <header class="major">
+              <h2>Menu</h2>
+            </header>
+
+            <ul>
+              <li><a href="/library.html">General</a></li>
+              <li>
+                <span class="opener">Web Directory</span>
+                <ul>
+                  <li><a href="/directory_pages/englishD.html">English</a></li>
+                  <li><a href="/directory_pages/mathD.html">Math</a></li>
+                  <li><a href="/directory_pages/filipinoD.html">Filipino</a></li>
+                  <li><a href="/directory_pages/scienceD.html">Science</a></li>
+                </ul>
+              </li>
+              <li>
+                <span class="opener">Modules</span>
+                <ul>
+                  <li><a href="/library_pages/kindergarten.html">Kindergarten</a></li>
+                  <li><a href="/library_pages/elem.html">Elementary</a></li>
+                  <li><a href="/library_pages/junior_high.html">Junior High School</a></li>
+                </ul>
+              </li>
+              <li>
+                <span class="opener">Tables & Charts</span>
+                <ul>
+                  <li><a href="/library_pages/charts/flags.html">Flags</a></li>
+                  <li><a href="/library_pages/charts/numberChart.html">Numbers</a></li>
+                  <li><a href="/library_pages/charts/letterChart.html">Letters</a></li>
+                  <li><a href="/library_pages/charts/shapes.html">Shapes</a></li>
+                  <li><a href="/library_pages/charts/color.html">Colors</a></li>
+                  <li><a href="/library_pages/charts/bodyParts.html">Body Parts</a></li>
+                  <li><a href="/library_pages/charts/multiplicationTable.html">Multiplication Table</a></li>
+                </ul>
+              </li>
+              <li>
+                <span class="opener">Maps</span>
+                <ul>
+                  <li><a href="/library_pages/maps/worldMap.html">World Map</a></li>
+                  <li><a href="/library_pages/maps/countryMap.html">Country Map</a></li>
+                  <li><a href="/library_pages/maps/googleMap.html">Google Map</a></li>
+                </ul>
+              </li>
+              <li>
+                <span class="opener">Videos</span>
+                <ul>
+                  <li><a href="/library_pages/youtube.html">Youtube</a></li>
+                  <li><a href="/library_pages/channels.html">Channel Recommendations</a></li>
+                </ul>
+              </li>
+              <li>
+                <span class="opener">eBooks</span>
+                <ul>
+                  <li><a href="/library_pages/googleBooks.html">Google eBooks</a></li>
+                  <li><a href="/directory_pages/eBooksD.html">eBooks Web Directory</a></li>
+                </ul>
+              </li>
+              <li><a href="/library_pages/trivia.html">Trivia</a></li>
+              <li><a href="/library_pages/dictionary.html">Dictionary</a></li>
+              <li><a href="/library_pages/studyTips.html">Study Tips</a></li>
+            </ul>
+          </nav>
+
+          <!-- Section -->
+
+          <!-- Footer -->
+          <footer id="footer">
+            <p class="copyright">&copy; HPM. All rights reserved.</p>
+          </footer>
+        </div>
+      </div>
+    </div>
+
+    <!-- Scripts -->
+    <script src="/js/jquery.min.js"></script>
+    <script src="/js/browser.min.js"></script>
+    <script src="/js/breakpoints.min.js"></script>
+    <script src="/js/util.js"></script>
+    <script src="/library.js"></script>
+  </body>
+</html>

@@ -1,0 +1,439 @@
+<!DOCTYPE html>
+
+<html>
+  <head>
+    <title>Library | Trivia</title>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+    <link rel="shortcut icon" href="/images/flavicon.ico" />
+    <link rel="stylesheet" href="/css/library.css" />
+    <style>
+      .trivias-div {
+        position: relative;
+        height: 190px;
+        padding: 15px;
+        border-radius: 10px;
+        box-shadow: 0 0 2em 1em rgba(204, 189, 189, 0.2);
+        margin-bottom: 20px;
+      }
+      .trivias-div p {
+        padding-top: 5px;
+        font-weight: bold;
+        text-align: center;
+      }
+
+      .trivias-div button {
+        position: relative;
+        float: right;
+      }
+
+      .vector {
+        width: 300px;
+        margin: 0 auto;
+        display: block;
+        text-align: center;
+        margin-bottom: 20px;
+      }
+
+      @media only screen and (max-width: 650px) {
+        .trivias-div {
+          height: fit-content;
+        }
+        .trivias-div button {
+          position: absolute;
+          right: 10px;
+          bottom: 5px;
+        }
+      }
+    </style>
+    <script>
+      document.addEventListener("contextmenu", function (LibraryV2) {
+        LibraryV2.preventDefault();
+      });
+
+      var link = "trivia";
+      link.split(".html")[0];
+      window.history.replaceState(null, null, link);
+    </script>
+  </head>
+  <body class="is-preload">
+    <!-- Wrapper -->
+    <div id="wrapper">
+      <!-- Main -->
+      <div id="main">
+        <div class="inner">
+          <!-- Header -->
+          <header id="header">
+            <a class="logo"><strong>Trivia</strong></a>
+            <div class="main-cont">
+              <div id="time-i">
+                <h1>Time</h1>
+              </div>
+              <div id="date-i">
+                <h1>Year</h1>
+              </div>
+              <div id="day-i">
+                <h1>Day</h1>
+              </div>
+            </div>
+          </header>
+
+          <!-- Content -->
+          <section id="search" class="alt">
+            <form method="post" action="#">
+              <input id="input-search" type="text" name="query" id="query" placeholder="Search topic" onkeyup="searchFunction()" onkeypress="return event.keyCode != 13;" />
+            </form>
+
+            <img class="vector" src="/images/course.svg" alt="Girl Reading" />
+
+            <div class="trivias-div">
+              <h3>Cats</h3>
+              <p id="current_fact1">Cats have 230 bones, a whopping 24 more bones than humans.</p>
+              <button id="new_fact1">Next</button>
+            </div>
+
+            <div class="trivias-div">
+              <h3>Dinosaur</h3>
+              <p id="current_fact2">Dinosaurs were reptiles that lived on Earth from about 230 million years ago to about 65 million years ago.</p>
+              <button id="new_fact2">Next</button>
+            </div>
+
+            <div class="trivias-div">
+              <h3>Earth</h3>
+              <p id="current_fact3">Mother Earth has a generous waistline: At the equator, the circumference of the globe is 24,901 miles (40,075 kilometers).</p>
+              <button id="new_fact3">Next</button>
+            </div>
+
+            <div class="trivias-div">
+              <h3>Numbers</h3>
+              <p id="current_fact4"></p>
+              <button id="new_fact4">Next</button>
+            </div>
+
+            <div class="trivias-div">
+              <h3>People</h3>
+              <p id="current_fact5"></p>
+              <button id="new_fact5">Next</button>
+            </div>
+          </section>
+        </div>
+      </div>
+
+      <!-- Sidebar -->
+      <div id="sidebar">
+        <div class="inner">
+          <!-- Home Back Button -->
+          <a href="/home.html"
+            ><div class="home-back-button"><i class="fa fa-arrow-left fa-fw" aria-hidden="true"></i>Back</div></a
+          >
+
+          <!-- Menu -->
+          <nav id="menu">
+            <header class="major">
+              <h2>Menu</h2>
+            </header>
+
+            <ul>
+              <li><a href="/library.html">General</a></li>
+              <li>
+                <span class="opener">Web Directory</span>
+                <ul>
+                  <li><a href="/directory_pages/englishD.html">English</a></li>
+                  <li><a href="/directory_pages/mathD.html">Math</a></li>
+                  <li><a href="/directory_pages/filipinoD.html">Filipino</a></li>
+                  <li><a href="/directory_pages/scienceD.html">Science</a></li>
+                </ul>
+              </li>
+              <li>
+                <span class="opener">Modules</span>
+                <ul>
+                  <li><a href="/library_pages/kindergarten.html">Kindergarten</a></li>
+                  <li><a href="/library_pages/elem.html">Elementary</a></li>
+                  <li><a href="/library_pages/junior_high.html">Junior High School</a></li>
+                </ul>
+              </li>
+              <li>
+                <span class="opener">Tables & Charts</span>
+                <ul>
+                  <li><a href="/library_pages/charts/flags.html">Flags</a></li>
+                  <li><a href="/library_pages/charts/numberChart.html">Numbers</a></li>
+                  <li><a href="/library_pages/charts/letterChart.html">Letters</a></li>
+                  <li><a href="/library_pages/charts/shapes.html">Shapes</a></li>
+                  <li><a href="/library_pages/charts/color.html">Colors</a></li>
+                  <li><a href="/library_pages/charts/bodyParts.html">Body Parts</a></li>
+                  <li><a href="/library_pages/charts/multiplicationTable.html">Multiplication Table</a></li>
+                </ul>
+              </li>
+              <li>
+                <span class="opener">Maps</span>
+                <ul>
+                  <li><a href="/library_pages/maps/worldMap.html">World Map</a></li>
+                  <li><a href="/library_pages/maps/countryMap.html">Country Map</a></li>
+                  <li><a href="/library_pages/maps/googleMap.html">Google Map</a></li>
+                </ul>
+              </li>
+              <li>
+                <span class="opener">Videos</span>
+                <ul>
+                  <li><a href="/library_pages/youtube.html">Youtube</a></li>
+                  <li><a href="/library_pages/channels.html">Channel Recommendations</a></li>
+                </ul>
+              </li>
+              <li>
+                <span class="opener">eBooks</span>
+                <ul>
+                  <li><a href="/library_pages/googleBooks.html">Google eBooks</a></li>
+                  <li><a href="/directory_pages/eBooksD.html">eBooks Web Directory</a></li>
+                </ul>
+              </li>
+              <li><a href="/library_pages/trivia.html">Trivia</a></li>
+              <li><a href="/library_pages/dictionary.html">Dictionary</a></li>
+              <li><a href="/library_pages/studyTips.html">Study Tips</a></li>
+            </ul>
+          </nav>
+
+          <!-- Section -->
+
+          <!-- Footer -->
+          <footer id="footer">
+            <p class="copyright">&copy; HPM. All rights reserved.</p>
+          </footer>
+        </div>
+      </div>
+    </div>
+
+    <!-- Scripts -->
+    <script src="/js/jquery.min.js"></script>
+    <script src="/js/browser.min.js"></script>
+    <script src="/js/breakpoints.min.js"></script>
+    <script src="/js/util.js"></script>
+    <script src="/library.js"></script>
+    <script>
+      function searchFunction() {
+        var $rows = $("#main .inner .trivias-div");
+        $("#input-search").keyup(function () {
+          var val = $.trim($(this).val()).replace(/ +/g, " ").toLowerCase().split(" ");
+          $rows
+            .hide()
+            .filter(function () {
+              var text = $(this).text().replace(/\s+/g, " ").toLowerCase();
+              var matchesSearch = true;
+              $(val).each(function (index, value) {
+                matchesSearch = !matchesSearch ? false : ~text.indexOf(value);
+              });
+              return matchesSearch;
+            })
+            .show();
+        });
+      }
+
+      // jQuery for displaying quotes and picking new quotes when the button is clicked
+      $(document).ready(function () {
+        $("#current_fact1").text(getFact1());
+        $("#new_fact1").on("click", function () {
+          $("#current_fact1").text(getFact1());
+        });
+
+        $("#current_fact2").text(getFact2());
+        $("#new_fact2").on("click", function () {
+          $("#current_fact2").text(getFact2());
+        });
+
+        $("#current_fact3").text(getFact3());
+        $("#new_fact3").on("click", function () {
+          $("#current_fact3").text(getFact3());
+        });
+
+        $("#current_fact4").text(getFact4());
+        $("#new_fact4").on("click", function () {
+          $("#current_fact4").text(getFact4());
+        });
+
+        $("#current_fact5").text(getFact5());
+        $("#new_fact5").on("click", function () {
+          $("#current_fact5").text(getFact5());
+        });
+      });
+
+      // Function that picks a random fact from the factList
+      var chosenFact = [];
+      var getFact1 = function () {
+        chosenFact = factList1[Math.floor(Math.random() * factList1.length)];
+        return chosenFact;
+      };
+
+      var getFact2 = function () {
+        chosenFact = factList2[Math.floor(Math.random() * factList2.length)];
+        return chosenFact;
+      };
+
+      var getFact3 = function () {
+        chosenFact = factList3[Math.floor(Math.random() * factList3.length)];
+        return chosenFact;
+      };
+
+      var getFact4 = function () {
+        chosenFact = factList4[Math.floor(Math.random() * factList4.length)];
+        return chosenFact;
+      };
+
+      var getFact5 = function () {
+        chosenFact = factList5[Math.floor(Math.random() * factList5.length)];
+        return chosenFact;
+      };
+
+      // List of Facts
+      var factList1 = [
+        "Frequently cats stare with their mouth hanging open because they have an extra organ that tastes scents in the air.",
+        "Cats have rough tongues that can clean all the meat off of a bone.",
+        "There are over 500 million domestic cats in the world.",
+        "Cats conserve energy by sleeping for an average of 13 to14 hours a day.",
+        "Cats can rotate their ears 180 degrees.",
+        "The hearing of the average cat is at least five times keener than that of a human adult.",
+        "Cats can spend up to a third of their waking hours grooming.",
+        "Cats live longer when they stay indoors.",
+        "Cats do not have a sweet tooth. Scientists believe this is due to a mutation in a key taste receptor.",
+        "A cat can’t climb head first down a tree because every claw on a cat’s paw points the same way. To get down from a tree, a cat must back down",
+        "Cats make about 100 different sounds. Dogs make only about 10.",
+        "Approximately 24 cat skins can make a coat.",
+        "Cats hate the water because their fur does not insulate well when it’s wet.",
+        "On average, cats spend 2/3 of every day sleeping. That means a nine-year-old cat has been awake for only three years of its life.",
+        "A cat’s jaw can’t move sideways, so a cat can’t chew large chunks of food.",
+        "Cats don't actually meow at each other, just at humans. Cats typically will spit, purr, and hiss at other cats.",
+        "A cat’s back is extremely flexible because it has up to 53 loosely fitting vertebrae. Humans only have 34.",
+        "Most cats had short hair until about 100 years ago, when it became fashionable to own cats and experiment with breeding.",
+        "Cats have about 130,000 hairs per square inch (20,155 hairs per square centimeter).",
+        "Approximately 1/3 of cat owners think their pets are able to read their minds.",
+        "A cat has 230 bones in its body. A human has 206. A cat has no collarbone, so it can fit through any opening the size of its head.",
+        "Cats have 32 muscles that control the outer ear (humans have only 6). A cat can independently rotate its ears 180 degrees.",
+        "Cats are extremely sensitive to vibrations. Cats are said to detect earthquake tremors 10 or 15 minutes before humans can.",
+        "Cats can drink seawater.",
+        "Researchers say your cat *does* know her name. She just doesn't care.",
+        "There are up to 60 million feral cats in the United States alone.",
+        "A cat’s nose pad is ridged with a unique pattern, just like the fingerprint of a human.	",
+        "If they have ample water, cats can tolerate temperatures up to 133 °F.",
+      ];
+
+      var factList2 = [
+        "Some dinosaurs' tails were over 45 feet long. Most dinosaurs had long tails that helped them to keep their balance when running. ",
+        "The earliest named dinosaur found so far is the Eoraptor (“dawn stealer”)",
+        "A dinosaur called the Pegomastax is one of the weirdest dinosaurs known. Described as a cross between a parrot and porcupine, it had a beak with teeth that sharpened themselves against each other.",
+        "One of the weirdest dinosaurs is the Suzhousaurus. Looking like a giant rat, this odd dinosaur also had a furry body, which suggests it is a distant ancestor of the giant ground sloth.",
+        "Dinosaurs lived on Earth for about 160 million years, which is about 64 times longer than people been around.",
+        "A T-rex bite was more than twice as powerful as a lion's bite. ",
+        "Dinosaurs lived on all the continents, including Antarctica.",
+        "While many people think dinosaurs were massive, dinosaurs were usually human sized or smaller. Scientists believe that the larger bones were just easier to be fossilized.",
+        "Some dinosaurs’ tails were over 45 feet long. Most dinosaurs had long tails that helped them to keep their balance when running.",
+        "Dinosaurs were reptiles that lived on Earth from about 230 million years ago to about 65 million years ago.",
+        "The word “dinosaur” was coined by British paleontologist Richard Owen in 1842. It is Greek, meaning “terrible lizard.” Rather than implying that dinosaurs were fearsome, Owen used the term to refer to their majesty and size.",
+        "The dinosaur with the longest name is Micropachycephalosaurus (“small thick-headed lizard”). Its fossils are usually found in China.",
+        "Dinosaurs dominated Earth for over 165 million years. Humans have been around for only 2 million years",
+        "Scientists estimate that there were over 1,000 different species of non-avian dinosaurs and over 500 distinct genera.",
+        "Scientists believe that some dinosaurs were cold blooded, others warm blooded, and still others not fully one or the other. ",
+        "The largest dinosaur eggs were as large as basketballs. The bigger the egg, the thicker the shell. So if the eggs had been larger, dinosaur babies probably would not have been able to get out.",
+        "Most dinosaurs were vegetarians.",
+        "Measuring 50 feet, Liopleurodon was the biggest aquatic reptile, half the size of the blue whale.",
+        "The blue whale is bigger than any dinosaur at 108 feet (33 m).",
+        "Baby Mussaurus (“mouse lizard”) are the smallest dinosaur skeletons ever found. They would fit inside a shopping bag.",
+        "A newborn human baby has a bigger brain than most adult dinosaurs had. Whales and dolphins have the biggest brains of all living animals.",
+        "Snakes and lizards shed their skin when they grow. Researchers believe that dinosaurs may have done the same.",
+        "Tyrannosaurus rex had huge back legs, but its tiny front legs were not much longer than human arms.",
+        "Dinosaurs often swallowed large rocks. These rocks stayed in the stomach and helped them grind up food.",
+        "Dinosaurs that could run on two legs were called bipeds.",
+        "Dinosaurs had different self-defense mechanisms. Some, like meat eaters, had sharp teeth. Plant eaters had long horns or sharp spikes. Other dinosaurs were covered in bony plates.",
+        "All dinosaurs laid eggs. About 40 kinds of dinosaur eggs have been discovered.",
+        "Dinosaurs that lived near water often left the best fossils.",
+        "The fastest dinosaur was the Ornithomimus. It could run up to 43½ mph (70 km/h).",
+        "The largest mounted dinosaur skeleton to be exhibited in a museum is a Brachiosaurus.",
+      ];
+
+      var factList3 = [
+        "Mother Earth has a generous waistline: At the equator, the circumference of the globe is 24,901 miles (40,075 kilometers).",
+        "At the equator, you would weigh less than if standing at one of the poles.",
+        "People on the equator move the fastest, while someone standing on the North or South pole would be perfectly still.",
+        "Earth is about 4.54 billion years old.",
+        "The ground you're walking on is recycled. Earth's rock cycle transforms igneous rocks to sedimentary rocks to metamorphic rocks and back again.",
+        "Earth's moon looks rather dead and inactive. But in fact, moonquakes, or earthquakes on the moon, keep things just a bit shook up. Quakes on the moon are less common and less intense than those that shake Earth.",
+        "The fiery award for Earth’s hottest spot goes to El Azizia, Libya, where temperature records from weather stations reveal it hit 136 degrees Fahrenheit (57.8 degrees Celsius) on Sept. 13, 1922, according to NASA Earth Observatory.",
+        "Within uncertainty, the temperature at the center of the Earth is the same as the temperature at the surface of the sun (5800 K).",
+        "Earthquake Weather Is a Myth. Each culture has a its own version of 'earthquake weather' to rationalize when and where a earthquake will hit.",
+        "Seas Could Rise 2.5 Feet By 2100. ",
+        "Unlike other planets, no real historical data can be found on the person (or group) that named our planet Earth. The term Earth comes from Old English and High Germanic and is the only planet not named after a Greek or Roman god.",
+        "TA Magnitude 12 Earthquake Would Split the Earth in Half.",
+        "Earthquakes Can Be Felt on the Other Side of the Planet. Earthquakes can happen over 400 miles below the Earth's surface and be felt literally on the other side of the Earth.",
+        "There Are a Billion Microbes in a Teaspoon of Soil. The number of microbes in a teaspoon of soil is estimated to be roughly equivalent to the number of humans currently living in Africa (one billion).",
+        "You Can See Earth Shrinking From Space. Groundwater pumping can cause significant land surface subsidence—enough so that it can be 'seen' from space.",
+        "There Are More Viruses Than Stars in the Universe. There are an estimated 10 nonillion individual viruses on the planet.",
+        "TUnderwater mountain range. The longest mountain range in the world is actually underwater. It’s called the Mid-Ocean Ridge.",
+        "Earth doesn’t take 24 hours to rotate on its axis. It’s actually 23 hours, 56 minutes and 4 seconds.",
+        "Baby Mussaurus (“mouse lizard”) are the smallest dinosaur skeletons ever found. They would fit inside a shopping bag.",
+        "A year on Earth isn’t 365 days. It’s actually 365.2564 days. It’s this extra .2564 days that creates the need for leap years.",
+        "Earth has 1 moon and 2 co-orbital satellites. They’re called 3753 Cruithne and 2002 AA29. We won’t go into too much detail about the Moon, I’m sure you’ve heard all about it.",
+        "The Earth is not actually round in shape; in fact it is geoid. This simply means that the rounded shape has a slight bulge towards the equator. ",
+        "Only 3% water of the earth is fresh, rest 97% salted. Of that 3%, over 2% is frozen in ice sheets and glaciers. Means less than 1% fresh water is found in lakes, rivers and underground.",
+        "Asia Continent is covered 30% of the total earth land area, but represent 60% of the world’s population.",
+        "Each winter there are about 1 septillion (1, 000, 000, 000, 000, 000, 000, 000, 000 or a trillion trillion) snow crystals that drop from the sky.",
+      ];
+
+      var factList4 = [
+        "Hundred Doesn't Mean 100. The word 'hundred' is actually derived from the Old Norse word 'hundrath,'' which actually means 120, not 100. ",
+        "There Is Only One Even Prime Number. The number 2 is also the smallest and first prime number (since every other even number is divisible by two).",
+        "The Square Root of Two Is Called Pythagoras' Constant.'",
+        "Zero Is the Only Number That Can't Be Represented In Roman Numerals.",
+        "The Indian astronomer and mathematician Brahmagupta brought up the concept of zero for the first time, around 600 A.D.",
+        "Roman Numerals Were Invented as a Means of Trading. ",
+        "Zero Is An Even Number.",
+        "There Is Only One Number Spelled With the Same Number of Letters as Itself. Four.",
+        "Six Is the Smallest Perfect Number.",
+        "2 And 5 Are the Only Prime Numbers That End With 2 And 5.",
+        "9 Is Considered a 'Magic' Number. If you multiply a number by 9 and add all the digits of the new number together, the sum will always add up to 9.",
+        "The Number Pi Spells the Food 'PIE'. If you pi (to the first two decimal places of 3.14) backwards, in big, blocky letters it actually reads 'PIE.'",
+        "There Are Weird Reasons That Cats Are Said to Have 9 Lives. Few theories for the number nine, though, one being that 9, again, is a magical number and was worshipped as such throughout the ages.",
+        "If a Pizza Has Radius 'Z' and Height 'A' the Equation Becomes… PI * z * z * a.",
+        "7 Is the Most Popular Favorite Number. ",
+        "Six Weeks = 10! Seconds. That is, 10 × 9 × 8 × 7 × 6 × 5 × 4 × 3 × 2 × 1 = 3,628,800 seconds = 60,480 minutes = 1,008 hours = 42 days = 6 weeks.",
+        "There's Not Enough Room in the World to Write Out a Googolplex. If you wrote it out and printed it in a volumed series of books, it would weigh more than the entire planet.",
+        "The Mile-High City Is Exactly One Mile High. The city of Denver, Colorado, has an elevation of precisely 5,280 feet—that's the length of a mile—which is why Denver is called the 'mile high' city.",
+        "In Asia, 4 Is Considered Unlucky. Also known as 'tetraphobia' the number 4 is viewed with superstition and distrust in much of East Asia. ",
+        "In Thailand, 555 Is Hilarious. The reason? 5 is pronounced ha—so 555 translates to hahaha. Thus, 55555 means hahahahaha, or ha squared.",
+        "(6 × 9) + (6 + 9) = 69.",
+        "There Are 31 Days In Most Months. January, March, May, July, August, October, and December.",
+        "In A Group Of 23 People, Two Will Probably Share a Birthday.",
+        "We See Odd Numbers as Male, Even Numbers as Female.",
+        "There's a Specific Name for 35th Anniversaries. It's called a Coral Anniversary. Go somewhere with snorkeling!",
+      ];
+
+      var factList5 = [
+        "Emotions' are the biggest motivator of human actions. They make you survive, make love (reproduce), create social bonds and be moral.",
+        "Men experience similar amount of emotions as women. Women are just taught to express emotions differently and more often.",
+        "There’s 100+ different human emotions we know about.",
+        "7 basic emotions are anger, sadness, fear, surprise, disgust, contempt and happiness.",
+        "Happiness is the most confusing emotion of all :) Why? Because it can mean a lot of things: joy, delight, excitement…",
+        "You have 43 facial muscles expressing the whole spectrum of emotions.",
+        "Emotions can last from less than a second to several minutes. Sad emotions tend to affect you for longer than the positive ones.",
+        "Mood lasts much longer than an emotion. From minutes to several days. It also affects how you experience emotions. For instance, if you’re in an irritable mood, you tend to experience anger more readily than usual.",
+        "Emotions are universal. Facial expressions of New Yorkers and Papuans are the same when experiencing the same emotions. Emotion triggers will of course differ.",
+        "Love is not an emotion. It’s an attachment within which you can experience a lot of emotions or moods: joy, awe, anger, worry…",
+        "Imitating some emotions as disgust or anger in facial expressions, will make you feel disgusted or angry.",
+        "EQ > IQ. 85% of your financial success is due to your personality and ability to communicate, negotiate, and lead. Shockingly, only 15% is due to your IQ.",
+        "Just 1% of the population can hide their emotions successfully. Definitely not politicians. ",
+        "10% of population don’t know how they feel. It’s a severe dysfunction called alexithymia — an inability to describe one’s emotions in words, thus distinguishing emotions and understanding emotional states of others.",
+        "Botox people still experience emotions. Although botox, the wrinkle killer, does paralyze some facial muscles, it doesn't ban the patient from experiencing emotions.",
+        "Goose bumps evolved to make our ancestors’ hair stand up, making them appear more threatening to predators.",
+        "Scientists aren't exactly sure why we yawn, but it may help regulate body temperature.",
+        "Your fingernails don’t actually grow after you’re dead.",
+        "If they were laid end to end, all of the blood vessels in the human body would encircle the Earth four times.",
+        "Humans are the only animals with chins.",
+        "Blood makes up about 8 percent of your total body weight.",
+        "The human nose can detect about 1 trillion smells.",
+        "You have two kidneys, but only one is necessary to live.",
+        "Belly buttons grow special hairs to catch lint.",
+        "The satisfying sound of cracking your knuckles comes from gas bubbles bursting in your joints.",
+        "Thumbs have their own pulse.",
+        "On a genetic level, all human beings are more than 99 percent identical.",
+        "Extraocular muscles in the eye are the body’s fastest muscles. They allow both of your eyes to flick in the same direction in a single 50-millisecond movement.",
+        "Hair grows fast—about 6 inches per year. The only thing in the body that grows faster is bone marrow.",
+      ];
+    </script>
+  </body>
+</html>

@@ -1,0 +1,84 @@
+#g1-coverflow-english,
+#g1-coverflow-math,
+#g1-coverflow-fil,
+#g1-coverflow-science,
+#g2-coverflow-english,
+#g2-coverflow-math,
+#g2-coverflow-fil,
+#g2-coverflow-science,
+#g3-coverflow-english,
+#g3-coverflow-math,
+#g3-coverflow-fil,
+#g3-coverflow-science {
+  padding: 10px;
+  background-color: $bgcolor;
+}
+
+#g1-english img,
+#g1-math img,
+#g1-fil img,
+#g1-science img,
+#g2-english img,
+#g2-math img,
+#g2-fil img,
+#g2-science img,
+#g3-english img,
+#g3-math img,
+#g3-fil img,
+#g3-science img {
+  width: 210px;
+  height: 288px;
+}
+
+#g1-english,
+#g1-math,
+#g1-fil,
+#g1-science,
+#g2-english,
+#g2-math,
+#g2-fil,
+#g2-science,
+#g3-english,
+#g3-math,
+#g3-fil,
+#g3-science {
+    margin: 0 auto !important;
+    width: 100%;
+    text-align: center !important;
+}
+
+
+#g1-english-controls,
+#g1-math-controls,
+#g1-fil-controls,
+#g1-science-controls,
+#g2-english-controls,
+#g2-math-controls,
+#g2-fil-controls,
+#g2-science-controls,
+#g3-english-controls,
+#g3-math-controls,
+#g3-fil-controls,
+#g3-science-controls {
+  position: absolute;
+  left: 50%;
+  z-index: 50;
+  transform: translateX(-50%);
+  bottom: 20px;
+  color: $controlsColor;
+}
+
+#g1-english-controls i,
+#g1-math-controls i,
+#g1-fil-controls i,
+#g1-science-controls i,
+#g2-english-controls i,
+#g2-math-controls i,
+#g2-fil-controls i,
+#g2-science-controls i,
+#g3-english-controls i,
+#g3-math-controls i,
+#g3-fil-controls i,
+#g3-science-controls i {
+  padding: 20px;
+}

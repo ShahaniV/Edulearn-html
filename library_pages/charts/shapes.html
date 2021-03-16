@@ -1,0 +1,570 @@
+<!DOCTYPE html>
+
+<html>
+  <head>
+    <title>Library | Shapes</title>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+    <link rel="shortcut icon" href="/images/flavicon.ico" />
+    <link rel="stylesheet" href="/css/library.css" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;800&display=swap" rel="stylesheet" />
+    <style>
+      .shapes {
+        padding: 2em;
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-auto-rows: minmax(300px, auto);
+        grid-gap: 1em;
+      }
+
+      @media screen and (max-width: 1100px) {
+        .shapes {
+          grid-template-columns: 1fr 1fr;
+        }
+      }
+
+      @media screen and (max-width: 700px) {
+        .shapes {
+          grid-template-columns: 1fr;
+          grid-gap: 2em;
+        }
+      }
+
+      section {
+        display: flex;
+        flex-direction: column;
+        color: black;
+        background-color: #eef;
+        border-radius: 1em;
+        box-shadow: 0 0 2em 1em rgba(0, 0, 0, 0.2);
+        padding: 10px;
+        padding-top: 15px;
+        overflow: hidden;
+      }
+
+      section > div {
+        margin: auto;
+        margin-left: 0 auto;
+        margin-right: 0 auto;
+        display: block;
+        text-align: center;
+      }
+
+      section > h2 {
+        text-align: center;
+        font-weight: 600;
+        margin-top: -0.3em;
+        color: #556;
+        margin-bottom: 0 !important;
+      }
+
+      /***************************************/
+      /*              REFERENCE              */
+      /***************************************/
+      .square {
+        background-color: lightsalmon;
+        height: 125px;
+        width: 125px;
+      }
+
+      .rectangle {
+        background-color: rgb(253, 175, 130);
+        height: 105px;
+        width: 180px;
+      }
+
+      .circle {
+        background-color: rgb(253, 205, 142);
+        height: 150px;
+        width: 150px;
+        border-radius: 50%;
+      }
+
+      .semi-circle {
+        background-color: rgb(253, 255, 122);
+        height: 80px; /*Height should be half of width*/
+        width: 180px;
+        border-radius: 100px 100px 0 0; /*Radius = Height*/
+      }
+
+      .ellipse {
+        background-color: rgb(150, 241, 89);
+        height: 105px;
+        width: 180px;
+        border-radius: 50%;
+      }
+
+      .pill {
+        background-color: rgb(96, 238, 120);
+        height: 100px;
+        width: 200px;
+        border-radius: 50000px; /*Any large value will do the trick*/
+      }
+
+      .equilateral-triangle {
+        height: 0px;
+        width: 0px;
+        border-left: 80px solid transparent;
+        border-right: 80px solid transparent;
+        border-bottom: 153px solid rgb(122, 255, 204); /*You need to multiply the left/right border width by 1.732 to get the bottom border, ie, height of triangle*/
+      }
+
+      .isosceles-triangle {
+        height: 0px;
+        width: 0px;
+        border-left: 70px solid transparent;
+        border-right: 70px solid transparent;
+        border-bottom: 170px solid rgb(122, 217, 255);
+      }
+
+      .scalene-triangle {
+        height: 0px;
+        width: 0px;
+        border-left: 130px solid transparent;
+        border-right: 50px solid transparent;
+        border-bottom: 170px solid rgb(122, 180, 255);
+      }
+
+      .right-triangle {
+        height: 0px;
+        width: 0px;
+        border-right: 135px solid transparent;
+        border-bottom: 140px solid rgb(122, 153, 255);
+      }
+
+      .trapezium {
+        height: 0px;
+        width: 140px;
+        border-left: 40px solid transparent;
+        border-right: 40px solid transparent;
+        border-bottom: 140px solid rgb(146, 122, 255);
+      }
+
+      .parallelogram {
+        height: 105px;
+        width: 180px;
+        background-color: rgb(195, 122, 255);
+        transform: skew(-20deg);
+      }
+
+      .rhombus {
+        height: 130px;
+        width: 130px;
+        background-color: rgb(251, 122, 255);
+        transform: skew(-20deg);
+      }
+
+      /* sixpoint-star start */
+      .sixpoint-star {
+        position: relative;
+        height: 0px;
+        width: 0px;
+        border-left: 80px solid transparent;
+        border-right: 80px solid transparent;
+        border-bottom: 153px solid rgb(255, 122, 188);
+        margin-top: 10px;
+      }
+
+      .sixpoint-star::after {
+        position: absolute;
+        content: "";
+        height: 0px;
+        width: 0px;
+        border-left: 80px solid transparent;
+        border-right: 80px solid transparent;
+        border-top: 153px solid rgb(255, 122, 188);
+        top: 40px;
+        left: -80px;
+      }
+      /*sixpoint-start end*/
+
+      /*hexagon start*/
+      .hexagon {
+        position: relative;
+        height: 0px;
+        width: 100px;
+        border-bottom: 100px solid rgb(255, 122, 122);
+        border-left: 60px solid transparent;
+        border-right: 60px solid transparent;
+        margin-top: 30px;
+      }
+
+      .hexagon::after {
+        position: absolute;
+        content: "";
+        height: 0px;
+        width: 100px;
+        border-top: 100px solid rgb(255, 122, 122);
+        border-left: 60px solid transparent;
+        border-right: 60px solid transparent;
+        left: -60px;
+        top: 100px;
+      }
+      /*hexagon end*/
+
+      /*pentagon start*/
+      .pentagon {
+        position: relative;
+        height: 0px;
+        width: 0px;
+        border-bottom: 75px solid rgb(255, 160, 122);
+        border-left: 100px solid transparent;
+        border-right: 100px solid transparent;
+        margin-top: 20px;
+      }
+
+      .pentagon:after {
+        position: absolute;
+        content: "";
+        height: 0px;
+        width: 125px;
+        border-top: 115px solid rgb(255, 160, 122);
+        border-left: 37.5px solid transparent;
+        border-right: 37.5px solid transparent;
+        left: -100px;
+        top: 75px;
+      }
+      /*pentagon end*/
+
+      /*heart start*/
+      .heart {
+        position: relative;
+        width: 200px;
+        height: 180px;
+        margin-top: 40px;
+      }
+
+      .heart::before,
+      .heart::after {
+        position: absolute;
+        content: "";
+        left: 100px;
+        top: 0;
+        width: 100px;
+        height: 160px;
+        background-color: rgb(255, 197, 122);
+        border-radius: 50px 50px 0 0;
+        transform: rotate(-45deg);
+        transform-origin: 0 100%;
+      }
+
+      .heart::after {
+        left: 0;
+        transform: rotate(45deg);
+        transform-origin: 100% 100%;
+      }
+      /*heart end*/
+
+      /*diamond start*/
+      .diamond {
+        position: relative;
+        height: 0px;
+        width: 100px;
+        border-bottom: 80px solid rgb(220, 255, 122);
+        border-left: 50px solid transparent;
+        border-right: 50px solid transparent;
+        margin-top: 20px;
+      }
+
+      .diamond::after {
+        position: absolute;
+        content: "";
+        height: 0px;
+        width: 0px;
+        border-top: 80px solid rgb(220, 255, 122);
+        border-left: 50px solid transparent;
+        border-right: 50px solid transparent;
+        left: -50px;
+        top: 80px;
+      }
+      /*diamond end*/
+
+      .egg {
+        height: 180px;
+        width: 130px;
+        background-color: rgb(149, 255, 122);
+        border-radius: 50% 50% 50% 50% / 60% 60% 40% 40%;
+      }
+
+      /*cross start*/
+      .cross {
+        position: relative;
+        height: 180px;
+        width: 30px;
+        background-color: rgb(122, 255, 248);
+      }
+
+      .cross::after {
+        position: absolute;
+        content: "";
+        height: 30px;
+        width: 180px;
+        background-color: rgb(122, 255, 248);
+        top: 75px;
+        left: -75px;
+      }
+      /*cross end*/
+
+      /* infinty start */
+      .infinity {
+        position: relative;
+        height: 80px;
+        width: 170px;
+      }
+
+      .infinity::before,
+      .infinity::after {
+        position: absolute;
+        content: "";
+        height: 80px;
+        width: 80px;
+        background-color: transparent;
+        border: 20px solid rgb(142, 122, 255);
+        box-sizing: border-box;
+        top: 0;
+      }
+
+      .infinity::before {
+        border-radius: 50% 50% 0 50%;
+        transform: rotate(-45deg);
+        left: 2px;
+      }
+
+      .infinity::after {
+        border-radius: 50% 50% 50% 0;
+        transform: rotate(45deg);
+        right: 2px;
+      }
+      /* infinty end */
+
+      /****************************************/
+      /*            REFERENCE END             */
+      /****************************************/
+    </style>
+    <script>
+      document.addEventListener("contextmenu", function (LibraryV2) {
+        LibraryV2.preventDefault();
+      });
+
+      var link = "shapes";
+      link.split(".html")[0];
+      window.history.replaceState(null, null, link);
+    </script>
+  </head>
+  <body class="is-preload">
+    <!-- Wrapper -->
+    <div id="wrapper">
+      <!-- Main -->
+      <div id="main">
+        <div class="inner">
+          <!-- Header -->
+          <header id="header">
+            <a href="/library.html" class="logo"><strong>Library</strong></a>
+            <div class="main-cont">
+              <div id="time-i">
+                <h1>Time</h1>
+              </div>
+              <div id="date-i">
+                <h1>Year</h1>
+              </div>
+              <div id="day-i">
+                <h1>Day</h1>
+              </div>
+            </div>
+          </header>
+
+          <!-- Content -->
+          <div class="shapes">
+            <section>
+              <h2>Square</h2>
+              <div class="square"></div>
+            </section>
+
+            <section>
+              <h2>Rectangle</h2>
+              <div class="rectangle"></div>
+            </section>
+
+            <section>
+              <h2>Circle</h2>
+              <div class="circle"></div>
+            </section>
+
+            <section>
+              <h2>Semi-circle</h2>
+              <div class="semi-circle"></div>
+            </section>
+
+            <section>
+              <h2>Ellipse</h2>
+              <div class="ellipse"></div>
+            </section>
+
+            <section>
+              <h2>Pill</h2>
+              <div class="pill"></div>
+            </section>
+
+            <section>
+              <h2>Equilateral Triangle</h2>
+              <div class="equilateral-triangle"></div>
+            </section>
+
+            <section>
+              <h2>Isosceles Triangle</h2>
+              <div class="isosceles-triangle"></div>
+            </section>
+
+            <section>
+              <h2>Scalene Triangle</h2>
+              <div class="scalene-triangle"></div>
+            </section>
+
+            <section>
+              <h2>Right Trianagle</h2>
+              <div class="right-triangle"></div>
+            </section>
+
+            <section>
+              <h2>Trapezium</h2>
+              <div class="trapezium"></div>
+            </section>
+
+            <section>
+              <h2>Parallelogram</h2>
+              <div class="parallelogram"></div>
+            </section>
+
+            <section>
+              <h2>Rhombus</h2>
+              <div class="rhombus"></div>
+            </section>
+
+            <section>
+              <h2>Six-point Star</h2>
+              <div class="sixpoint-star"></div>
+            </section>
+
+            <section>
+              <h2>Pentagon</h2>
+              <div class="pentagon"></div>
+            </section>
+
+            <section>
+              <h2>Hexagon</h2>
+              <div class="hexagon"></div>
+            </section>
+
+            <section>
+              <h2>Heart</h2>
+              <div class="heart"></div>
+            </section>
+
+            <section>
+              <h2>Diamond</h2>
+              <div class="diamond"></div>
+            </section>
+
+            <section>
+              <h2>Egg</h2>
+              <div class="egg"></div>
+            </section>
+
+            <section>
+              <h2>Cross</h2>
+              <div class="cross"></div>
+            </section>
+
+            <section>
+              <h2>Infinity</h2>
+              <div class="infinity"></div>
+            </section>
+          </div>
+        </div>
+      </div>
+
+      <!-- Sidebar -->
+      <div id="sidebar">
+        <div class="inner">
+          <!-- Home Back Button -->
+          <a href="/home.html"
+            ><div class="home-back-button"><i class="fa fa-arrow-left fa-fw" aria-hidden="true"></i>Back</div></a
+          >
+
+          <!-- Menu -->
+          <nav id="menu">
+            <header class="major">
+              <h2>Menu</h2>
+            </header>
+
+            <ul>
+              <li><a href="/library.html">General</a></li>
+              <li>
+                <span class="opener">Web Directory</span>
+                <ul>
+                  <li><a href="/directory_pages/englishD.html">English</a></li>
+                  <li><a href="/directory_pages/mathD.html">Math</a></li>
+                  <li><a href="/directory_pages/filipinoD.html">Filipino</a></li>
+                  <li><a href="/directory_pages/scienceD.html">Science</a></li>
+                </ul>
+              </li>
+              <li>
+                <span class="opener">Modules</span>
+                <ul>
+                  <li><a href="/library_pages/kindergarten.html">Kindergarten</a></li>
+                  <li><a href="/library_pages/elem.html">Elementary</a></li>
+                  <li><a href="/library_pages/junior_high.html">Junior High School</a></li>
+                </ul>
+              </li>
+              <li>
+                <span class="opener">Tables & Charts</span>
+                <ul>
+                  <li><a href="/library_pages/charts/flags.html">Flags</a></li>
+                  <li><a href="/library_pages/charts/numberChart.html">Numbers</a></li>
+                  <li><a href="/library_pages/charts/letterChart.html">Letters</a></li>
+                  <li><a href="/library_pages/charts/shapes.html">Shapes</a></li>
+                  <li><a href="/library_pages/charts/color.html">Colors</a></li>
+                  <li><a href="/library_pages/charts/bodyParts.html">Body Parts</a></li>
+                  <li><a href="/library_pages/charts/multiplicationTable.html">Multiplication Table</a></li>
+                </ul>
+              </li>
+              <li>
+                <span class="opener">Maps</span>
+                <ul>
+                  <li><a href="/library_pages/maps/worldMap.html">World Map</a></li>
+                  <li><a href="/library_pages/maps/countryMap.html">Country Map</a></li>
+                  <li><a href="/library_pages/maps/googleMap.html">Google Map</a></li>
+                </ul>
+              </li>
+              <li>
+                <span class="opener">Videos</span>
+                <ul>
+                  <li><a href="/library_pages/youtube.html">Youtube</a></li>
+                  <li><a href="/library_pages/channels.html">Channel Recommendations</a></li>
+                </ul>
+              </li>
+              <li><a href="/library_pages/trivia.html">Trivia</a></li>
+              <li><a href="/library_pages/googleBooks.html">Google eBooks</a></li>
+              <li><a href="/library_pages/dictionary.html">Dictionary</a></li>
+              <li><a href="/library_pages/studyTips.html">Study Tips</a></li>
+            </ul>
+          </nav>
+
+          <!-- Footer -->
+          <footer id="footer">
+            <p class="copyright">&copy; HPM. All rights reserved.</p>
+          </footer>
+        </div>
+      </div>
+    </div>
+
+    <!-- Scripts -->
+
+    <script src="/js/jquery.min.js"></script>
+    <script src="/js/browser.min.js"></script>
+    <script src="/js/breakpoints.min.js"></script>
+    <script src="/js/util.js"></script>
+    <script src="/library.js"></script>
+  </body>
+</html>

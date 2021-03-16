@@ -1,0 +1,552 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>OWL | Games</title>
+
+    <!--Links-->
+    <link rel="shortcut icon" href="images/flavicon.ico" />
+    <link rel="stylesheet" href="/css/games.css" />
+
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/magnific-popup.js/1.1.0/magnific-popup.css" rel="stylesheet" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;700&display=swap" rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,600,700&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css" />
+
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css"
+      integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2"
+      crossorigin="anonymous"
+    />
+
+    <script>
+      document.addEventListener("contextmenu", function (OWLwebsite) {
+        OWLwebsite.preventDefault();
+      });
+
+      var link = "games";
+      link.split(".html")[0];
+      window.history.replaceState(null, null, link);
+    </script>
+  </head>
+  <body>
+    <div class="container g-container mx-auto">
+      <main role="main">
+        <!--back and darkmode button-->
+
+        <div class="darkout">
+          <div class="back">
+            <a href="home.html">
+              <div class="backBtn">
+                <span class="line tLine"></span>
+                <span class="line mLine"></span>
+                <span class="label">Back</span>
+                <span class="line bLine"></span>
+              </div>
+            </a>
+          </div>
+
+          <div class="darkmode">
+            <div class="pipe">
+              <div class="containerr">
+                <i class="fas fa-moon"></i>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!--back and darkmode button-->
+        <!--title-->
+        <div class="header" style="margin-top: 70px">
+          <h1>Games</h1>
+          <p>An interactive session. Level up today!</p>
+        </div>
+        <!--title-->
+
+        <div class="filters filter-button-group">
+          <ul>
+            <li class="active"><a href="javascript:void(0);" data-filter="*">All</a></li>
+            <li><a href="javascript:void(0);" data-filter="game">Easy</a></li>
+            <li><a href="javascript:void(0);" data-filter="gamee">Intermediate</a></li>
+            <li><a href="javascript:void(0);" data-filter="gameee">Advance</a></li>
+          </ul>
+        </div>
+
+        <div class="App">
+          <div class="Library" id="gamelibrary">
+            <div class="LibraryEntry" data-filter="game">
+              <div
+                id="gameone"
+                data-id="game_1"
+                data-animation="slideLeft"
+                class="LibraryEntry-backdrop"
+                style="background-image: url('/game_images/Bubble-Shooter-1.png')"
+              ></div>
+              <div class="LibraryEntry-item open-popup" data-id="game_1" style="background-image: url('/game_images/Bubble-Shooter-1.png')">
+                <div class="LibraryEntry-gradient"></div>
+                <div class="LibraryEntry-name">Bubble Shooter</div>
+              </div>
+            </div>
+            <div class="LibraryEntry" data-filter="game">
+              <div
+                id="gameone"
+                data-id="game_1v"
+                data-animation="slideLeft"
+                class="LibraryEntry-backdrop"
+                style="background-image: url('/game_images/Baby-Hazel-Learn-Shapes.png')"
+              ></div>
+              <div class="LibraryEntry-item open-popup" data-id="game_1v" style="background-image: url('/game_images/Baby-Hazel-Learn-Shapes.png')">
+                <div class="LibraryEntry-gradient"></div>
+                <div class="LibraryEntry-name">Baby Hazel</div>
+              </div>
+            </div>
+            <div class="LibraryEntry" data-filter="gamee">
+              <div
+                id="gameone"
+                data-id="game_2"
+                data-animation="slideLeft"
+                class="LibraryEntry-backdrop"
+                style="background-image: url('/game_images/Roll-The-Ball-Online.png')"
+              ></div>
+              <div class="LibraryEntry-item open-popup" data-id="game_2" style="background-image: url('/game_images/Roll-The-Ball-Online.png')">
+                <div class="LibraryEntry-gradient"></div>
+                <div class="LibraryEntry-name">Roll the Ball Online</div>
+              </div>
+            </div>
+            <div class="LibraryEntry" data-filter="gamee">
+              <div
+                id="gameone"
+                data-id="game_2v"
+                data-animation="slideLeft"
+                class="LibraryEntry-backdrop"
+                style="background-image: url('/game_images/Tasty-Planet-Dinotime.png')"
+              ></div>
+              <div class="LibraryEntry-item open-popup" data-id="game_2v" style="background-image: url('/game_images/Tasty-Planet-Dinotime.png')">
+                <div class="LibraryEntry-gradient"></div>
+                <div class="LibraryEntry-name">Tasty Planet Dinotime</div>
+              </div>
+            </div>
+            <div class="LibraryEntry" data-filter="gamee">
+              <div
+                id="gameone"
+                data-id="game_5v"
+                data-animation="slideLeft"
+                class="LibraryEntry-backdrop"
+                style="background-image: url('/game_images/Into-Space-2.png')"
+              ></div>
+              <div class="LibraryEntry-item open-popup" data-id="game_5v" style="background-image: url('/game_images/Into-Space-2.png')">
+                <div class="LibraryEntry-gradient"></div>
+                <div class="LibraryEntry-name">Into Space</div>
+              </div>
+            </div>
+            <div class="LibraryEntry" data-filter="gameee">
+              <div id="gameone" data-id="game_3" data-animation="slideLeft" class="LibraryEntry-backdrop" style="background-image: url('/game_images/advace.png')"></div>
+              <div class="LibraryEntry-item open-popup" data-id="game_3" style="background-image: url('/game_images/advace.png')">
+                <div class="LibraryEntry-gradient"></div>
+                <div class="LibraryEntry-name">Find in Mind</div>
+              </div>
+            </div>
+            <div class="LibraryEntry" data-filter="game">
+              <div
+                id="gameone"
+                data-id="game_4"
+                data-animation="slideLeft"
+                class="LibraryEntry-backdrop"
+                style="background-image: url('/game_images/Dinasaurs-Coloring-Book.png')"
+              ></div>
+              <div class="LibraryEntry-item open-popup" data-id="game_4" style="background-image: url('/game_images/Dinasaurs-Coloring-Book.png')">
+                <div class="LibraryEntry-gradient"></div>
+                <div class="LibraryEntry-name">Dinasaurs Coloring Book</div>
+              </div>
+            </div>
+            <div class="LibraryEntry" data-filter="gamee">
+              <div
+                id="gameone"
+                data-id="game_5"
+                data-animation="slideLeft"
+                class="LibraryEntry-backdrop"
+                style="background-image: url('/game_images/Word-Search-Classic.png')"
+              ></div>
+              <div class="LibraryEntry-item open-popup" data-id="game_5" style="background-image: url('/game_images/Word-Search-Classic.png')">
+                <div class="LibraryEntry-gradient"></div>
+                <div class="LibraryEntry-name">Word Search Classic</div>
+              </div>
+            </div>
+            <div class="LibraryEntry" data-filter="gameee">
+              <div id="gameone" data-id="game_6" data-animation="slideLeft" class="LibraryEntry-backdrop" style="background-image: url('/game_images/Master-Chess.png')"></div>
+              <div class="LibraryEntry-item open-popup" data-id="game_6" style="background-image: url('/game_images/Master-Chess.png')">
+                <div class="LibraryEntry-gradient"></div>
+                <div class="LibraryEntry-name">Master Chess</div>
+              </div>
+            </div>
+            <div class="LibraryEntry" data-filter="game">
+              <div
+                id="gameone"
+                data-id="game_7"
+                data-animation="slideLeft"
+                class="LibraryEntry-backdrop"
+                style="background-image: url('/game_images/Puzzles-And-Matching-Educational-Games.png')"
+              ></div>
+              <div class="LibraryEntry-item open-popup" data-id="game_7" style="background-image: url('/game_images/Puzzles-And-Matching-Educational-Games.png')">
+                <div class="LibraryEntry-gradient"></div>
+                <div class="LibraryEntry-name">Puzzle and Matching</div>
+              </div>
+            </div>
+            <div class="LibraryEntry" data-filter="gamee">
+              <div
+                id="gameone"
+                data-id="game_8"
+                data-animation="slideLeft"
+                class="LibraryEntry-backdrop"
+                style="background-image: url('/game_images/Happy-Glass-2\ \(1\).png')"
+              ></div>
+              <div class="LibraryEntry-item open-popup" data-id="game_8" style="background-image: url('/game_images/Happy-Glass-2\ \(1\).png')">
+                <div class="LibraryEntry-gradient"></div>
+                <div class="LibraryEntry-name">Happy Glass</div>
+              </div>
+            </div>
+            <div class="LibraryEntry" data-filter="gameee">
+              <div
+                id="gameone"
+                data-id="game_9"
+                data-animation="slideLeft"
+                class="LibraryEntry-backdrop"
+                style="background-image: url('/game_images/clickplay-time-5.png')"
+              ></div>
+              <div class="LibraryEntry-item open-popup" data-id="game_9" style="background-image: url('/game_images/clickplay-time-5.png')">
+                <div class="LibraryEntry-gradient"></div>
+                <div class="LibraryEntry-name">ClickPlay Time 5</div>
+              </div>
+            </div>
+            <div class="LibraryEntry" data-filter="game">
+              <div
+                id="gameone"
+                data-id="game_10"
+                data-animation="slideLeft"
+                class="LibraryEntry-backdrop"
+                style="background-image: url('/game_images/Kids-Memory-Wild-Animals.png')"
+              ></div>
+              <div class="LibraryEntry-item open-popup" data-id="game_10" style="background-image: url('/game_images/Kids-Memory-Wild-Animals.png')">
+                <div class="LibraryEntry-gradient"></div>
+                <div class="LibraryEntry-name">Wild Animals</div>
+              </div>
+            </div>
+            <div class="LibraryEntry" data-filter="gamee">
+              <div id="gameone" data-id="game_11" data-animation="slideLeft" class="LibraryEntry-backdrop" style="background-image: url('/game_images/Math-Vs-Bat.png')"></div>
+              <div class="LibraryEntry-item open-popup" data-id="game_11" style="background-image: url('/game_images/Math-Vs-Bat.png')">
+                <div class="LibraryEntry-gradient"></div>
+                <div class="LibraryEntry-name">Math Vs Bat</div>
+              </div>
+            </div>
+            <div class="LibraryEntry" data-filter="gameee">
+              <div
+                id="gameone"
+                data-id="game_12"
+                data-animation="slideLeft"
+                class="LibraryEntry-backdrop"
+                style="background-image: url('/game_images/minicheckers.jpg')"
+              ></div>
+              <div class="LibraryEntry-item open-popup" data-id="game_12" style="background-image: url('/game_images/minicheckers.jpg')">
+                <div class="LibraryEntry-gradient"></div>
+                <div class="LibraryEntry-name">Mini Checkers</div>
+              </div>
+            </div>
+            <div class="LibraryEntry" data-filter="game">
+              <div
+                id="gameone"
+                data-id="game_13"
+                data-animation="slideLeft"
+                class="LibraryEntry-backdrop"
+                style="background-image: url('/game_images/Drawing-For-Kids.png')"
+              ></div>
+              <div class="LibraryEntry-item open-popup" data-id="game_13" style="background-image: url('/game_images/Drawing-For-Kids.png')">
+                <div class="LibraryEntry-gradient"></div>
+                <div class="LibraryEntry-name">Drawing for Kids</div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- EasyGame -->
+        <div id="game_1" class="popup">
+          <div class="popup-overlay"></div>
+          <div class="popup-content">
+            <a href="#" class="close-popup" data-id="game_1" data-animation="slideLeft">&times;</a>
+            <img class="game_logos" src="/game_images/Bubble-Shooter-1.png" />
+            <h1>Bubble shooter</h1>
+            <p>
+              Here is a colorful bubble shooter game! You know what to do! Try to make a group of three or more of the same colored balls. Use your mouse to aim and shoot!
+            </p>
+            <a href="/game_pages/bubbleshooter.html" class="playbtn animation text-decoration-none">
+              <i class="fas fa-play m-auto d-block text-center"></i>
+            </a>
+          </div>
+        </div>
+        <div id="game_1v" class="popup">
+          <div class="popup-overlay"></div>
+          <div class="popup-content">
+            <a href="#" class="close-popup" data-id="game_1v" data-animation="slideLeft">&times;</a>
+            <img class="game_logos" src="/game_images/Baby-Hazel-Learn-Shapes.png" />
+            <h1>Baby Hazel Learn Shapes</h1>
+            <p>
+              Baby Hazel Learn Shapes is an online game that you can play for free. The family is the first school for children to learn. Baby Hazel is growing and she needs
+              to become smarter by learning new things from now on.
+            </p>
+            <a href="/game_pages/Baby-Hazel.html" class="playbtn animation text-decoration-none">
+              <i class="fas fa-play m-auto d-block text-center"></i>
+            </a>
+          </div>
+        </div>
+        <div id="game_4" class="popup">
+          <div class="popup-overlay"></div>
+          <div class="popup-content">
+            <a data-id="game_4" href="#" class="close-popup" data-animation="slideLeft">&times;</a>
+            <img class="game_logos" src="/game_images/Dinasaurs-Coloring-Book.png" />
+            <h1>Dinosaurs Coloring book</h1>
+            <p>
+              Dinosaurs Coloring Book is an online game that you can play. Do you like coloring? Then here you go, there are wonderful Dinosaurs world are here! you can enjoy
+              coloring theses Dinosaurs and have fun. Have a wonderful coloring time. You can also download and print the coloring pages, to color them in real life, or print
+              a finished image.
+            </p>
+            <a href="/game_pages/DinoColor.html" class="playbtn animation text-decoration-none">
+              <i class="fas fa-play m-auto d-block text-center"></i>
+            </a>
+          </div>
+        </div>
+        <div id="game_7" class="popup">
+          <div class="popup-overlay"></div>
+          <div class="popup-content">
+            <a data-id="game_7" href="#" class="close-popup" data-animation="slideLeft">&times;</a>
+            <img class="game_logos" src="/game_images/Puzzles-And-Matching-Educational-Games.png" />
+            <h1>Puzzle and matching</h1>
+            <p>
+              Let's play the cute game with our baby! Puzzles And Matching - Educational Games is an interesting education game prepared for kids. This game contains many
+              kinds and levels for you: fun puzzles, matching of geometric shapes and animal pairing. What are
+            </p>
+            <a href="/game_pages/puzzleAndMatchingGame.html" class="playbtn animation text-decoration-none">
+              <i class="fas fa-play m-auto d-block text-center"></i>
+            </a>
+          </div>
+        </div>
+
+        <div id="game_10" class="popup">
+          <div class="popup-overlay"></div>
+          <div class="popup-content">
+            <a data-id="game_10" href="#" class="close-popup" data-animation="slideLeft">&times;</a>
+            <img class="game_logos" src="/game_images/Kids-Memory-Wild-Animals.png" />
+            <h1>Wild Animals</h1>
+            <p>
+              Wild Animals is an online game that you can play. Do you like playing the memory game? If you like, welcome to play our wild animal memory challenge. Wild
+              Animals is an excellent game for kids and adults that you can play online for free. The aim of the game is to find all matching wild animal images to win the
+              game. Have fun Wild Animals!
+            </p>
+            <a href="/game_pages/WildAnimals.html" class="playbtn animation text-decoration-none">
+              <i class="fas fa-play m-auto d-block text-center"></i>
+            </a>
+          </div>
+        </div>
+
+        <div id="game_13" class="popup">
+          <div class="popup-overlay"></div>
+          <div class="popup-content">
+            <a data-id="game_13" href="#" class="close-popup" data-animation="slideLeft">&times;</a>
+            <img class="game_logos" src="/game_images/Drawing-For-Kids.png" />
+            <h1>Drawing for kids</h1>
+            <p>
+              An interactive game to build up blocks of monster eyed shapes and figuring out to complete and fill out the whole square with a lot of difficulties and stages
+              that will make it more fun, with a vibrant music and colorful theme.
+            </p>
+            <a href="/game_pages/Drawingfirkids.html" class="playbtn animation text-decoration-none">
+              <i class="fas fa-play m-auto d-block text-center"></i>
+            </a>
+          </div>
+        </div>
+        <!-- EasyGame -->
+        <!-- IntermediateGame -->
+        <div id="game_2" class="popup">
+          <div class="popup-overlay"></div>
+          <div class="popup-content">
+            <a href="#" class="close-popup" data-id="game_2" data-animation="slideLeft">&times;</a>
+            <img class="game_logos" src="/game_images/Roll-The-Ball-Online.png" />
+            <h1>Roll the ball - Online</h1>
+            <p>
+              Roll The Ball Online is an online game that you can play. A special puzzle casual games. Is it a plumber, a maze, a jigsaw puzzle? In Roll The Ball Online, you
+              will find all similar factors of them. The game is simple to operate, slide to move the blocks so that the ball can be guided to roll into the goal location.
+              Notice! Riveted blocks can't be moved.
+            </p>
+            <a href="/game_pages/RollTheBall.html" class="playbtn animation text-decoration-none">
+              <i class="fas fa-play m-auto d-block text-center"></i>
+            </a>
+          </div>
+        </div>
+        <div id="game_5" class="popup">
+          <div class="popup-overlay"></div>
+          <div class="popup-content">
+            <a data-id="game_5" href="#" class="close-popup" data-animation="slideLeft">&times;</a>
+            <img class="game_logos" src="/game_images/Word-Search-Classic.png" />
+            <h1>Word search classic</h1>
+            <p>
+              Word Search Classic is an online game that you can play. Here is a list of words and you will find hidden words in the letter grid. The composition of a letter
+              grid is vertical, horizontal, or diagonal. There are ten different types to choose from. Have fun play with Word Search Classic.
+            </p>
+            <a href="/game_pages/WordSearch.html" class="playbtn animation text-decoration-none">
+              <i class="fas fa-play m-auto d-block text-center"></i>
+            </a>
+          </div>
+        </div>
+        <div id="game_8" class="popup">
+          <div class="popup-overlay"></div>
+          <div class="popup-content">
+            <a data-id="game_8" href="#" class="close-popup" data-animation="slideLeft">&times;</a>
+            <img class="game_logos" src="/game_images/Happy-Glass-2 (1).png" />
+            <h1>Happy glass</h1>
+            <p>
+              Happy Glass is an online game that you can play on 4J.Com for free. Happy Glass is a puzzle game suitable for all ages. You need to use your feelings to control
+              the amount of water so that the liquid in the glass exceeds the water line but does not overflow.
+            </p>
+            <a href="/game_pages/Happyglass.html" class="playbtn animation text-decoration-none">
+              <i class="fas fa-play m-auto d-block text-center"></i>
+            </a>
+          </div>
+        </div>
+
+        <div id="game_11" class="popup">
+          <div class="popup-overlay"></div>
+          <div class="popup-content">
+            <a data-id="game_11" href="#" class="close-popup" data-animation="slideLeft">&times;</a>
+            <img class="game_logos" src="/game_images/Math-Vs-Bat.png" />
+            <h1>Math VS Bat</h1>
+            <p>
+              An interactive game to build up blocks of monster eyed shapes and figuring out to complete and fill out the whole square with a lot of difficulties and stages
+              that will make it more fun, with a vibrant music and colorful theme.
+            </p>
+            <a href="/game_pages/Mathbat.html" class="playbtn animation text-decoration-none">
+              <i class="fas fa-play m-auto d-block text-center"></i>
+            </a>
+          </div>
+        </div>
+        <div id="game_2v" class="popup">
+          <div class="popup-overlay"></div>
+          <div class="popup-content">
+            <a data-id="game_2v" href="#" class="close-popup" data-animation="slideLeft">&times;</a>
+            <img class="game_logos" src="/game_images/Tasty-Planet-Dinotime.png" />
+            <h1>Tasty Planet Dinotime</h1>
+            <p>
+              Tasty Planet Dinotime is an online game that you can play for free. You are an ever-growing grey goo with a habit of engulfing everything in your path. Eating a
+              time machine however may have not been the best idea!
+            </p>
+            <a href="/game_pages/Goo.html" class="playbtn animation text-decoration-none">
+              <i class="fas fa-play m-auto d-block text-center"></i>
+            </a>
+          </div>
+        </div>
+        <div id="game_5v" class="popup">
+          <div class="popup-overlay"></div>
+          <div class="popup-content">
+            <a data-id="game_5v" href="#" class="close-popup" data-animation="slideLeft">&times;</a>
+            <img class="game_logos" src="/game_images/Into-Space-2.png" />
+            <h1>Into Space 2</h1>
+            <p>
+              Into Space 2 is an online game that you can play. Launch a rocket into the skies! Complete missions, unlock achievements and purchase upgrades to send it even
+              further. Will you be able to reach Mars?
+            </p>
+            <a href="/game_pages/SOLARMAX2.html" class="playbtn animation text-decoration-none">
+              <i class="fas fa-play m-auto d-block text-center"></i>
+            </a>
+          </div>
+        </div>
+        <!-- IntermediateGame -->
+        <!-- AdvanceGame -->
+        <div id="game_3" class="popup">
+          <div class="popup-overlay"></div>
+          <div class="popup-content">
+            <a href="#" class="close-popup" data-id="game_3" data-animation="slideLeft">&times;</a>
+            <img class="game_logos" src="/game_images/advace.png" />
+            <h1>Find in mind</h1>
+            <p>
+              Find In Mind is an online game that you can play. This game can train your brain and improve your cognitive abilities! In the game, you can collect coins to buy
+              helpful power-ups and try to earn 3 stars in every level. Focus your attention and improve your mind by playing every day. Are you ready for the challenge? Come
+              and have a try!
+            </p>
+            <a href="/game_pages/BlockMonsters.html" class="playbtn animation text-decoration-none">
+              <i class="fas fa-play m-auto d-block text-center"></i>
+            </a>
+          </div>
+        </div>
+        <div id="game_6" class="popup">
+          <div class="popup-overlay"></div>
+          <div class="popup-content">
+            <a data-id="game_6" href="#" class="close-popup" data-animation="slideLeft">&times;</a>
+            <img class="game_logos" src="/game_images/Master-Chess.png" />
+            <h1>Master chess</h1>
+            <p>
+              Master Chess is an online game that you can play. This is a classic chess game, defeat your opponent by capturing his piece and try to promote your piece to a
+              King.
+            </p>
+            <a href="/game_pages/Masterchess.html" class="playbtn animation text-decoration-none">
+              <i class="fas fa-play m-auto d-block text-center"></i>
+            </a>
+          </div>
+        </div>
+        <div id="game_9" class="popup">
+          <div class="popup-overlay"></div>
+          <div class="popup-content">
+            <a data-id="game_9" href="#" class="close-popup" data-animation="slideLeft">&times;</a>
+            <img class="game_logos" src="/game_images/clickplay-time-5.png" />
+            <h1>ClickPLAY Time 5</h1>
+            <p>
+              An interactive game to enhance and improve your intellectual understanding and observations within thigns and your logical thinking along with critical and
+              problem solving.
+            </p>
+            <a href="/game_pages/Clickplay5.html" class="playbtn animation text-decoration-none">
+              <i class="fas fa-play m-auto d-block text-center"></i>
+            </a>
+          </div>
+        </div>
+
+        <div id="game_12" class="popup">
+          <div class="popup-overlay"></div>
+          <div class="popup-content">
+            <a data-id="game_12" href="#" class="close-popup" data-animation="slideLeft">&times;</a>
+            <img class="game_logos" src="/game_images/minicheckers.jpg" />
+            <h1>Mini checkers</h1>
+            <p>
+              Draughts or checkers is a group of strategy board games for two players which involve diagonal moves of uniform game pieces and mandatory captures by jumping
+              over opponent pieces
+            </p>
+            <a href="/game_pages/checkers.html" class="playbtn animation text-decoration-none">
+              <i class="fas fa-play m-auto d-block text-center"></i>
+            </a>
+          </div>
+        </div>
+
+        <!-- AdvanceGame -->
+
+        <div class="isotope-pager" style="padding-top: 15px; text-align: center"></div>
+
+        <!-- footer -->
+        <div class="footer">
+          <p>
+            &copy;
+            <script>
+              document.write(new Date().getFullYear());
+            </script>
+            By <a href="#" target="_blank">HPM</a>
+          </p>
+        </div>
+
+        <!-- //footer -->
+      </main>
+    </div>
+
+    <!--Games-->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/magnific-popup.js/1.1.0/jquery.magnific-popup.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.isotope/2.2.2/isotope.pkgd.min.js"></script>
+
+    <!--Scripts-->
+    <script src="/games.js"></script>
+  </body>
+</html>

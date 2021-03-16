@@ -1,0 +1,142 @@
+/*NAVIGATION*/
+header{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 40px 100px;
+    z-index: 10000;
+    display: flex !important;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    transition: 0.5s;
+  
+    
+    .logo{
+      display: flex;
+        color:  $mainColor;
+        font-weight: 700;
+        font-size: 2em;
+        text-decoration: none !important;
+  
+        img.owl-nav{
+          width: 50px !important;
+          height: 50px !important;
+          margin-right: 10px;
+        }
+    }
+  
+    .navigation{
+        position: relative;
+        display: flex;
+        li{
+            list-style: none;
+            margin-left: 30px;
+            padding-top: 5px;
+  
+            a{
+              letter-spacing: 1px;
+                text-decoration: none;
+                font-weight: 600;
+                color: rgb(66, 66, 66);
+                &:hover{
+                    color: #f83677;
+                }
+            }
+        }
+    }
+  }
+  header.sticky{
+    display: flex;
+    background: rgb(255, 255, 255);
+    padding: 10px 100px;
+    box-shadow: 0 5px 20px rgba(0,0,0,0.05);
+  
+    .logo{
+        color:  $mainColor;
+    }
+  
+    .navigation{
+        li{
+            a{
+              letter-spacing: 1px;
+              font-weight: normal;
+                color: rgb(36, 36, 36);
+                &:hover{
+                  color: #ff3e7f;
+              }
+            }
+        }
+    }
+  }
+   .logo{
+     margin-top: 0 !important;
+   }
+  
+   @media (max-width: 991px){
+    header, header.sticky{
+        padding: 10px 20px;
+    }
+    header .navigation{
+        display: none;
+    }
+    .navigation.active{
+        width: 100%;
+        height: calc(100% - 68px);
+        position: fixed;
+        top: 68px;
+        left: 0;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        background: #fff;
+        opacity: 0;
+          animation: fadeIn 0.7s ease-in both;
+        li{
+          
+        animation-delay: 0.2s;
+      }
+  }
+  
+  header .navigation li{
+    margin-left: 0;
+    a{
+        text-decoration: none;
+        color: #111;
+        font-size: 1.6em;
+        font-weight: normal;
+        &:hover{
+            color: #ff0157;
+        }
+    }
+  }
+  @keyframes fadeIn {
+      from {
+          opacity: 0;
+          transform: translate3d(0, -20%, 0);
+      }
+      to {
+          opacity: 1;
+          transform: translate3d(0, 0, 0);
+      }
+  }
+    .menuToggle{
+        position: relative;
+        width: 50px;
+        height: 50px;
+        background: url(/images/menu.png);
+        background-size: 30px;
+        background-repeat: no-repeat;
+        background-position: center;
+        cursor: pointer;
+    }
+  
+    .menuToggle.active{
+        background: url(/images/menu.png);
+        background-size: 28px;
+        background-repeat: no-repeat;
+        background-position: center;
+    }
+  }

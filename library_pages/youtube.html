@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+
+<html>
+  <head>
+    <title>Library | Youtube</title>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+    <link rel="shortcut icon" href="/images/flavicon.ico" />
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="/css/library.css" />
+    <style>
+      #youtube-search {
+        width: 150px;
+        margin: 0 auto;
+        background-color: rgb(255, 22, 22) !important;
+        border-radius: 10px !important;
+        color: white !important;
+        font-weight: normal;
+        box-shadow: none;
+      }
+      .form-control {
+        width: 50%;
+        margin: 0 auto;
+        margin-top: 10px;
+      }
+      .y-title {
+        margin-top: 50px;
+        margin-bottom: 0;
+      }
+      #videos {
+        margin: 0 auto;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center !important;
+      }
+      iframe {
+        float: left;
+        width: 420px;
+        height: 310px;
+        margin: 5px;
+      }
+
+      @media only screen and (max-width: 500px) {
+        #youtube-search {
+          width: 100px;
+        }
+        iframe {
+          width: 99%;
+          height: 210px;
+        }
+      }
+    </style>
+  </head>
+  <body class="is-preload">
+    <!-- Wrapper -->
+    <div id="wrapper">
+      <!-- Main -->
+      <div id="main">
+        <div class="inner">
+          <!-- Header -->
+          <header id="header">
+            <a href="youtube.html" class="logo"><strong>Library</strong></a>
+            <div class="main-cont">
+              <div id="time-i">
+                <h1>Time</h1>
+              </div>
+              <div id="date-i">
+                <h1>Year</h1>
+              </div>
+              <div id="day-i">
+                <h1>Day</h1>
+              </div>
+            </div>
+          </header>
+
+          <!-- Content -->
+
+          <div class="container">
+            <h2 class="y-title">MiniYoutube <i class="fab fa-youtube" style="color: red"></i></h2>
+            <form id="form">
+              <div class="form-group">
+                <input type="text" class="form-control" id="search" />
+              </div>
+              <div class="form-group">
+                <input type="submit" class="btn" value="Search" id="youtube-search" />
+              </div>
+            </form>
+          </div>
+
+          <div class="row">
+            <div class="col-md-12" style="padding-right: 10px">
+              <div id="videos"></div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Sidebar -->
+      <div id="sidebar">
+        <div class="inner">
+          <!-- Home Back Button -->
+          <a href="/home.html"
+            ><div class="home-back-button"><i class="fa fa-arrow-left fa-fw" aria-hidden="true"></i>Back</div></a
+          >
+
+          <!-- Menu -->
+          <nav id="menu">
+            <header class="major">
+              <h2>Menu</h2>
+            </header>
+
+            <ul>
+              <li><a href="/library.html">General</a></li>
+              <li>
+                <span class="opener">Web Directory</span>
+                <ul>
+                  <li><a href="/directory_pages/englishD.html">English</a></li>
+                  <li><a href="/directory_pages/mathD.html">Math</a></li>
+                  <li><a href="/directory_pages/filipinoD.html">Filipino</a></li>
+                  <li><a href="/directory_pages/scienceD.html">Science</a></li>
+                </ul>
+              </li>
+              <li>
+                <span class="opener">Modules</span>
+                <ul>
+                  <li><a href="/library_pages/kindergarten.html">Kindergarten</a></li>
+                  <li><a href="/library_pages/elem.html">Elementary</a></li>
+                  <li><a href="/library_pages/junior_high.html">Junior High School</a></li>
+                </ul>
+              </li>
+              <li>
+                <span class="opener">Tables & Charts</span>
+                <ul>
+                  <li><a href="/library_pages/charts/flags.html">Flags</a></li>
+                  <li><a href="/library_pages/charts/numberChart.html">Numbers</a></li>
+                  <li><a href="/library_pages/charts/letterChart.html">Letters</a></li>
+                  <li><a href="/library_pages/charts/shapes.html">Shapes</a></li>
+                  <li><a href="/library_pages/charts/color.html">Colors</a></li>
+                  <li><a href="/library_pages/charts/bodyParts.html">Body Parts</a></li>
+                  <li><a href="/library_pages/charts/multiplicationTable.html">Multiplication Table</a></li>
+                </ul>
+              </li>
+              <li>
+                <span class="opener">Maps</span>
+                <ul>
+                  <li><a href="/library_pages/maps/worldMap.html">World Map</a></li>
+                  <li><a href="/library_pages/maps/countryMap.html">Country Map</a></li>
+                  <li><a href="/library_pages/maps/googleMap.html">Google Map</a></li>
+                </ul>
+              </li>
+              <li>
+                <span class="opener">Videos</span>
+                <ul>
+                  <li><a href="/library_pages/youtube.html">Youtube</a></li>
+                  <li><a href="/library_pages/channels.html">Channel Recommendations</a></li>
+                </ul>
+              </li>
+              <li>
+                <span class="opener">eBooks</span>
+                <ul>
+                  <li><a href="/library_pages/googleBooks.html">Google eBooks</a></li>
+                  <li><a href="/directory_pages/eBooksD.html">eBooks Web Directory</a></li>
+                </ul>
+              </li>
+              <li><a href="/library_pages/trivia.html">Trivia</a></li>
+              <li><a href="/library_pages/dictionary.html">Dictionary</a></li>
+              <li><a href="/library_pages/studyTips.html">Study Tips</a></li>
+            </ul>
+          </nav>
+
+          <!-- Section -->
+
+          <!-- Footer -->
+          <footer id="footer">
+            <p class="copyright">&copy; HPM. All rights reserved.</p>
+          </footer>
+        </div>
+      </div>
+    </div>
+
+    <!-- Scripts -->
+    <script src="/js/jquery.min.js"></script>
+    <script src="/js/browser.min.js"></script>
+    <script src="/js/breakpoints.min.js"></script>
+    <script src="/js/util.js"></script>
+    <script src="/library.js"></script>
+    <script>
+      document.addEventListener("contextmenu", function (LibraryV2) {
+        LibraryV2.preventDefault();
+      });
+    </script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="/js/youtube.js"></script>
+  </body>
+</html>

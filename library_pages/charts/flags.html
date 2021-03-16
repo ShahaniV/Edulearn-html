@@ -1,0 +1,392 @@
+<!DOCTYPE html>
+
+<html>
+  <head>
+    <title>Library | Flags</title>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+    <link rel="shortcut icon" href="/images/flavicon.ico" />
+    <link rel="stylesheet" href="/css/library.css" />
+    <link href="https://fonts.googleapis.com/css?family=Muli:400,600" rel="stylesheet" />
+    <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+    <style>
+      #main .inner {
+        padding: 0 25px;
+      }
+      body .container .title {
+        margin: auto;
+        font-size: 2.6rem;
+        letter-spacing: 1px;
+        word-spacing: 0.25rem;
+      }
+      body .container .form {
+        margin: 0 auto;
+        margin-top: 4.5rem;
+        display: flex;
+        align-items: center;
+        box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+        border-radius: 5px;
+        max-width: 50%;
+      }
+      body .container .form .search-btn {
+        padding: 0 15px;
+        background-color: #fff;
+        border: none;
+        border-top-left-radius: 5px;
+        border-bottom-left-radius: 5px;
+        cursor: pointer;
+        outline: none;
+      }
+      body .container .form input[type="text"] {
+        width: 100%;
+        padding: 1rem;
+        border-top-right-radius: 5px;
+        border-bottom-right-radius: 5px;
+        border: none;
+        outline: none;
+      }
+      body .container .heading {
+        font-size: 1.2rem;
+        margin-top: 1rem;
+      }
+      body .container .heading span {
+        font-size: 1.6rem;
+      }
+      body .container .heading h3 {
+        text-align: center !important;
+      }
+      body .container .countries {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+      }
+      body .container .countries .country {
+        margin: 2rem 2rem 2rem 0;
+        height: 20.5rem;
+        width: 12.25rem;
+        box-shadow: 0 2px 5px rgba(0, 0, 0, 0.25);
+        border-radius: 5px;
+      }
+      body .container .countries .country img {
+        width: 100%;
+        height: 40%;
+        background-color: #fff;
+        border-top-right-radius: 5px;
+        border-top-left-radius: 5px;
+      }
+      body .container .countries .country .country-body {
+        padding: 0.5rem 2rem 2rem 0.6rem;
+        height: 12rem;
+        background-color: #fff;
+        border-radius: 5px;
+      }
+      body .container .countries .country .country-body h3 {
+        font-size: 1rem;
+      }
+      body .container .countries .country .country-body h4 {
+        font-weight: lighter;
+        font-size: 0.92rem;
+        margin: 0.45rem 0;
+      }
+
+      @media (max-width: 550px) {
+        body .container {
+          align-items: center;
+        }
+        body .container .title {
+          font-size: 2rem;
+          text-align: center;
+          padding: 0 1rem;
+        }
+        body .container .form {
+          margin-top: 4.5rem;
+          display: flex;
+          align-items: center;
+          box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+          border-radius: 5px;
+        }
+        body .container .form .search-btn {
+          padding: 0 3px;
+          background-color: #fff;
+          border: none;
+          border-top-left-radius: 5px;
+          border-bottom-left-radius: 5px;
+          cursor: pointer;
+          outline: none;
+        }
+        body .container .form input[type="text"] {
+          width: 100%;
+        }
+        body .container .heading {
+          font-size: 1.1rem;
+          text-align: center;
+        }
+        body .container .heading span {
+          font-size: 1.5rem;
+        }
+
+        body .container .countries {
+          display: flex;
+          flex-wrap: wrap;
+          align-items: center;
+          justify-content: center;
+        }
+        body .container .countries .country {
+          margin: 2rem 2rem 2rem 2rem;
+          height: 20.5rem;
+          width: 15rem;
+          box-shadow: 0 2px 5px rgba(0, 0, 0, 0.25);
+          border-radius: 5px;
+          cursor: pointer;
+        }
+        body .container .countries .country img {
+          width: 100%;
+          height: 40%;
+          background-color: #fff;
+          border-top-right-radius: 5px;
+          border-top-left-radius: 5px;
+        }
+        body .container .countries .country .country-body {
+          padding: 0.5rem 2rem 2rem 0.6rem;
+          height: 12rem;
+          background-color: #fff;
+          border-radius: 5px;
+        }
+        body .container .countries .country .country-body h3 {
+          font-size: 1rem;
+        }
+        body .container .countries .country .country-body h4 {
+          font-weight: lighter;
+          font-size: 0.92rem;
+          margin: 0.45rem 0;
+        }
+      }
+    </style>
+    <script>
+      document.addEventListener("contextmenu", function (LibraryV2) {
+        LibraryV2.preventDefault();
+      });
+
+      var link = "flags";
+      link.split(".html")[0];
+      window.history.replaceState(null, null, link);
+    </script>
+  </head>
+  <body class="is-preload">
+    <!-- Wrapper -->
+    <div id="wrapper">
+      <!-- Main -->
+      <div id="main">
+        <div class="inner">
+          <!-- Header -->
+          <header id="header">
+            <a href="#" class="logo"><strong>Country Flag Finder</strong></a>
+            <div class="main-cont">
+              <div id="time-i">
+                <h1>Time</h1>
+              </div>
+              <div id="date-i">
+                <h1>Year</h1>
+              </div>
+              <div id="day-i">
+                <h1>Day</h1>
+              </div>
+            </div>
+          </header>
+
+          <!-- Content -->
+          <div class="container">
+            <form id="form" class="form">
+              <button type="submit" class="search-btn">
+                <i class="fas fa-search"></i>
+              </button>
+              <input type="text" id="search" placeholder="Search for any country..." autocomplete="off" autofocus />
+            </form>
+
+            <div id="heading" class="heading"></div>
+
+            <div id="countries" class="countries"></div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Sidebar -->
+      <div id="sidebar">
+        <div class="inner">
+          <!-- Home Back Button -->
+          <a href="/home.html"
+            ><div class="home-back-button"><i class="fa fa-arrow-left fa-fw" aria-hidden="true"></i>Back</div></a
+          >
+
+          <!-- Menu -->
+          <nav id="menu">
+            <header class="major">
+              <h2>Menu</h2>
+            </header>
+
+            <ul>
+              <li><a href="/library.html">General</a></li>
+              <li>
+                <span class="opener">Web Directory</span>
+                <ul>
+                  <li><a href="/directory_pages/englishD.html">English</a></li>
+                  <li><a href="/directory_pages/mathD.html">Math</a></li>
+                  <li><a href="/directory_pages/filipinoD.html">Filipino</a></li>
+                  <li><a href="/directory_pages/scienceD.html">Science</a></li>
+                </ul>
+              </li>
+              <li>
+                <span class="opener">Modules</span>
+                <ul>
+                  <li><a href="/library_pages/kindergarten.html">Kindergarten</a></li>
+                  <li><a href="/library_pages/elem.html">Elementary</a></li>
+                  <li><a href="/library_pages/junior_high.html">Junior High School</a></li>
+                </ul>
+              </li>
+              <li>
+                <span class="opener">Tables & Charts</span>
+                <ul>
+                  <li><a href="/library_pages/charts/flags.html">Flags</a></li>
+                  <li><a href="/library_pages/charts/numberChart.html">Numbers</a></li>
+                  <li><a href="/library_pages/charts/letterChart.html">Letters</a></li>
+                  <li><a href="/library_pages/charts/shapes.html">Shapes</a></li>
+                  <li><a href="/library_pages/charts/color.html">Colors</a></li>
+                  <li><a href="/library_pages/charts/bodyParts.html">Body Parts</a></li>
+                  <li><a href="/library_pages/charts/multiplicationTable.html">Multiplication Table</a></li>
+                </ul>
+              </li>
+              <li>
+                <span class="opener">Maps</span>
+                <ul>
+                  <li><a href="/library_pages/maps/worldMap.html">World Map</a></li>
+                  <li><a href="/library_pages/maps/countryMap.html">Country Map</a></li>
+                  <li><a href="/library_pages/maps/googleMap.html">Google Map</a></li>
+                </ul>
+              </li>
+              <li>
+                <span class="opener">Videos</span>
+                <ul>
+                  <li><a href="/library_pages/youtube.html">Youtube</a></li>
+                  <li><a href="/library_pages/channels.html">Channel Recommendations</a></li>
+                </ul>
+              </li>
+              <li><a href="/library_pages/trivia.html">Trivia</a></li>
+              <li><a href="/library_pages/googleBooks.html">Google eBooks</a></li>
+              <li><a href="/library_pages/dictionary.html">Dictionary</a></li>
+              <li><a href="/library_pages/studyTips.html">Study Tips</a></li>
+            </ul>
+          </nav>
+
+          <!-- Footer -->
+          <footer id="footer">
+            <p class="copyright">&copy; HPM. All rights reserved.</p>
+          </footer>
+        </div>
+      </div>
+    </div>
+
+    <!-- Scripts -->
+
+    <script src="/js/jquery.min.js"></script>
+    <script src="/js/browser.min.js"></script>
+    <script src="/js/breakpoints.min.js"></script>
+    <script src="/js/util.js"></script>
+    <script src="/library.js"></script>
+    <script>
+      /* The design was taken from https://www.frontendmentor.io/challenges/rest-countries-api-with-color-theme-switcher-5cacc469fec04111f7b848ca */
+
+      const form = document.getElementById("form");
+      const search = document.getElementById("search");
+      const heading = document.getElementById("heading");
+      const countries = document.getElementById("countries");
+
+      // All countries
+      const allCountries = () => {
+        fetch(`https://restcountries.eu/rest/v2/all`)
+          .then((res) => res.json())
+          .then((data) => {
+            console.log(data);
+
+            heading.innerHTML = `<h3>There are total <span>${data.length}</span> countries</h3>`;
+
+            countries.innerHTML = data
+              .map(
+                (item) => `
+            
+            <div class = 'country'>
+            
+                <img src = '${item.flag}' />
+
+                <div class = 'country-body'>
+                
+                    <h3>${item.name}</h3>
+                    <h4>Region: ${item.region}</h4>
+                    <h4>Capital: ${item.capital}</h4>
+                    <h4>Population: ${item.population}</h4>
+                
+                </div>
+
+            </div>
+        
+        `
+              )
+              .join("");
+          });
+      };
+
+      // Search for country
+      const searchCountry = (e) => {
+        const searchTerm = search.value.trim();
+
+        fetch(`https://restcountries.eu/rest/v2/name/${searchTerm}`)
+          .then((res) => res.json())
+          .then((data) => {
+            console.log(data);
+
+            const error = (data.status = 404);
+
+            if (heading.length === 0) {
+              heading.innerHTML = `No countries found</h3>`;
+            } else {
+              heading.innerHTML = `<h3> <span>${data.length}</span> countries found</h3>`;
+
+              countries.innerHTML = data
+                .map(
+                  (item) => `
+                
+                    <div class = 'country'>
+                    
+                        <img src = '${item.flag}' />
+    
+                        <div class = 'country-body'>
+                        
+                            <h3>${item.name}</h3>
+                            <h4>Region: ${item.region}</h4>
+                            <h4>Capital: ${item.capital}</h4>
+                            <h4>Population: ${item.population}</h4>
+                        
+                        </div>
+    
+                    </div>
+                
+                `
+                )
+                .join("");
+            }
+          });
+
+        e.preventDefault();
+      };
+
+      // Initialize functions
+      const init = () => {
+        allCountries();
+      };
+
+      init();
+
+      // Event listeners
+      form.addEventListener("submit", searchCountry);
+    </script>
+  </body>
+</html>

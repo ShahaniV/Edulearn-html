@@ -1,0 +1,22 @@
+.ui-coverflow-wrapper{
+    height:390px;
+}
+.ui-state-active{
+    border:0px;
+}
+section{
+    width: 100%;
+}
+
+*{
+    user-select: none;
+}
+$bgcolor: #f5f5f5;
+$controlsColor: #000;
+
+@import 'kindergarten';
+@import 'grade123';
+@import 'grade456';
+@import 'grade78910';
+@import 'list';
+@import 'dictionary';

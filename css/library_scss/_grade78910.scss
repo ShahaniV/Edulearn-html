@@ -1,0 +1,104 @@
+#g7-coverflow-english,
+#g7-coverflow-math,
+#g7-coverflow-fil,
+#g7-coverflow-science,
+#g8-coverflow-english,
+#g8-coverflow-math,
+#g8-coverflow-fil,
+#g8-coverflow-science,
+#g9-coverflow-english,
+#g9-coverflow-math,
+#g9-coverflow-fil,
+#g9-coverflow-science,
+#g10-coverflow-english,
+#g10-coverflow-math,
+#g10-coverflow-fil,
+#g10-coverflow-science {
+  padding: 10px;
+  background-color: $bgcolor;
+}
+
+#g7-english img,
+#g7-math img,
+#g7-fil img,
+#g7-science img,
+#g8-english img,
+#g8-math img,
+#g8-fil img,
+#g8-science img,
+#g9-english img,
+#g9-math img,
+#g9-fil img,
+#g9-science img,
+#g10-english img,
+#g10-math img,
+#g10-fil img,
+#g10-science img {
+  width: 210px;
+  height: 288px;
+}
+
+#g7-english,
+#g7-math,
+#g7-fil,
+#g7-science,
+#g8-english,
+#g8-math,
+#g8-fil,
+#g8-science,
+#g9-english,
+#g9-math,
+#g9-fil,
+#g9-science,
+#g10-english,
+#g10-math,
+#g10-fil,
+#g10-science {
+    margin: 0 auto !important;
+    width: 100%;
+    text-align: center !important;
+}
+
+
+#g7-english-controls,
+#g7-math-controls,
+#g7-fil-controls,
+#g7-science-controls,
+#g8-english-controls,
+#g8-math-controls,
+#g8-fil-controls,
+#g8-science-controls,
+#g9-english-controls,
+#g9-math-controls,
+#g9-fil-controls,
+#g9-science-controls,
+#g10-english-controls,
+#g10-math-controls,
+#g10-fil-controls,
+#g10-science-controls {
+  position: absolute;
+  left: 50%;
+  z-index: 50;
+  transform: translateX(-50%);
+  bottom: 20px;
+  color: $controlsColor;
+}
+
+#g7-english-controls i,
+#g7-math-controls i,
+#g7-fil-controls i,
+#g7-science-controls i,
+#g8-english-controls i,
+#g8-math-controls i,
+#g8-fil-controls i,
+#g8-science-controls i,
+#g9-english-controls i,
+#g9-math-controls i,
+#g9-fil-controls i,
+#g9-science-controls i,
+#g10-english-controls i,
+#g10-math-controls i,
+#g10-fil-controls i,
+#g10-science-controls i {
+  padding: 20px;
+}

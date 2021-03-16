@@ -1,0 +1,376 @@
+<!DOCTYPE html>
+
+<html>
+  <head>
+    <title>Library | Channels</title>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+    <link rel="shortcut icon" href="/images/flavicon.ico" />
+    <link rel="stylesheet" href="/css/library.css" />
+    <style>
+      .channel {
+        background-color: #222222;
+        margin: 10px 0;
+        display: flex;
+        flex-wrap: wrap;
+        box-shadow: 0 0 2em 1em rgba(204, 189, 189, 0.2);
+        padding: 10px;
+        border-radius: 10px;
+      }
+      .channels {
+        padding-top: 0 !important;
+      }
+
+      .channel-profile {
+        width: 140px;
+        height: 140px;
+        border-radius: 50%;
+      }
+      .description,
+      .channel-profile {
+        float: left;
+        margin: 0 10px;
+      }
+
+      .description {
+        margin-left: 20px;
+      }
+
+      .description p {
+        width: 640px;
+        margin-bottom: 10px;
+      }
+
+      .description h2 {
+        color: white;
+        margin-bottom: 10px;
+      }
+      .description h2:hover {
+        color: rgb(167, 165, 165);
+      }
+
+      @media only screen and (max-width: 900px) {
+        .description p {
+          width: 490px;
+        }
+      }
+
+      @media only screen and (max-width: 800px) {
+        .description p {
+          width: 390px;
+        }
+      }
+      @media only screen and (max-width: 650px) {
+        .description p {
+          width: 290px;
+        }
+      }
+      @media only screen and (max-width: 500px) {
+        .channel-profile {
+          margin: 0 auto;
+        }
+        .description p {
+          width: auto;
+          text-align: center;
+        }
+        .description h2 {
+          margin-top: 10px;
+          text-align: center;
+        }
+        .description button {
+          margin: 0 auto;
+          display: block;
+        }
+      }
+    </style>
+    <script>
+      document.addEventListener("contextmenu", function (LibraryV2) {
+        LibraryV2.preventDefault();
+      });
+
+      var link = "channels";
+      link.split(".html")[0];
+      window.history.replaceState(null, null, link);
+    </script>
+  </head>
+  <body class="is-preload">
+    <!-- Wrapper -->
+    <div id="wrapper">
+      <!-- Main -->
+      <div id="main">
+        <div class="inner">
+          <!-- Header -->
+          <header id="header">
+            <a class="logo"><strong>Youtube Channel Recommendations</strong></a>
+            <div class="main-cont">
+              <div id="time-i">
+                <h1>Time</h1>
+              </div>
+              <div id="date-i">
+                <h1>Year</h1>
+              </div>
+              <div id="day-i">
+                <h1>Day</h1>
+              </div>
+            </div>
+          </header>
+
+          <!-- Content -->
+          <section class="channels">
+            <div class="channel">
+              <img src="https://yt3.ggpht.com/ytc/AAUvwnjBXigR2_TXN9u0ZpE8ziePt22ZjUQtA6LZJZK7FQ=s176-c-k-c0x00ffffff-no-rj-mo" alt="Cover" class="channel-profile" />
+              <div class="description">
+                <a href="https://www.youtube.com/user/TEDEducation" target="_blank"
+                  ><h2>TED-Ed <i class="fa fa-check-circle" aria-hidden="true"></i></h2
+                ></a>
+                <p>
+                  Best educational Youtube channels to frequent. Everything from lessons ideas to professional development opportunities and more can be found here.
+                  Characterized by its incredible animation style, the stunning videos on TedEd currently have over 12 million subscribers and counting.
+                </p>
+              </div>
+            </div>
+
+            <div class="channel">
+              <img src="https://yt3.ggpht.com/ytc/AAUvwnghQpS3xsRt75Eyet8D8BfNGMSNVoKoo84IYdqG=s176-c-k-c0x00ffffff-no-rj-mo" alt="Cover" class="channel-profile" />
+              <div class="description">
+                <a href="https://www.youtube.com/channel/UCphTF9wHwhCt-BzIq-s4V-g" target="_blank"
+                  ><h2>What if <i class="fa fa-check-circle" aria-hidden="true"></i></h2
+                ></a>
+                <p>
+                  What If: These two simple words are the spark that has ignited countless theories, discoveries, and inventions.What If is a documentary web series that takes
+                  you on an epic journey through hypothetical worlds and possibilities, some in distant corners of the universe, others right here on Earth.
+                </p>
+              </div>
+            </div>
+
+            <div class="channel">
+              <img src="https://yt3.ggpht.com/ytc/AAUvwnhQtbqXRiJYKG55116p8H9rmytZ-bej8S2XGgKiMA=s176-c-k-c0x00ffffff-no-rj-mo" alt="Cover" class="channel-profile" />
+              <div class="description">
+                <a href="https://www.youtube.com/user/bigthink" target="_blank"
+                  ><h2>Big Think <i class="fa fa-check-circle" aria-hidden="true"></i></h2
+                ></a>
+                <p>
+                  Leading source of expert-driven and actionable educational content. Explore thousands of videos featuring experts discussing topics aimed at getting us to
+                  think differently about the big ideas and core skills taht define knowledge in the 21st century.
+                </p>
+              </div>
+            </div>
+
+            <div class="channel">
+              <img src="https://yt3.ggpht.com/ytc/AAUvwnjF6UpcpHjyNXjjbZmCjFJLrTZyttiXr4vr7m8S=s176-c-k-c0x00ffffff-no-rj-mo" alt="Cover" class="channel-profile" />
+              <div class="description">
+                <a href="https://www.youtube.com/user/khanacademy" target="_blank"
+                  ><h2>Khan Academy <i class="fa fa-check-circle" aria-hidden="true"></i></h2
+                ></a>
+                <p>You can learn anything on Khan Academy's YouTube channel. As most know, all Khan Academy content is 100% free.</p>
+              </div>
+            </div>
+
+            <div class="channel">
+              <img src="https://yt3.ggpht.com/ytc/AAUvwnhaCfWYKZA5TAF_WjTA7NoLehvFZG2jxPdA8FD_BOI=s176-c-k-c0x00ffffff-no-rj-mo" alt="Cover" class="channel-profile" />
+              <div class="description">
+                <a href="https://www.youtube.com/user/NationalGeographic" target="_blank"
+                  ><h2>National Geographic <i class="fa fa-check-circle" aria-hidden="true"></i></h2
+                ></a>
+                <p>
+                  If you saw issues of this amazing and timeless publication in your home growing up, then you know just how strong National Geographic has been going. Their
+                  own educational Youtube channels feature content-specific videos on Nag Geo Wild and the super-popular National Geographic Kids.
+                </p>
+              </div>
+            </div>
+
+            <div class="channel">
+              <img src="https://yt3.ggpht.com/ytc/AAUvwnipDz1zucxC-k-Ktln5mKjSZ66A7ETmScck-9qRQw=s176-c-k-c0x00ffffff-no-rj-mo" alt="Cover" class="channel-profile" />
+              <div class="description">
+                <a href="https://www.youtube.com/user/crashcourse" target="_blank"
+                  ><h2>Crash Course <i class="fa fa-check-circle" aria-hidden="true"></i></h2
+                ></a>
+                <p>
+                  Launched with the purpose of teaching a wide range of subjects such as world history, biology, and even psychology. With 11.7 million subscritbers and over
+                  1.5 billion views, Crash Course uses a combination of historical footage, descriptive illustrations, and humor to keep viewers informed and entertained.
+                </p>
+              </div>
+            </div>
+
+            <div class="channel">
+              <img src="https://yt3.ggpht.com/ytc/AAUvwnhZ3RdTd90CWLjszcugYGMU4I72zJAVkphAfSflTQ=s176-c-k-c0x00ffffff-no-rj-mo" alt="Cover" class="channel-profile" />
+              <div class="description">
+                <a href="https://www.youtube.com/user/Vsauce" target="_blank"
+                  ><h2>Vsauce <i class="fa fa-check-circle" aria-hidden="true"></i></h2
+                ></a>
+                <p>
+                  Created by internet celebrity Michael Stevens. The channels feature videos on scientific, psychological, mathematical, and philosophical topics, as well as
+                  gaming, technology, popular culture, and other general interest subjects.
+                </p>
+              </div>
+            </div>
+
+            <div class="channel">
+              <img src="https://yt3.ggpht.com/ytc/AAUvwnjBJR7xS-yf4Mwz7GJ4y6rWceVa1LkGQpPnaTyyCw=s176-c-k-c0x00ffffff-no-rj-mo" alt="Cover" class="channel-profile" />
+              <div class="description">
+                <a href="https://www.youtube.com/user/1veritasium" target="_blank"
+                  ><h2>Veritasium <i class="fa fa-check-circle" aria-hidden="true"></i></h2
+                ></a>
+                <p>
+                  Veritasium has provided an insiders look at science, innovations, and places of interest. Each video includes demonstrations, interviews and/or tours in
+                  order to give you a 3-dimensional look at the subject matter.
+                </p>
+              </div>
+            </div>
+
+            <div class="channel">
+              <img src="https://yt3.ggpht.com/ytc/AAUvwngXhIw0jthBwN1CVp7DE3c8_nhRFIQPbcadOSAaoQ=s176-c-k-c0x00ffffff-no-rj-mo" alt="Cover" class="channel-profile" />
+              <div class="description">
+                <a href="https://www.youtube.com/user/magauchsein" target="_blank"
+                  ><h2>Easy Languages <i class="fa fa-check-circle" aria-hidden="true"></i></h2
+                ></a>
+                <p>
+                  If you've always wanted to learn another language, then this is the channel for you! Easy languages has conducted interviews on the streets in order to teach
+                  viewers about other people's language and cultures.
+                </p>
+              </div>
+            </div>
+
+            <div class="channel">
+              <img src="https://yt3.ggpht.com/ytc/AAUvwnh4DhHKHnUUylGkg2pu0fgMu2feGC-2ISJOKqUP=s176-c-k-c0x00ffffff-no-rj-mo" alt="Cover" class="channel-profile" />
+              <div class="description">
+                <a href="https://www.youtube.com/channel/UCP5bYRGZUJMG93AVoMekz9g" target="_blank"
+                  ><h2>Imaginary Ambitions <i class="fa fa-check-circle" aria-hidden="true"></i></h2
+                ></a>
+                <p>
+                  This channel presents unconventional explorations of what defines different musical genres, styles, and artists. Striving to create original tracks inspired
+                  by different styles of music that you will find interesting. Watch the videos for a comedic outline of how the music you're listening to, was made.
+                </p>
+              </div>
+            </div>
+
+            <div class="channel">
+              <img src="https://yt3.ggpht.com/ytc/AAUvwnjTeFYoj5eDtxHLIiF36qp7yCZTp4q8mxIKLjWx=s176-c-k-c0x00ffffff-no-rj-mo" alt="Cover" class="channel-profile" />
+              <div class="description">
+                <a href="https://www.youtube.com/user/Sepharoth64" target="_blank"
+                  ><h2>Ali Abdaal <i class="fa fa-check-circle" aria-hidden="true"></i></h2
+                ></a>
+                <p>
+                  Ali Abadaal is a junior doctor in the UK’s National Health Service (NHS). He vlogs about life as a doctor, as well as about how to study more effectively. He
+                  makes videos about medicine, tech, productivity and lifestyle. Check out my most popular videos.
+                </p>
+              </div>
+            </div>
+
+            <div class="channel">
+              <img src="https://yt3.ggpht.com/ytc/AAUvwnjs3sSc1KBFo8smDze4ugoH9yqGdEt4bHQiYP4HUA=s176-c-k-c0x00ffffff-no-rj-mo" alt="Cover" class="channel-profile" />
+              <div class="description">
+                <a href="https://www.youtube.com/user/Computerphile" target="_blank"
+                  ><h2>Computerphile <i class="fa fa-check-circle" aria-hidden="true"></i></h2
+                ></a>
+                <p>Computerphile has provided viewers with all sorts of interesting trivia from the world of computers, plus in-depth explanations about all things tech.</p>
+              </div>
+            </div>
+
+            <div class="channel">
+              <img src="https://yt3.ggpht.com/ytc/AAUvwngdcZ7Gy9y6YHLMGg-Zu0mGLpjKvtrl9dbJHPof=s176-c-k-c0x00ffffff-no-rj-mo" alt="Cover" class="channel-profile" />
+              <div class="description">
+                <a href="https://www.youtube.com/user/learnhowtoadult" target="_blank"
+                  ><h2>How to Adult <i class="fa fa-check-circle" aria-hidden="true"></i></h2
+                ></a>
+                <p>
+                  This is a channel that will serve you well for years to come and maybe should've been introduced to you years ago. How to Adult is perfect for those
+                  lingering questions of adulthook that you should probably know the answer to but have scooted by for the time being.
+                </p>
+              </div>
+            </div>
+          </section>
+        </div>
+      </div>
+
+      <!-- Sidebar -->
+      <div id="sidebar">
+        <div class="inner">
+          <!-- Home Back Button -->
+          <a href="/home.html"
+            ><div class="home-back-button"><i class="fa fa-arrow-left fa-fw" aria-hidden="true"></i>Back</div></a
+          >
+
+          <!-- Menu -->
+          <nav id="menu">
+            <header class="major">
+              <h2>Menu</h2>
+            </header>
+
+            <ul>
+              <li><a href="/library.html">General</a></li>
+              <li>
+                <span class="opener">Web Directory</span>
+                <ul>
+                  <li><a href="/directory_pages/englishD.html">English</a></li>
+                  <li><a href="/directory_pages/mathD.html">Math</a></li>
+                  <li><a href="/directory_pages/filipinoD.html">Filipino</a></li>
+                  <li><a href="/directory_pages/scienceD.html">Science</a></li>
+                </ul>
+              </li>
+              <li>
+                <span class="opener">Modules</span>
+                <ul>
+                  <li><a href="/library_pages/kindergarten.html">Kindergarten</a></li>
+                  <li><a href="/library_pages/elem.html">Elementary</a></li>
+                  <li><a href="/library_pages/junior_high.html">Junior High School</a></li>
+                </ul>
+              </li>
+              <li>
+                <span class="opener">Tables & Charts</span>
+                <ul>
+                  <li><a href="/library_pages/charts/flags.html">Flags</a></li>
+                  <li><a href="/library_pages/charts/numberChart.html">Numbers</a></li>
+                  <li><a href="/library_pages/charts/letterChart.html">Letters</a></li>
+                  <li><a href="/library_pages/charts/shapes.html">Shapes</a></li>
+                  <li><a href="/library_pages/charts/color.html">Colors</a></li>
+                  <li><a href="/library_pages/charts/bodyParts.html">Body Parts</a></li>
+                  <li><a href="/library_pages/charts/multiplicationTable.html">Multiplication Table</a></li>
+                </ul>
+              </li>
+              <li>
+                <span class="opener">Maps</span>
+                <ul>
+                  <li><a href="/library_pages/maps/worldMap.html">World Map</a></li>
+                  <li><a href="/library_pages/maps/countryMap.html">Country Map</a></li>
+                  <li><a href="/library_pages/maps/googleMap.html">Google Map</a></li>
+                </ul>
+              </li>
+              <li>
+                <span class="opener">Videos</span>
+                <ul>
+                  <li><a href="/library_pages/youtube.html">Youtube</a></li>
+                  <li><a href="/library_pages/channels.html">Channel Recommendations</a></li>
+                </ul>
+              </li>
+              <li>
+                <span class="opener">eBooks</span>
+                <ul>
+                  <li><a href="/library_pages/googleBooks.html">Google eBooks</a></li>
+                  <li><a href="/directory_pages/eBooksD.html">eBooks Web Directory</a></li>
+                </ul>
+              </li>
+              <li><a href="/library_pages/trivia.html">Trivia</a></li>
+              <li><a href="/library_pages/dictionary.html">Dictionary</a></li>
+              <li><a href="/library_pages/studyTips.html">Study Tips</a></li>
+            </ul>
+          </nav>
+
+          <!-- Section -->
+
+          <!-- Footer -->
+          <footer id="footer">
+            <p class="copyright">&copy; HPM. All rights reserved.</p>
+          </footer>
+        </div>
+      </div>
+    </div>
+
+    <!-- Scripts -->
+    <script src="/js/jquery.min.js"></script>
+    <script src="/js/browser.min.js"></script>
+    <script src="/js/breakpoints.min.js"></script>
+    <script src="/js/util.js"></script>
+    <script src="/library.js"></script>
+  </body>
+</html>

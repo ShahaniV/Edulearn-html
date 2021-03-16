@@ -1,0 +1,417 @@
+.ui-coverflow-wrapper {
+  height: 390px;
+}
+
+.ui-state-active {
+  border: 0px;
+}
+
+section {
+  width: 100%;
+}
+
+* {
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
+}
+
+#k-coverflow-learning,
+#k-coverflow-reading {
+  padding: 10px;
+  background-color: #f5f5f5;
+}
+
+#k-learning img,
+#k-reading img {
+  width: 210px;
+  height: 288px;
+}
+
+#k-learning,
+#k-reading {
+  margin: 0 auto !important;
+  width: 100%;
+  text-align: center !important;
+}
+
+#k-learning-controls,
+#k-reading-controls {
+  position: absolute;
+  left: 50%;
+  z-index: 50;
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
+  bottom: 20px;
+  color: #000;
+}
+
+#k-learning-controls i,
+#k-reading-controls i {
+  padding: 20px;
+}
+
+#g1-coverflow-english,
+#g1-coverflow-math,
+#g1-coverflow-fil,
+#g1-coverflow-science,
+#g2-coverflow-english,
+#g2-coverflow-math,
+#g2-coverflow-fil,
+#g2-coverflow-science,
+#g3-coverflow-english,
+#g3-coverflow-math,
+#g3-coverflow-fil,
+#g3-coverflow-science {
+  padding: 10px;
+  background-color: #f5f5f5;
+}
+
+#g1-english img,
+#g1-math img,
+#g1-fil img,
+#g1-science img,
+#g2-english img,
+#g2-math img,
+#g2-fil img,
+#g2-science img,
+#g3-english img,
+#g3-math img,
+#g3-fil img,
+#g3-science img {
+  width: 210px;
+  height: 288px;
+}
+
+#g1-english,
+#g1-math,
+#g1-fil,
+#g1-science,
+#g2-english,
+#g2-math,
+#g2-fil,
+#g2-science,
+#g3-english,
+#g3-math,
+#g3-fil,
+#g3-science {
+  margin: 0 auto !important;
+  width: 100%;
+  text-align: center !important;
+}
+
+#g1-english-controls,
+#g1-math-controls,
+#g1-fil-controls,
+#g1-science-controls,
+#g2-english-controls,
+#g2-math-controls,
+#g2-fil-controls,
+#g2-science-controls,
+#g3-english-controls,
+#g3-math-controls,
+#g3-fil-controls,
+#g3-science-controls {
+  position: absolute;
+  left: 50%;
+  z-index: 50;
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
+  bottom: 20px;
+  color: #000;
+}
+
+#g1-english-controls i,
+#g1-math-controls i,
+#g1-fil-controls i,
+#g1-science-controls i,
+#g2-english-controls i,
+#g2-math-controls i,
+#g2-fil-controls i,
+#g2-science-controls i,
+#g3-english-controls i,
+#g3-math-controls i,
+#g3-fil-controls i,
+#g3-science-controls i {
+  padding: 20px;
+}
+
+#g4-coverflow-english,
+#g4-coverflow-math,
+#g4-coverflow-fil,
+#g4-coverflow-science,
+#g5-coverflow-english,
+#g5-coverflow-math,
+#g5-coverflow-fil,
+#g5-coverflow-science,
+#g6-coverflow-english,
+#g6-coverflow-math,
+#g6-coverflow-fil,
+#g6-coverflow-science {
+  padding: 10px;
+  background-color: #f5f5f5;
+}
+
+#g4-english img,
+#g4-math img,
+#g4-fil img,
+#g4-science img,
+#g5-english img,
+#g5-math img,
+#g5-fil img,
+#g5-science img,
+#g6-english img,
+#g6-math img,
+#g6-fil img,
+#g6-science img {
+  width: 210px;
+  height: 288px;
+}
+
+#g4-english,
+#g4-math,
+#g4-fil,
+#g4-science,
+#g5-english,
+#g5-math,
+#g5-fil,
+#g5-science,
+#g6-english,
+#g6-math,
+#g6-fil,
+#g6-science {
+  margin: 0 auto !important;
+  width: 100%;
+  text-align: center !important;
+}
+
+#g4-english-controls,
+#g4-math-controls,
+#g4-fil-controls,
+#g4-science-controls,
+#g5-english-controls,
+#g5-math-controls,
+#g5-fil-controls,
+#g5-science-controls,
+#g6-english-controls,
+#g6-math-controls,
+#g6-fil-controls,
+#g6-science-controls {
+  position: absolute;
+  left: 50%;
+  z-index: 50;
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
+  bottom: 20px;
+  color: #000;
+}
+
+#g4-english-controls i,
+#g4-math-controls i,
+#g4-fil-controls i,
+#g4-science-controls i,
+#g5-english-controls i,
+#g5-math-controls i,
+#g5-fil-controls i,
+#g5-science-controls i,
+#g6-english-controls i,
+#g6-math-controls i,
+#g6-fil-controls i,
+#g6-science-controls i {
+  padding: 20px;
+}
+
+#g7-coverflow-english,
+#g7-coverflow-math,
+#g7-coverflow-fil,
+#g7-coverflow-science,
+#g8-coverflow-english,
+#g8-coverflow-math,
+#g8-coverflow-fil,
+#g8-coverflow-science,
+#g9-coverflow-english,
+#g9-coverflow-math,
+#g9-coverflow-fil,
+#g9-coverflow-science,
+#g10-coverflow-english,
+#g10-coverflow-math,
+#g10-coverflow-fil,
+#g10-coverflow-science {
+  padding: 10px;
+  background-color: #f5f5f5;
+}
+
+#g7-english img,
+#g7-math img,
+#g7-fil img,
+#g7-science img,
+#g8-english img,
+#g8-math img,
+#g8-fil img,
+#g8-science img,
+#g9-english img,
+#g9-math img,
+#g9-fil img,
+#g9-science img,
+#g10-english img,
+#g10-math img,
+#g10-fil img,
+#g10-science img {
+  width: 210px;
+  height: 288px;
+}
+
+#g7-english,
+#g7-math,
+#g7-fil,
+#g7-science,
+#g8-english,
+#g8-math,
+#g8-fil,
+#g8-science,
+#g9-english,
+#g9-math,
+#g9-fil,
+#g9-science,
+#g10-english,
+#g10-math,
+#g10-fil,
+#g10-science {
+  margin: 0 auto !important;
+  width: 100%;
+  text-align: center !important;
+}
+
+#g7-english-controls,
+#g7-math-controls,
+#g7-fil-controls,
+#g7-science-controls,
+#g8-english-controls,
+#g8-math-controls,
+#g8-fil-controls,
+#g8-science-controls,
+#g9-english-controls,
+#g9-math-controls,
+#g9-fil-controls,
+#g9-science-controls,
+#g10-english-controls,
+#g10-math-controls,
+#g10-fil-controls,
+#g10-science-controls {
+  position: absolute;
+  left: 50%;
+  z-index: 50;
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
+  bottom: 20px;
+  color: #000;
+}
+
+#g7-english-controls i,
+#g7-math-controls i,
+#g7-fil-controls i,
+#g7-science-controls i,
+#g8-english-controls i,
+#g8-math-controls i,
+#g8-fil-controls i,
+#g8-science-controls i,
+#g9-english-controls i,
+#g9-math-controls i,
+#g9-fil-controls i,
+#g9-science-controls i,
+#g10-english-controls i,
+#g10-math-controls i,
+#g10-fil-controls i,
+#g10-science-controls i {
+  padding: 20px;
+}
+
+.faq-list {
+  width: 100%;
+  margin: 30px auto 0;
+  list-style-type: none;
+}
+
+.faq-list > li {
+  width: 100%;
+  background-color: #f5f5f5;
+  margin-bottom: 10px;
+  overflow: hidden;
+}
+
+.faq-list > li.open .list-header:after {
+  -webkit-transform: rotate(180deg);
+          transform: rotate(180deg);
+}
+
+.faq-list > li.open .list-content {
+  width: 100%;
+  max-height: 1000px;
+  -webkit-transition: max-height 0.5s ease-in;
+  transition: max-height 0.5s ease-in;
+}
+
+.faq-list .list-header {
+  position: relative;
+  padding: 20px 0 20px 30px;
+  line-height: 30px;
+  cursor: pointer;
+}
+
+.faq-list .list-header:after {
+  content: "";
+  width: 0;
+  height: 0;
+  position: absolute;
+  top: 25px;
+  right: 25px;
+  border-style: solid;
+  border-width: 18px 12px 0 12px;
+  border-color: #757575 transparent transparent transparent;
+  -webkit-transition: transform 0.5s ease-in;
+  -webkit-transition: -webkit-transform 0.5s ease-in;
+  transition: -webkit-transform 0.5s ease-in;
+  transition: transform 0.5s ease-in;
+  transition: transform 0.5s ease-in, -webkit-transform 0.5s ease-in;
+}
+
+.faq-list .list-content {
+  max-height: 0;
+  overflow: scroll;
+  -webkit-transition: max-height 1s cubic-bezier(0, 1.05, 0, 1);
+  transition: max-height 1s cubic-bezier(0, 1.05, 0, 1);
+}
+
+.faq-list .list-content-inner {
+  width: 100%;
+  padding: 0 45px 30px;
+}
+
+@media only screen and (max-width: 600px) {
+  .faq-list {
+    padding: 0 !important;
+  }
+  .list-content-inner {
+    padding: 0 10px 20px !important;
+  }
+}
+
+.dictionary {
+  width: 80%;
+  margin: 0 auto;
+}
+
+.dictionary .def {
+  text-align: center;
+  margin-top: 10px;
+}
+
+.dictionary .audio {
+  margin: 0 auto;
+  text-align: center;
+}
+
+.dinput {
+  margin-bottom: 10px;
+}

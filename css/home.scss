@@ -1,0 +1,251 @@
+@import url("https://fonts.googleapis.com/css?family=Acme|Lobster|Patua+One|Rubik|Sniglet");
+
+// Variables
+$Rubik: "Rubik", cursive;
+$Patua: "Patua One", cursive;
+$mainColor: #f67c92;
+
+/*general*/
+@import "home_scss/general";
+/*navigation*/
+@import "home_scss/navigation";
+
+/*about*/
+@import "home_scss/about";
+
+/*features*/
+@import "home_scss/features";
+
+/*courses*/
+@import "home_scss/courses";
+
+/*offer*/
+#offer {
+  padding: 40px 0 85px 0;
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+}
+#offer button {
+  margin: 30px 0;
+}
+
+/*contact*/
+@import "home_scss/contact";
+
+/*footer*/
+@import "home_scss/footer";
+
+/*screen sizing*/
+@import "home_scss/sizing";
+
+/*typing style*/
+.typing {
+  position: relative;
+}
+
+.typing::after {
+  content: "";
+  position: absolute;
+  right: -5px;
+  width: 1px;
+  height: 90%;
+  border-right: 2.5px solid #000;
+  animation: blink 0.5s infinite ease;
+}
+
+@keyframes blink {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+/*****************************/
+/* MESSAGE BOX RELATED CLASS */
+/*           (START)           */
+/*****************************/
+
+$msgbox-area-width-l: 200px;
+
+$msgbox-area-y-pos: 15px;
+$msgbox-area-x-s: 20px;
+$msgbox-area-x-m: 80px;
+$msgbox-area-x-l: 15px;
+
+$msgbox-box-color: #0c0c0c;
+$msgbox-box-background-color: rgba(#ffebeb, 0.8);
+$msgbox-box-padding: 15px 17px;
+$msgbox-box-margin: 13px;
+$msgbox-box-border-radius: 12px;
+$msgbox-box-box-shadow: 0 10px 15px rgba(#ffffff, 0.65);
+$msgbox-box-transition-time: 300ms;
+
+$msgbox-close-color: #131212;
+$msgbox-close-margin: 25px;
+$msgbox-close-transition-time: 225ms;
+
+$msgbox-close-hover-text-shadow: 0 0 3px #363636;
+
+.msgbox-area {
+  z-index: 2;
+  width: fit-content;
+  max-height: 100%;
+  position: fixed;
+  bottom: $msgbox-area-y-pos;
+  left: $msgbox-area-x-s;
+  right: $msgbox-area-x-s;
+  .msgbox-box {
+    top: 350px;
+    font-size: 15px;
+    color: $msgbox-box-color;
+    background-color: $msgbox-box-background-color;
+    padding: $msgbox-box-padding;
+    margin: 0 0 $msgbox-box-margin;
+    display: flex;
+    align-items: center;
+    position: relative;
+    border-radius: $msgbox-box-border-radius;
+    box-shadow: $msgbox-box-box-shadow;
+    transition: opacity $msgbox-box-transition-time ease-in;
+    &.msgbox-box-hide {
+      opacity: 0;
+    }
+    &:last-child {
+      margin: 0;
+    }
+  }
+  .msgbox-content {
+    flex-shrink: 1;
+  }
+  .msgbox-close {
+    text-align: right;
+    right: 0;
+    color: $msgbox-close-color;
+    font-weight: bold;
+    text-decoration: none;
+    margin: 0 0 0 $msgbox-close-margin;
+    flex-grow: 0;
+    flex-shrink: 0;
+    position: relative;
+    transition: text-shadow $msgbox-close-transition-time ease-out;
+    &:hover {
+      text-shadow: $msgbox-close-hover-text-shadow;
+    }
+  }
+}
+
+@media (min-width: 481px) and (max-width: 767px) {
+  .msgbox-area {
+    left: $msgbox-area-x-m;
+    right: $msgbox-area-x-m;
+  }
+}
+
+@media (min-width: 200px) {
+  .msgbox-area {
+    width: fit-content;
+    height: 0;
+    top: $msgbox-area-y-pos;
+    left: auto;
+    right: $msgbox-area-x-l;
+  }
+}
+
+/*****************************/
+/* MESSAGE BOX RELATED CLASS */
+/*           (END)           */
+/*****************************/
+
+.games-vidiv {
+  width: 400px;
+  height: 350px !important;
+  background-image: url(/images/games-vid.gif);
+  background-size: contain;
+  background-position: center;
+  background-repeat: no-repeat;
+  .phone {
+    position: relative;
+    top: -8px;
+    height: 430px;
+    width: 354px;
+    margin-left: 53px;
+    margin-right: 0;
+    display: block;
+    border-radius: 25px;
+  }
+}
+
+@media only screen and (max-width: 750px) {
+  #offer {
+    .about-right-col {
+      padding-top: 30px;
+    }
+  }
+}
+
+@media only screen and (max-width: 350px) {
+  .games-vidiv {
+    width: 250px;
+    height: 280px !important;
+    margin-bottom: 30px;
+    .phone {
+      top: -8px;
+      left: 13px;
+      height: 360px;
+      width: 270px;
+      margin-right: 4px; //changed
+      margin-left: 0;
+    }
+  }
+}
+
+.module-vidiv {
+  width: 400px;
+  height: 350px !important;
+  background-image: url(/images/module-vid.gif);
+  background-size: contain;
+  background-position: center;
+  background-repeat: no-repeat;
+  .phone {
+    position: relative;
+    top: -8px;
+    height: 430px;
+    width: 354px;
+    margin-left: 53px;
+    margin-right: 0;
+    display: block;
+    border-radius: 25px;
+  }
+}
+
+@media only screen and (max-width: 750px) {
+  #courses {
+    .about-right-col {
+      padding-top: 30px;
+    }
+  }
+
+  .contact-row {
+    margin-top: 0;
+  }
+}
+
+@media only screen and (max-width: 350px) {
+  .module-vidiv {
+    width: 250px;
+    height: 280px !important;
+    margin-bottom: 30px;
+    .phone {
+      top: -8px;
+      left: 13px;
+      height: 360px;
+      width: 270px;
+      margin-right: 4px; //changed
+      margin-left: 0;
+    }
+  }
+}
+
+@import "home_scss/motivationalquote";

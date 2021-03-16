@@ -1,0 +1,84 @@
+#g4-coverflow-english,
+#g4-coverflow-math,
+#g4-coverflow-fil,
+#g4-coverflow-science,
+#g5-coverflow-english,
+#g5-coverflow-math,
+#g5-coverflow-fil,
+#g5-coverflow-science,
+#g6-coverflow-english,
+#g6-coverflow-math,
+#g6-coverflow-fil,
+#g6-coverflow-science {
+  padding: 10px;
+  background-color: $bgcolor;
+}
+
+#g4-english img,
+#g4-math img,
+#g4-fil img,
+#g4-science img,
+#g5-english img,
+#g5-math img,
+#g5-fil img,
+#g5-science img,
+#g6-english img,
+#g6-math img,
+#g6-fil img,
+#g6-science img {
+  width: 210px;
+  height: 288px;
+}
+
+#g4-english,
+#g4-math,
+#g4-fil,
+#g4-science,
+#g5-english,
+#g5-math,
+#g5-fil,
+#g5-science,
+#g6-english,
+#g6-math,
+#g6-fil,
+#g6-science {
+    margin: 0 auto !important;
+    width: 100%;
+    text-align: center !important;
+}
+
+
+#g4-english-controls,
+#g4-math-controls,
+#g4-fil-controls,
+#g4-science-controls,
+#g5-english-controls,
+#g5-math-controls,
+#g5-fil-controls,
+#g5-science-controls,
+#g6-english-controls,
+#g6-math-controls,
+#g6-fil-controls,
+#g6-science-controls {
+  position: absolute;
+  left: 50%;
+  z-index: 50;
+  transform: translateX(-50%);
+  bottom: 20px;
+  color: $controlsColor;
+}
+
+#g4-english-controls i,
+#g4-math-controls i,
+#g4-fil-controls i,
+#g4-science-controls i,
+#g5-english-controls i,
+#g5-math-controls i,
+#g5-fil-controls i,
+#g5-science-controls i,
+#g6-english-controls i,
+#g6-math-controls i,
+#g6-fil-controls i,
+#g6-science-controls i {
+  padding: 20px;
+}

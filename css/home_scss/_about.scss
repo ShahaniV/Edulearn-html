@@ -1,0 +1,86 @@
+#about {
+  padding: 20px 0 100px 0;
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+}
+.about-left-col {
+  margin-left: 8%;
+  flex-basis: 42%;
+
+  img {
+    width: 100%;
+  }
+
+  div.card-body {
+    padding-top: 0;
+    padding-bottom: 0;
+  }
+}
+
+.about-right-col {
+  flex-basis: 50%;
+  text-align: right;
+}
+
+.about-text {
+  max-width: 500px;
+  margin-right: 100px;
+  display: inline-block;
+
+  h2 {
+    margin: 50px 0 10px;
+    font-size: 28px;
+    font-style: italic;
+  }
+
+  h3 {
+    font-size: 20px;
+    font-style: italic;
+    color: #797979;
+  }
+}
+
+.carousel-div {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -ms-flex-line-pack: center;
+  align-content: center;
+  padding-top: 100px;
+}
+
+.carousel-control-prev-icon {
+  background-image: url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' fill='%23000' viewBox='0 0 8 8'%3E%3Cpath d='M5.25 0l-4 4 4 4 1.5-1.5-2.5-2.5 2.5-2.5-1.5-1.5z'/%3E%3C/svg%3E") !important;
+}
+
+.carousel-control-next-icon {
+  background-image: url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' fill='%23000' viewBox='0 0 8 8'%3E%3Cpath d='M2.75 0l-1.5 1.5 2.5 2.5-2.5 2.5 1.5 1.5 4-4-4-4z'/%3E%3C/svg%3E") !important;
+}
+
+.bg-pink {
+  background-color: #ffe8ed !important;
+}
+
+.text-pink {
+  color: $mainColor;
+}
+
+.border-radius {
+  border-radius: 250px;
+  width: 60%;
+}
+
+@media only screen and (max-width: 400px) {
+  .about-left-col {
+    margin-left: 0 !important;
+  }
+
+  #menuBtn {
+    right: 20px !important;
+  }
+}

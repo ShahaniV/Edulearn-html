@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Games</title>
+    <link rel="shortcut icon" href="/images/flavicon.ico" />
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/magnific-popup.js/1.1.0/magnific-popup.css" rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css?family=Parisienne&display=swap" rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,600,700&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css" />
+    <link rel="stylesheet" href="/css/games.css" />
+    <style>
+      iframe {
+        margin: 0 auto;
+        display: block;
+        text-align: center;
+      }
+    </style>
+    <script>
+      document.addEventListener("contextmenu", function (LibraryV2) {
+        LibraryV2.preventDefault();
+      });
+
+      var link = "DrawingforKids";
+      link.split(".html")[0];
+      window.history.replaceState(null, null, link);
+    </script>
+  </head>
+
+  <body>
+    <!--back and darkmode button-->
+    <div class="darkout">
+      <div class="back">
+        <a href="/games.html">
+          <div class="backBtn">
+            <span class="line tLine"></span>
+            <span class="line mLine"></span>
+            <span class="label">Back</span>
+            <span class="line bLine"></span>
+          </div>
+        </a>
+      </div>
+
+      <div class="darkmode">
+        <div class="pipe">
+          <div class="containerr">
+            <i class="fas fa-sun"></i>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!--back and darkmode button-->
+
+    <!--title-->
+    <div class="header">
+      <h1>Games</h1>
+      <p>An interactive session. Level up today!</p>
+    </div>
+    <!--title-->
+
+    <iframe width="800" height="600" frameborder="0" scrolling="no" src="https://www.4j.com/embed/Drawing-For-Kids"></iframe>
+    <p align="center">
+      If something went wrong at the game screen,<br />
+      kindly refresh the website
+    </p>
+
+    <!-- footer -->
+    <div class="footer">
+      <p>
+        &copy;
+        <script>
+          document.write(new Date().getFullYear());
+        </script>
+        By HPM
+      </p>
+    </div>
+
+    <!-- //footer -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/magnific-popup.js/1.1.0/jquery.magnific-popup.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.isotope/2.2.2/isotope.pkgd.min.js"></script>
+    <script src="/games.js"></script>
+  </body>
+</html>
