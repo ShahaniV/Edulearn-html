@@ -1,0 +1,106 @@
+/* body{
+    height: 1000px;
+    background-color: var(--bg-black-50);
+}
+h1{
+    color: var(--text-black-700); PARA MAY CHANGE RIN COLOR LAHAT PAG NAKA DARMODE OR INDI NA. LAGAY LNG GANTO
+} */
+
+:root {
+    --bg-black-900: #000;
+    --bg-black-100: #ddd;
+    --bg-black-50: #eff0f4;
+    --bg-opacity: rgba(255, 255, 255, 0.5);
+    --text-black-900: #000;
+    --text-black-700: #555;
+  }
+  body.dark {
+    --bg-black-900: #fff;
+    --bg-black-100: #353535;
+    --bg-black-50: #2b2c2f;
+    --bg-opacity: rgba(43, 44, 47, 0.5);
+    --text-black-900: #fff;
+    --text-black-700: #fff;
+  }
+.style-switcher{
+    background-color: #fcaa3f;
+   position: fixed;
+   right:0;
+   top: 77px;
+    padding: 15px;
+    width: 180px;
+    z-index: 101;
+    border-radius: 5px;
+    transition: all 0.3s ease;
+    transform: translateX(100%);
+}
+.style-switcher.open{
+    transform: translateX(-15px);
+}
+.style-switcher .s-icon{
+    background-color: #fcaa3f;
+    position: absolute;
+    height: 38px;
+    width: 38px;
+    color: var(--text-black-900);
+    text-align: center;
+    font-size: 20px;
+    right: 100%;
+    margin-right: 15px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    border-radius: 50%;
+}
+.style-switcher .s-icon:after{
+    border-radius: 50%;
+}
+.style-switcher .s-icon i{
+    line-height: 40px;
+}
+.style-switcher .style-switcher-toggler{
+    top: 0;
+}
+.style-switcher .day-night{
+    top: 55px;
+}
+.style-switcher h4{
+    margin: 0 0 10px;
+    color: var(--text-black-700);
+    font-style: 16px;
+    font-weight: 600;
+    text-transform: capitalize;
+}
+.style-switcher .colors{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+.style-switcher .colors span{
+    display: inline-block;
+    height: 30px;
+    width: 30px;
+    border-radius: 50%;
+}
+.style-switcher .color-1{
+    background-color:#2F5061;
+}
+.style-switcher .color-2{
+    background-color: #E57F84;
+}
+.style-switcher .color-3{
+    background-color: #F8EA8C;
+}
+.style-switcher .color-4{
+    background-color: #4297A0;
+}
+.style-switcher .color-5{
+    background-color: rgb(247, 126, 78);
+}
+
+@media (max-width: 991px){
+    .style-switcher{
+       right:0;
+       top: 10px;
+        padding: 15px;
+    }
+}

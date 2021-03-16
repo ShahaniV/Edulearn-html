@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>OWL</title>
+    <title>Edulearn</title>
     <link rel="shortcut icon" href="/images/flavicon.ico" />
     <!-- Links -->
     <link rel="stylesheet" href="css/home.css" />
@@ -31,7 +31,7 @@
       integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2"
       crossorigin="anonymous"
     />
-
+    <link rel="stylesheet" href="css/stye-switcher.css" />
     <script>
       document.addEventListener("contextmenu", function (OWLwebsite) {
         OWLwebsite.preventDefault();
@@ -55,6 +55,22 @@
             <li><a href="library.html">Library</a></li>
             <li><a href="games.html">Games</a></li>
             <li><a href="#contact">Contact</a></li>
+            <div class="style-switcher outer-shadow">
+              <div class="style-switcher-toggler s-icon outer-shadow inner-shadow">
+                <i class="fas fa-cog fa-spin"></i>
+              </div>
+              <div class="day-night s-icon outer-shadow inner-shadow">
+                <i class="fas"></i>
+              </div>
+              <h4>Theme Colors</h4>
+              <div class="colors">
+                <span class="color-1" onclick="setActiveStyle('color-1')"></span>
+                <span class="color-2" onclick="setActiveStyle('color-2')"></span>
+                <span class="color-3" onclick="setActiveStyle('color-3')"></span>
+                <span class="color-4" onclick="setActiveStyle('color-4')"></span>
+                <span class="color-5" onclick="setActiveStyle('color-5')"></span>
+              </div>
+            </div>
           </ul>
         </header>
         <div class="smooth-scroll">
@@ -482,9 +498,11 @@
       integrity="sha384-w1Q4orYjBQndcko6MimVbzY0tgp4pWB4lZ7lr30WKz0vr/aWKhXdBNmNb5D92v7s"
       crossorigin="anonymous"
     ></script>
+    <script src="/js/style-switcher.js"></script>
     <script>
       var scroll = new SmoothScroll('a[href*="#"]');
     </script>
+
     <!-- Hiding the source code -->
   </body>
 </html>
