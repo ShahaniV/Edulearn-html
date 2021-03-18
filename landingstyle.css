@@ -429,6 +429,25 @@ form.sign-in-form {
 }
 
 @media (max-width: 570px) {
+  .sign-up-form {
+    margin-top: 60px;
+  }
+  .logo {
+    width: 50px;
+    height: 50px;
+  }
+  .logo-heading {
+    display: flex;
+    position: absolute;
+    top: 15px;
+    left: 70px;
+  }
+
+  .logo-heading h1 {
+    font-size: 1.6em;
+    padding-top: 4%;
+    height: 70px !important;
+  }
   form {
     padding: 0 1.5rem;
   }
