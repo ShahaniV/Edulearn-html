@@ -1,125 +1,123 @@
-.section-2{
-    border-radius: 20px;
-  }
-  .cover {
+.section-2 {
+  border-radius: 20px;
+}
+.cover {
+  width: 100%;
+  height: 55vmin;
+  background: url("https://images.unsplash.com/photo-1605693858835-602979e9b200?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=750&q=80");
+  background-position: -24rem -19rem;
+  background-size: 150%;
+  position: relative;
+  border-radius: 20px;
+
+  .overlay {
+    border-radius: 20px !important;
+    position: absolute;
+    top: 0;
+    left: 0;
     width: 100%;
-    height: 55vmin;
-    background: url("https://images.unsplash.com/photo-1520082379916-7cf029de2c1f?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=967&q=80");
-    background-position: -24rem -19rem;
-    background-size: 150%;
-    position: relative;
+    height: 100%;
+    z-index: 999;
+  }
+
+  .content {
+    width: 100%;
+    height: 100%;
+    background: rgba(66, 66, 66, 0.7);
+    padding-top: 19vmin;
     border-radius: 20px;
-  
-    .overlay {
-      border-radius: 20px !important;
-      position: absolute;
-      top: 0;
-      left: 0;
-      width: 100%;
-      height: 100%;
-      z-index: 999;
+
+    & > h1 {
+      font-family: $Patua;
+      font-size: 6.5vmin;
+      color: whitesmoke;
     }
-  
-    .content {
-      width: 100%;
-      height: 100%;
-      background: rgba(66, 66, 66, 0.7);
-      padding-top: 19vmin;
-      border-radius: 20px;
-  
-      &> h1 {
-        font-family: $Patua;
-        font-size: 6.5vmin;
-        color: whitesmoke;
-      }
-  
-      &> p {
-        font-family: $Rubik;
-        font-size: 2.5vmin;
-        color: #e5e5e5;
-      }
+
+    & > p {
+      font-family: $Rubik;
+      font-size: 2.5vmin;
+      color: #e5e5e5;
     }
   }
-  
-  .numbers .rect {
-    position: relative;
-    z-index: 1;
-    background: white;
-    width: 17rem;
-    height: 19rem;
-    padding-top: 3.5vmin;
-    margin: 1rem;
-    border-radius: 0.5em;
-    box-shadow: 1px 2px 50px 0px rgba(255, 0, 0, 0.349);
-  
-    h1 {
-      font-size: 5rem;
-      color: tomato;
-    }
-  
-    img{
-      width: 150px;
-      height: 150px;
-    }
-  
-    p{
-      padding-left: 5px;
-      padding-right: 5px;
-    }
+}
+
+.numbers .rect {
+  position: relative;
+  z-index: 1;
+  background: white;
+  width: 17rem;
+  height: 19rem;
+  padding-top: 3.5vmin;
+  margin: 1rem;
+  border-radius: 0.5em;
+  box-shadow: 1px 2px 50px 0px rgba(0, 132, 255, 0.473);
+
+  h1 {
+    font-size: 5rem;
+    color: tomato;
   }
-  
-  .numbers {
-    margin-top: -17vmin;
+
+  img {
+    width: 150px;
+    height: 150px;
   }
-  
-  .rect{
-    transition: transform 0.5s;
-  
-    &:hover {
-      transform: translateY(-10px);
-    }
-  
+
+  p {
+    padding-left: 5px;
+    padding-right: 5px;
   }
-  
-  #features {
-    padding-top: 50px;
-    padding-bottom: 50px;
+}
+
+.numbers {
+  margin-top: -17vmin;
+}
+
+.rect {
+  transition: transform 0.5s;
+
+  &:hover {
+    transform: translateY(-10px);
   }
-  
-  .feature-row {
-    width: 80%;
-    margin: auto;
-    display: flex;
-    align-items: center;
-    justify-content: space-around;
-    flex-wrap: wrap;
+}
+
+#features {
+  padding-top: 50px;
+  padding-bottom: 50px;
+}
+
+.feature-row {
+  width: 80%;
+  margin: auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  flex-wrap: wrap;
+}
+
+.feature-col {
+  flex-basis: 25%;
+  text-align: center;
+
+  img {
+    width: 100px;
   }
-  
-  .feature-col {
-    flex-basis: 25%;
-    text-align: center;
-  
-    img {
-      width: 100px;
-    }
-  
-    h4 {
-      margin-bottom: 15px;
-      font-size: 20px;
-      font-weight: 400;
-    }
+
+  h4 {
+    margin-bottom: 15px;
+    font-size: 20px;
+    font-weight: 400;
   }
-  
-  .feature-btn {
-    margin: 80px auto 0;
-    display: flex;
-    align-items: flex-end;
-    justify-content: center;
-  
-    .line {
-      text-align: right;
-      display: inline-block;
-      margin-right: 25px;
-    }
+}
+
+.feature-btn {
+  margin: 80px auto 0;
+  display: flex;
+  align-items: flex-end;
+  justify-content: center;
+
+  .line {
+    text-align: right;
+    display: inline-block;
+    margin-right: 25px;
   }
-  
+}

@@ -1,115 +1,115 @@
 .contact-row {
-    display: flex;
-    align-items: center;
-    flex-wrap: wrap;
-    margin-top: 45px;
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  margin-top: 45px;
+}
+
+.contact-left-col,
+.contact-right-col {
+  flex-basis: 50%;
+}
+
+.contact-right-col img {
+  width: 100%;
+}
+
+/*Contact Form*/
+.form {
+  width: 90%;
+  padding: 30px 0px;
+}
+.form-control {
+  position: relative;
+  border-color: #fff;
+
+  label {
+    display: inline-block;
+    margin-bottom: 5px;
   }
-  
-  .contact-left-col,
-  .contact-right-col {
-    flex-basis: 50%;
-  }
-  
-  .contact-right-col img {
-    width: 100%;
-  }
-  
-  /*Contact Form*/
-  .form {
-    width: 90%;
-    padding: 30px 0px;
-  }
-  .form-control {
-    position: relative;
-    border-color: #fff;
-  
-    label {
-      display: inline-block;
-      margin-bottom: 5px;
-    }
-  
-    input {
-      border: 2px solid $mainColor;
-      border-radius: 4px;
-      display: block;
-      font-family: inherit;
-      font-size: 14px;
-      padding: 10px;
-      width: 95%;
-    }
-  
-    textarea {
-      border: 2px solid $mainColor;
-      border-radius: 4px;
-      display: block;
-      font-family: inherit;
-      font-size: 14px;
-      padding: 10px;
-      width: 95%;
-    }
-  }
-  
-  .form-control.success input {
-    border-color: #2ecc71;
-  }
-  
-  .form-control.error input {
-    border-color: #e74c3c;
-  }
-  
-  .form-control.success textarea {
-    border-color: #2ecc71;
-  }
-  
-  .form-control.error textarea {
-    border-color: #e74c3c;
-  }
-  
-  .form-control i {
-    position: absolute;
-    top: 35px;
-    right: 10px;
-    visibility: hidden;
-  }
-  
-  .form-control.success i.fa-check-circle {
-    color: #2ecc71;
-    visibility: visible;
-  }
-  
-  .form-control.error i.fa-exclamation-circle {
-    color: #e74c3c;
-    visibility: visible;
-  }
-  
-  .form-control small {
-    visibility: hidden;
-    position: relative;
-    bottom: 0;
-    left: 0;
-  }
-  
-  .form-control.error small {
-    color: #e74c3c;
-    visibility: visible;
-  }
-  
-  .form button {
-    background-color: $mainColor;
-    border: 2px solid #fff;
+
+  input {
+    border: 2px solid $mainColor;
     border-radius: 4px;
-    color: white;
     display: block;
     font-family: inherit;
-    font-size: 16px;
+    font-size: 14px;
     padding: 10px;
-    width: 100%;
-    margin-top: 80px;
+    width: 95%;
   }
-  
-  /*Contact Form*/
 
-  /* Form 
+  textarea {
+    border: 2px solid $mainColor;
+    border-radius: 4px;
+    display: block;
+    font-family: inherit;
+    font-size: 14px;
+    padding: 10px;
+    width: 95%;
+  }
+}
+
+.form-control.success input {
+  border-color: #2ecc71;
+}
+
+.form-control.error input {
+  border-color: #e74c3c;
+}
+
+.form-control.success textarea {
+  border-color: #2ecc71;
+}
+
+.form-control.error textarea {
+  border-color: #e74c3c;
+}
+
+.form-control i {
+  position: absolute;
+  top: 35px;
+  right: 10px;
+  visibility: hidden;
+}
+
+.form-control.success i.fa-check-circle {
+  color: #2ecc71;
+  visibility: visible;
+}
+
+.form-control.error i.fa-exclamation-circle {
+  color: #e74c3c;
+  visibility: visible;
+}
+
+.form-control small {
+  visibility: hidden;
+  position: relative;
+  bottom: 0;
+  left: 0;
+}
+
+.form-control.error small {
+  color: #e74c3c;
+  visibility: visible;
+}
+
+.form button {
+  background-color: $mainColor;
+  border: 2px solid #fff;
+  border-radius: 4px;
+  color: white;
+  display: block;
+  font-family: inherit;
+  font-size: 16px;
+  padding: 10px;
+  width: 100%;
+  margin-top: 80px;
+}
+
+/*Contact Form*/
+
+/* Form 
 -----------------------------------------------------------------*/
 
 form label {
@@ -129,16 +129,16 @@ form textarea {
   background: #f4f4f4;
   padding: 0.75em;
   width: 95%;
-  transition: background-color .25s ease-in-out;
+  transition: background-color 0.25s ease-in-out;
 }
 
-  form input[type="text"]:focus,
-  form input[type="email"]:focus,
-  form input[type="password"]:focus,
-  form select:focus,
-  form textarea:focus {
-    background: #f8f8f8;
-  }
+form input[type="text"]:focus,
+form input[type="email"]:focus,
+form input[type="password"]:focus,
+form select:focus,
+form textarea:focus {
+  background: #f8f8f8;
+}
 
 form input[type="text"],
 form input[type="email"],
@@ -162,9 +162,9 @@ form ::-moz-placeholder {
 form :-ms-input-placeholder {
   color: #999;
 }
-form{
-  .sendmsbtn{
-    background-color: $mainColor !important;
+form {
+  .sendmsbtn {
+    background-color: #fa8509 !important;
     border: none;
     border-radius: 5px;
     padding: 5px;
@@ -175,25 +175,26 @@ form{
   }
 }
 
-form{
-  input:focus, textarea:focus{
-   outline: 2px solid $mainColor !important;
+form {
+  input:focus,
+  textarea:focus {
+    outline: 2px solid $secondColor !important;
   }
 }
 
- #form-status{
-   width: 95%;
- }
-  #form-status.success {
-    background-color: #fff !important;
-    color: rgb(17, 201, 57) !important;
-    animation: status 4s ease forwards !important;
-  }
-  #form-status.error {
-    background-color: #fff !important;
-    color: rgb(255, 0, 0) !important;
-    animation: status 4s ease forwards !important;
-  }
+#form-status {
+  width: 95%;
+}
+#form-status.success {
+  background-color: #fff !important;
+  color: rgb(17, 201, 57) !important;
+  animation: status 4s ease forwards !important;
+}
+#form-status.error {
+  background-color: #fff !important;
+  color: rgb(255, 0, 0) !important;
+  animation: status 4s ease forwards !important;
+}
 
 @keyframes form-status {
   0% {
