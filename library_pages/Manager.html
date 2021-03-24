@@ -1,0 +1,254 @@
+<!DOCTYPE html>
+
+<html>
+  <head>
+    <title>Library | Manager</title>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+    <link rel="shortcut icon" href="/images/flavicon.ico" />
+    <link rel="stylesheet" href="/css/library.css" />
+
+    <script>
+      document.addEventListener("contextmenu", function (LibraryV2) {
+        LibraryV2.preventDefault();
+      });
+
+      var link = "dictionary";
+      link.split(".html")[0];
+      window.history.replaceState(null, null, link);
+    </script>
+  </head>
+  <body class="is-preload">
+    <!-- Wrapper -->
+    <div id="wrapper">
+      <!-- Main -->
+      <div id="main">
+        <div class="inner">
+          <!-- Header -->
+          <header id="header">
+            <a href="/library.html" class="logo"><strong>Library</strong></a>
+            <div class="main-cont">
+              <div id="time-i">
+                <h1>Time</h1>
+              </div>
+              <div id="date-i">
+                <h1>Year</h1>
+              </div>
+              <div id="day-i">
+                <h1>Day</h1>
+              </div>
+            </div>
+          </header>
+
+          <!-- Content -->
+          <section style="padding-top: 10px !important">
+            <header class="main">
+              <h1 style="text-align: center">Modules</h1>
+            </header>
+            <!-- Form -->
+            <form method="post" action="#">
+              <div class="row gtr-uniform">
+                <div class="col-6 col-12-small">
+                  <label for="demo-category">Grade Level</label>
+                  <select name="demo-category" id="demo-category">
+                    <option value="">Grade Level</option>
+                    <option value="1">Manufacturing</option>
+                    <option value="1">Shipping</option>
+                    <option value="1">Administration</option>
+                    <option value="1">Human Resources</option>
+                  </select>
+                </div>
+                <div class="col-6 col-12-small">
+                  <label for="demo-category">Subject</label>
+                  <select name="demo-category" id="demo-category">
+                    <option value="">Subject</option>
+                    <option value="1">Manufacturing</option>
+                    <option value="1">Shipping</option>
+                    <option value="1">Administration</option>
+                    <option value="1">Human Resources</option>
+                  </select>
+                </div>
+                <div class="col-12 col-12-xsmall">
+                  <label for="demo-name">Title</label>
+                  <input type="text" name="demo-name" id="demo-name" value="" placeholder="Module Title" />
+                </div>
+                <div class="col-12">
+                  <ul class="actions">
+                    <li><a href="#" class="button icon solid fa-download">File</a></li>
+                    <li><a href="#" class="button primary">Add</a></li>
+                  </ul>
+                </div>
+              </div>
+            </form>
+
+            <!-- Table -->
+            <div class="row gtr-uniform">
+              <div class="col-6 col-12-xsmall d-flex flex-wrap">
+                <label for="demo-category" class="flex-row"> Grade Level </label>
+                <select name="demo-category" id="demo-category" class="flex-row">
+                  <option value="">Grade 6</option>
+                  <option value="1">Manufacturing</option>
+                  <option value="1">Shipping</option>
+                  <option value="1">Administration</option>
+                  <option value="1">Human Resources</option>
+                </select>
+              </div>
+              <div class="col-6 col-12-xsmall d-flex flex-wrap">
+                <label for="demo-category" class="flex-row"> Subject </label>
+                <select name="demo-category" id="demo-category" class="flex-row">
+                  <option value="">Math</option>
+                  <option value="1">Manufacturing</option>
+                  <option value="1">Shipping</option>
+                  <option value="1">Administration</option>
+                  <option value="1">Human Resources</option>
+                </select>
+              </div>
+            </div>
+            <!-- Break -->
+            <div class="table-wrapper">
+              <table>
+                <thead>
+                  <tr>
+                    <th>Title</th>
+                    <th>File</th>
+                    <th>Actions</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td>Adding Simple Fractions and Mixed Numbers</td>
+                    <td>Module1.pdf</td>
+                    <td class="d-flex flex-row">
+                      <a href="#" class="button primary small w-50">Edit</a>
+                      <a href="#" class="button primary small w-50">Delete</a>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>Subtracting Simple Fractions and Mixed Numbers</td>
+                    <td>Module2.pdf</td>
+                    <td>
+                      <a href="#" class="button primary small">Edit</a>
+                      <a href="#" class="button primary small">Delete</a>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>Multiplying Simple Fractions and Mixed Fractions</td>
+                    <td>Module3.pdf</td>
+                    <td>
+                      <a href="#" class="button primary small">Edit</a>
+                      <a href="#" class="button primary small">Delete</a>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>Dividing Simple Fractions and Mixed Fractions</td>
+                    <td>Module4.pdf</td>
+                    <td>
+                      <a href="#" class="button primary small">Edit</a>
+                      <a href="#" class="button primary small">Delete</a>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>Addition of Decimals and Mixed Decimals</td>
+                    <td>Module5.pdf</td>
+                    <td>
+                      <a href="#" class="button primary small">Edit</a>
+                      <a href="#" class="button primary small">Delete</a>
+                    </td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+          </section>
+        </div>
+      </div>
+
+      <!-- Sidebar -->
+      <div id="sidebar">
+        <div class="inner">
+          <!-- Home Back Button -->
+          <a href="/home.html"
+            ><div class="home-back-button"><i class="fa fa-arrow-left fa-fw" aria-hidden="true"></i>Back</div></a
+          >
+
+          <!-- Menu -->
+          <nav id="menu">
+            <header class="major">
+              <h2>Menu</h2>
+            </header>
+
+            <ul>
+              <li><a href="/library.html">General</a></li>
+              <li>
+                <span class="opener">Web Directory</span>
+                <ul>
+                  <li><a href="/directory_pages/englishD.html">English</a></li>
+                  <li><a href="/directory_pages/mathD.html">Math</a></li>
+                  <li><a href="/directory_pages/filipinoD.html">Filipino</a></li>
+                  <li><a href="/directory_pages/scienceD.html">Science</a></li>
+                </ul>
+              </li>
+              <li>
+                <span class="opener">Modules</span>
+                <ul>
+                  <li><a href="/library_pages/Manager.html">Manage Modules</a></li>
+                  <li><a href="/library_pages/kindergarten.html">Kindergarten</a></li>
+                  <li><a href="/library_pages/elem.html">Elementary</a></li>
+                  <li><a href="/library_pages/junior_high.html">Junior High School</a></li>
+                </ul>
+              </li>
+              <li>
+                <span class="opener">Tables & Charts</span>
+                <ul>
+                  <li><a href="/library_pages/charts/flags.html">Flags</a></li>
+                  <li><a href="/library_pages/charts/numberChart.html">Numbers</a></li>
+                  <li><a href="/library_pages/charts/letterChart.html">Letters</a></li>
+                  <li><a href="/library_pages/charts/shapes.html">Shapes</a></li>
+                  <li><a href="/library_pages/charts/color.html">Colors</a></li>
+                  <li><a href="/library_pages/charts/bodyParts.html">Body Parts</a></li>
+                  <li><a href="/library_pages/charts/multiplicationTable.html">Multiplication Table</a></li>
+                </ul>
+              </li>
+              <li>
+                <span class="opener">Maps</span>
+                <ul>
+                  <li><a href="/library_pages/maps/worldMap.html">World Map</a></li>
+                  <li><a href="/library_pages/maps/countryMap.html">Country Map</a></li>
+                  <li><a href="/library_pages/maps/googleMap.html">Google Map</a></li>
+                </ul>
+              </li>
+              <li>
+                <span class="opener">Videos</span>
+                <ul>
+                  <li><a href="/library_pages/youtube.html">Youtube</a></li>
+                  <li><a href="/library_pages/channels.html">Channel Recommendations</a></li>
+                </ul>
+              </li>
+              <li>
+                <span class="opener">eBooks</span>
+                <ul>
+                  <li><a href="/library_pages/googleBooks.html">Google eBooks</a></li>
+                  <li><a href="/directory_pages/eBooksD.html">eBooks Web Directory</a></li>
+                </ul>
+              </li>
+              <li><a href="/library_pages/trivia.html">Trivia</a></li>
+              <li><a href="/library_pages/dictionary.html">Dictionary</a></li>
+              <li><a href="/library_pages/studyTips.html">Study Tips</a></li>
+            </ul>
+          </nav>
+
+          <!-- Footer -->
+          <footer id="footer">
+            <p class="copyright">&copy; HPM. All rights reserved.</p>
+          </footer>
+        </div>
+      </div>
+    </div>
+
+    <!-- Scripts -->
+    <script src="/js/jquery.min.js"></script>
+    <script src="/js/browser.min.js"></script>
+    <script src="/js/breakpoints.min.js"></script>
+    <script src="/js/util.js"></script>
+    <script src="/library.js"></script>
+  </body>
+</html>
