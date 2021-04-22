@@ -24,18 +24,18 @@
     width: 100%;
     height: 100%;
     background: rgba(66, 66, 66, 0.7);
-    padding-top: 19vmin;
+    padding-top: 13vmin;
     border-radius: 20px;
 
     & > h1 {
       font-family: $Patua;
-      font-size: 6.5vmin;
+      font-size: 7vmin;
       color: whitesmoke;
     }
 
     & > p {
       font-family: $Rubik;
-      font-size: 2.5vmin;
+      font-size: 3vmin;
       color: #e5e5e5;
     }
   }
