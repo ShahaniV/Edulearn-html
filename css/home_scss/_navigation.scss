@@ -14,7 +14,7 @@ header {
 
   .logo {
     display: flex;
-    color: $mainColor;
+    color: var(--mainColor);
     font-weight: 700;
     font-size: 2em;
     text-decoration: none !important;
@@ -22,13 +22,16 @@ header {
     img.owl-nav {
       width: 50px !important;
       height: 50px !important;
-      margin-right: 10px;
+      margin-right: 8px;
     }
   }
 
   .navigation {
     position: relative;
     display: flex;
+    
+      margin-bottom: 10px;
+    
     li {
       list-style: none;
       margin-left: 30px;
@@ -38,9 +41,9 @@ header {
         letter-spacing: 1px;
         text-decoration: none;
         font-weight: 600;
-        color: rgb(66, 66, 66);
+        color: var(--rgb66nav);
         &:hover {
-          color: $secondColor;
+          color: var(--secondColor);
         }
       }
     }
@@ -63,7 +66,7 @@ header.sticky {
         font-weight: normal;
         color: rgb(36, 36, 36);
         &:hover {
-          color: $secondColor;
+          color: var(--secondColor);
         }
       }
     }
@@ -76,6 +79,7 @@ header.sticky {
 @media (max-width: 991px) {
   header,
   header.sticky {
+    
     padding: 10px 20px;
   }
   header .navigation {
@@ -137,5 +141,16 @@ header.sticky {
     background-size: 28px;
     background-repeat: no-repeat;
     background-position: center;
+  }
+}
+
+
+.dropdown-menu.show{
+  background-color: var(--subbodyColor) !important;
+}
+
+header.sticky{
+  .dropdown-menu.show{
+    background-color: var(--white) !important;
   }
 }

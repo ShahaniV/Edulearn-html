@@ -22,7 +22,10 @@
   
   .course-text {
     max-width: 350px;
-  
+
+  h1{
+    color: var(--textBlack);
+  }
     button {
       margin: 30px 0;
     }

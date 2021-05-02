@@ -3,8 +3,32 @@
 // Variables
 $Rubik: "Rubik", cursive;
 $Patua: "Patua One", cursive;
-$mainColor: #1199e7;
-$secondColor: #ff9017;
+:root{
+  --mainColor: #1199e7;
+  --bodyColor: white;
+  --secondColor: #ff9017;
+  --textBlack: #000;
+  --subbodyColor: white;
+  --rgb66nav: rgb(66, 66, 66);
+  --white: #fff;
+  --homeBackground: url(/images/home-background.png);
+}
+
+body.dark{
+  --mainColor:#ff9017;
+  --bodyColor: #2b2c2f;
+  --subbodyColor: #34363a;
+  --secondColor:#1199e7;
+  --textBlack: white;
+  --rgb66nav: white;
+  --white: #fff;
+  --homeBackground: url(/images/home-dark-background.png);
+  /* --secondColor: #1199e7; */
+}
+
+body{
+  background-color: var(--bodyColor) !important;
+}
 
 /*general*/
 @import "home_scss/general";

@@ -1,4 +1,31 @@
 @import url("https://fonts.googleapis.com/css?family=Acme|Lobster|Patua+One|Rubik|Sniglet");
+:root {
+  --mainColor: #1199e7;
+  --bodyColor: white;
+  --secondColor: #ff9017;
+  --textBlack: #000;
+  --subbodyColor: white;
+  --rgb66nav: rgb(66, 66, 66);
+  --white: #fff;
+  --homeBackground: url(/images/home-background.png);
+}
+
+body.dark {
+  --mainColor:#ff9017;
+  --bodyColor: #2b2c2f;
+  --subbodyColor: #34363a;
+  --secondColor:#1199e7;
+  --textBlack: white;
+  --rgb66nav: white;
+  --white: #fff;
+  --homeBackground: url(/images/home-dark-background.png);
+  /* --secondColor: #1199e7; */
+}
+
+body {
+  background-color: var(--bodyColor) !important;
+}
+
 /*general*/
 * {
   margin: 0;
@@ -17,7 +44,7 @@
 
 #header {
   height: 550px;
-  background-image: url(/images/home-background.png);
+  background-image: var(--homeBackground);
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
@@ -39,13 +66,14 @@
 }
 
 .letterE {
-  color: #ff9017;
+  color: var(--secondColor);
 }
 
 .header-text {
   max-width: 400px;
   margin-top: 90px;
   padding-top: 100px;
+  color: var(--textBlack);
 }
 
 .header-text button {
@@ -61,7 +89,7 @@ h1 {
   height: 12px;
   width: 12px;
   display: inline-block;
-  background: #ff9017;
+  background: var(--secondColor);
   margin: 15px 0;
 }
 
@@ -69,7 +97,7 @@ h1 {
   padding: 18px 40px;
   background: transparent;
   outline: none;
-  border: 2px solid #1199e7;
+  border: 2px solid var(--mainColor);
   font-weight: bold;
   cursor: pointer;
   color: #000;
@@ -90,7 +118,7 @@ p {
 .line-3 {
   width: 15px;
   height: 15px;
-  background: #ff9017;
+  background: var(--secondColor);
   display: inline-block;
 }
 
@@ -136,7 +164,7 @@ header .logo {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  color: #1199e7;
+  color: var(--mainColor);
   font-weight: 700;
   font-size: 2em;
   text-decoration: none !important;
@@ -145,7 +173,7 @@ header .logo {
 header .logo img.owl-nav {
   width: 50px !important;
   height: 50px !important;
-  margin-right: 10px;
+  margin-right: 8px;
 }
 
 header .navigation {
@@ -153,6 +181,7 @@ header .navigation {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  margin-bottom: 10px;
 }
 
 header .navigation li {
@@ -165,11 +194,11 @@ header .navigation li a {
   letter-spacing: 1px;
   text-decoration: none;
   font-weight: 600;
-  color: #424242;
+  color: var(--rgb66nav);
 }
 
 header .navigation li a:hover {
-  color: #ff9017;
+  color: var(--secondColor);
 }
 
 header.sticky {
@@ -193,7 +222,7 @@ header.sticky .navigation li a {
 }
 
 header.sticky .navigation li a:hover {
-  color: #ff9017;
+  color: var(--secondColor);
 }
 
 .logo {
@@ -290,6 +319,14 @@ header.sticky .navigation li a:hover {
   }
 }
 
+.dropdown-menu.show {
+  background-color: var(--subbodyColor) !important;
+}
+
+header.sticky .dropdown-menu.show {
+  background-color: var(--white) !important;
+}
+
 /*about*/
 #about {
   padding: 20px 0 100px 0;
@@ -330,10 +367,15 @@ header.sticky .navigation li a:hover {
   display: inline-block;
 }
 
+.about-text h1 {
+  color: var(--textBlack);
+}
+
 .about-text h2 {
   margin: 50px 0 10px;
   font-size: 28px;
   font-style: italic;
+  color: var(--textBlack);
 }
 
 .about-text h3 {
@@ -368,7 +410,7 @@ header.sticky .navigation li a:hover {
 }
 
 .text-pink {
-  color: #ff9017;
+  color: var(--secondColor);
 }
 
 .border-radius {
@@ -563,6 +605,10 @@ header.sticky .navigation li a:hover {
   max-width: 350px;
 }
 
+.course-text h1 {
+  color: var(--textBlack);
+}
+
 .course-text button {
   margin: 30px 0;
 }
@@ -601,6 +647,7 @@ header.sticky .navigation li a:hover {
 .contact-right-col {
   -ms-flex-preferred-size: 50%;
       flex-basis: 50%;
+  color: var(--textBlack);
 }
 
 .contact-right-col img {
@@ -624,7 +671,7 @@ header.sticky .navigation li a:hover {
 }
 
 .form-control input {
-  border: 2px solid #1199e7;
+  border: 2px solid var(--mainColor);
   border-radius: 4px;
   display: block;
   font-family: inherit;
@@ -634,7 +681,7 @@ header.sticky .navigation li a:hover {
 }
 
 .form-control textarea {
-  border: 2px solid #1199e7;
+  border: 2px solid var(--mainColor);
   border-radius: 4px;
   display: block;
   font-family: inherit;
@@ -689,7 +736,7 @@ header.sticky .navigation li a:hover {
 }
 
 .form button {
-  background-color: #1199e7;
+  background-color: var(--mainColor);
   border: 2px solid #fff;
   border-radius: 4px;
   color: white;
@@ -769,7 +816,7 @@ form .sendmsbtn {
 
 form input:focus,
 form textarea:focus {
-  outline: 2px solid #ff9017 !important;
+  outline: 2px solid var(--secondColor) !important;
 }
 
 #form-status {
@@ -828,7 +875,7 @@ form textarea:focus {
 hr {
   width: 100%;
   border: 0;
-  border-top: 1px solid #1199e7;
+  border-top: 1px solid var(--mainColor);
 }
 
 .footer-row {
@@ -868,7 +915,7 @@ hr {
 }
 
 .link-title h4 {
-  color: #1199e7;
+  color: var(--mainColor);
   margin-bottom: 20px;
 }
 

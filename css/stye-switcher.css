@@ -6,22 +6,7 @@ h1{
     color: var(--text-black-700); PARA MAY CHANGE RIN COLOR LAHAT PAG NAKA DARMODE OR INDI NA. LAGAY LNG GANTO
 } */
 
-:root {
-  --bg-black-900: #000;
-  --bg-black-100: #ddd;
-  --bg-black-50: #eff0f4;
-  --bg-opacity: rgba(255, 255, 255, 0.5);
-  --text-black-900: #000;
-  --text-black-700: #555;
-}
-body.dark {
-  --bg-black-900: #fff;
-  --bg-black-100: #353535;
-  --bg-black-50: #2b2c2f;
-  --bg-opacity: rgba(43, 44, 47, 0.5);
-  --text-black-900: #fff;
-  --text-black-700: #fff;
-}
+
 .style-switcher {
   background-color: #fcaa3f;
   position: fixed;

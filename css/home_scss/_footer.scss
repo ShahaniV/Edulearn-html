@@ -6,7 +6,7 @@
   hr {
     width: 100%;
     border: 0;
-    border-top: 1px solid $mainColor;
+    border-top: 1px solid var(--mainColor);
   }
   
   .footer-row {
@@ -32,7 +32,7 @@
   }
   
   .link-title h4 {
-    color: $mainColor;
+    color: var(--mainColor);
     margin-bottom: 20px;
   }
   

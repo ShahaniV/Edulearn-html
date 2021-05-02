@@ -12,7 +12,7 @@
 
 #header {
   height: 550px;
-  background-image: url(/images/home-background.png);
+  background-image: var(--homeBackground);
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
@@ -33,13 +33,13 @@
 }
 
 .letterE {
-  color: $secondColor;
+  color: var(--secondColor);
 }
 .header-text {
   max-width: 400px;
   margin-top: 90px;
   padding-top: 100px;
-
+color: var(--textBlack);
   button {
     margin-top: 20px;
     margin-bottom: 60px;
@@ -54,7 +54,7 @@ h1 {
   height: 12px;
   width: 12px;
   display: inline-block;
-  background: $secondColor;
+  background: var(--secondColor);
   margin: 15px 0;
 }
 
@@ -62,7 +62,7 @@ h1 {
   padding: 18px 40px;
   background: transparent;
   outline: none;
-  border: 2px solid $mainColor;
+  border: 2px solid var(--mainColor);
   font-weight: bold;
   cursor: pointer;
   color: #000;
@@ -83,7 +83,7 @@ p {
 .line-3 {
   width: 15px;
   height: 15px;
-  background: $secondColor;
+  background: var(--secondColor);
   display: inline-block;
 }
 

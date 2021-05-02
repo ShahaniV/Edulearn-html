@@ -8,6 +8,7 @@
 .contact-left-col,
 .contact-right-col {
   flex-basis: 50%;
+  color: var(--textBlack);
 }
 
 .contact-right-col img {
@@ -29,7 +30,7 @@
   }
 
   input {
-    border: 2px solid $mainColor;
+    border: 2px solid var(--mainColor);
     border-radius: 4px;
     display: block;
     font-family: inherit;
@@ -39,7 +40,7 @@
   }
 
   textarea {
-    border: 2px solid $mainColor;
+    border: 2px solid var(--mainColor);
     border-radius: 4px;
     display: block;
     font-family: inherit;
@@ -95,7 +96,7 @@
 }
 
 .form button {
-  background-color: $mainColor;
+  background-color: var(--mainColor);
   border: 2px solid #fff;
   border-radius: 4px;
   color: white;
@@ -178,7 +179,7 @@ form {
 form {
   input:focus,
   textarea:focus {
-    outline: 2px solid $secondColor !important;
+    outline: 2px solid var(--secondColor) !important;
   }
 }
 

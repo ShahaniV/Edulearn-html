@@ -28,10 +28,15 @@
   margin-right: 100px;
   display: inline-block;
 
+  h1{
+    color: var(--textBlack);
+  }
+
   h2 {
     margin: 50px 0 10px;
     font-size: 28px;
     font-style: italic;
+    color: var(--textBlack);
   }
 
   h3 {
@@ -67,7 +72,7 @@
 }
 
 .text-pink {
-  color: $secondColor;
+  color: var(--secondColor);
 }
 
 .border-radius {
