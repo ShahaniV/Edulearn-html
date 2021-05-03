@@ -34,22 +34,124 @@ body{
 
 
 /*general*/
-@import "home_scss/general";
+* {
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+    user-select: none;
+  }
+  
+  .h-container {
+    margin: 0 auto !important;
+    padding: 0 !important;
+  }
+  
+  #header {
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    .sticky {
+      padding-left: 5px;
+      margin: 0 auto;
+    }
+  }
+
+  .small{
+      margin-bottom: 5px !important;
+  }
+  
+  .container {
+    margin-right: 100px;
+    margin-left: 100px;
+  }
+  
+  .logo {
+    margin-top: 30px;
+    width: 200px;
+  }
+  
+  .letterE {
+    color: var(--secondColor);
+  }
+  .header-text {
+    max-width: 400px;
+    margin-top: 90px;
+    padding-top: 100px;
+  color: var(--textBlack);
+    button {
+      margin-top: 20px;
+      margin-bottom: 60px;
+    }
+  }
+  
+  h1 {
+    font-size: 34px;
+  }
+  
+  .square {
+    height: 12px;
+    width: 12px;
+    display: inline-block;
+    background: var(--secondColor);
+    margin: 15px 0;
+  }
+  
+  .common-btn {
+    padding: 18px 40px;
+    background: transparent;
+    outline: none;
+    border: 2px solid var(--mainColor);
+    font-weight: bold;
+    cursor: pointer;
+    color: #000;
+  
+    &:hover {
+      color: #000;
+    }
+  }
+  
+  p {
+    font-size: 15px;
+    line-height: 18px;
+    color: #777;
+  }
+  
+  .line-1,
+  .line-2,
+  .line-3 {
+    width: 15px;
+    height: 15px;
+    background: var(--secondColor);
+    display: inline-block;
+  }
+  
+  .line-2 {
+    width: 80px;
+    height: 1px;
+  }
+  
+  .line-3 {
+    width: 60px;
+    height: 1px;
+  }
+  
+  .line {
+    line-height: 8px;
+  }
+  
 /*navigation*/
 @import "home_scss/navigation";
 
 .admin-form {
+    color: var(--textBlack) !important;
+    h1{
+        color: var(--secondColor) !important;
+    }
+    table th{
+        color: var(--textBlack) !important;
+    }
   @import "library.scss";
 }
-
-/*about*/
-@import "home_scss/about";
-
-/*features*/
-@import "home_scss/features";
-
-/*courses*/
-@import "home_scss/courses";
 
 /*offer*/
 #offer {
@@ -62,38 +164,13 @@ body{
   margin: 30px 0;
 }
 
-/*contact*/
-@import "home_scss/contact";
-
 /*footer*/
 @import "home_scss/footer";
 
 /*screen sizing*/
 @import "home_scss/sizing";
 
-/*typing style*/
-.typing {
-  position: relative;
-}
 
-.typing::after {
-  content: "";
-  position: absolute;
-  right: -5px;
-  width: 1px;
-  height: 90%;
-  border-right: 2.5px solid #000;
-  animation: blink 0.5s infinite ease;
-}
-
-@keyframes blink {
-  0% {
-    opacity: 0;
-  }
-  100% {
-    opacity: 1;
-  }
-}
 /*****************************/
 /* MESSAGE BOX RELATED CLASS */
 /*           (START)           */
@@ -190,24 +267,6 @@ $msgbox-close-hover-text-shadow: 0 0 3px #363636;
 /*           (END)           */
 /*****************************/
 
-.games-vidiv {
-  width: 400px;
-  height: 350px !important;
-  background-image: url(/images/games-vid.gif);
-  background-size: contain;
-  background-position: center;
-  background-repeat: no-repeat;
-  .phone {
-    position: relative;
-    top: -8px;
-    height: 430px;
-    width: 354px;
-    margin-left: 53px;
-    margin-right: 0;
-    display: block;
-    border-radius: 25px;
-  }
-}
 
 @media only screen and (max-width: 750px) {
   #offer {
@@ -233,24 +292,6 @@ $msgbox-close-hover-text-shadow: 0 0 3px #363636;
   }
 }
 
-.module-vidiv {
-  width: 400px;
-  height: 350px !important;
-  background-image: url(/images/module-vid.gif);
-  background-size: contain;
-  background-position: center;
-  background-repeat: no-repeat;
-  .phone {
-    position: relative;
-    top: -8px;
-    height: 430px;
-    width: 354px;
-    margin-left: 53px;
-    margin-right: 0;
-    display: block;
-    border-radius: 25px;
-  }
-}
 
 @media only screen and (max-width: 750px) {
   #courses {
