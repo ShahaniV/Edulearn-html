@@ -22,24 +22,19 @@ body{
     text-align: center;
 }
 .pri{
-    justify-content: center;
-    display: flex;
-    flex-wrap: wrap;
-    margin: 5px;
-    padding: 10px;
-    box-sizing: border-box;
-}
-
-.pri li{
-    margin: 10px 5px;
+   display: flex;
+   flex-wrap: wrap;
 }
 img{
-    width: 190px;
-    height: 160px;
+    width: 230px;
+    height: 200px;
     margin-top: 10px;
     border-radius: 25px;
 }
 .container .clr{
+  width: 280px;
+  height: 280px;
+  margin: 10px 10px 10px 0px;
     background-color: #F3F3F3;
     position: relative;
     box-shadow: 8px 10px 18px #615858;
@@ -51,28 +46,49 @@ img{
     list-style: none;
     border-radius: 25px;
 }
-.t{
-    margin-top: 50px;
-}
 .i2{
     margin-top: 5px;
     font-size: 30px;
     margin-bottom: 0px;
 }
-#color{
-    color: black;
+.image__overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.6);
+    color: #F3F3F3;
+    font-size: 32px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    opacity: 0;
+    transition: opacity 0.75s;
 }
-a {
-    text-decoration: none; 
-    color: #424951;
+.image__overlay--blur {
+    backdrop-filter: blur(90px);
 }
-a:hover{
-    text-decoration: none; 
-    color: black;
+.image__overlay > * {
+    transform: translateY(20px);
+    transition: transform 0.75s;
+}
+.image__overlay:hover {
+    opacity: 1;
+}
+.image__overlay:hover > * {
+    transform: translateY(0);
+}
+.desc {
+    font-size: 15px;
+    margin-top: 3px;
+    padding: 15px;
+    color:#F3F3F3;
 }
     </style>
     <link rel="stylesheet" href="/css/library.css" />
-    <script>
+    <!-- <script>
       document.addEventListener("contextmenu", function (LibraryV2) {
         LibraryV2.preventDefault();
       });
@@ -80,7 +96,7 @@ a:hover{
       var link = "bodyparts";
       link.split(".html")[0];
       window.history.replaceState(null, null, link);
-    </script>
+    </script> -->
   </head>
   <body class="is-preload">
     <!-- Wrapper -->
@@ -106,34 +122,55 @@ a:hover{
 
           <!-- Content -->
           <div class="container">
-            <h2>Head Part</h2>
+            <h1>Head Part</h1>
                <div class="pri">
-            <li class="clr" id="head"><img src="/images/parts/head.png"><h1 class="i2" id="color">Head</h1></li>
-            <li class="clr" id="eyes"><img src="/images/parts/hair.png"><h1 class="i2">Hair</h1></li>
-            <li class="clr" id="eyes"><img src="/images/parts/forehead.png"><h1 class="i2"></a>Forehead</h1></li>
-            <li class="clr" id="head"><img src="/images/parts/ear.png"><h1 class="i2">Ear</h1></li>
-            <li class="clr" id="eyes"><img src="/images/parts/mouth.png"><h1 class="i2">Mouth</h1></li>
-            <li class="clr" id="eyes"><img src="/images/parts/eyes.png"><h1 class="i2">Eye</h1></li>
-            <li class="clr" id="eyes"><img src="/images/parts/nose.png"><h1 class="i2">Nose</h1></li>
+            <li class="clr" id="head"><img src="/images/parts/head.png"><h1 class="i2" id="color">Head</h1>
+              <div class="image__overlay"><p class="desc">Head the upper or front part of the body in vertebrates, 
+      that contains and protects the BRAIN, eyes, mouth, nose and ears when present. There is usually a concentration of sense organs in the head, such as eyes, tentacles, antennae and mouth parts.</p> </div></li>
+            <li class="clr" id="eyes"><img src="/images/parts/hair.png"><h1 class="i2">Hair</h1>
+              <div class="image__overlay"><p class="desc">Hair is a protein filament that grows from follicles found in the dermis. Hair is one of the defining characteristics of mammals.</p> </div></li>          
+            <li class="clr" id="eyes"><img src="/images/parts/forehead.png"><h1 class="i2"></a>Forehead</h1>
+              <div class="image__overlay"><p class="desc">Forehead is an area of the head bounded by three features, two of the skull and one of the scalp.</p> </div></li>          
+            <li class="clr" id="head"><img src="/images/parts/ear.png"><h1 class="i2">Ear</h1>
+              <div class="image__overlay"><p class="desc">The ear is the organ of hearing and balance. <br>The parts of the ear include: Pinna or auricle. This is the outside part of the ear. External auditory canal or tube.</p> </div></li>          
+            <li class="clr" id="eyes"><img src="/images/parts/mouth.png"><h1 class="i2">Mouth</h1>
+              <div class="image__overlay"><p class="desc">Mouth is that it is the anterior most part of the gastrointestinal tract. Mouth is also known as the oral cavity.</p> </div></li>          
+            <li class="clr" id="eyes"><img src="/images/parts/eyes.png"><h1 class="i2">Eye</h1>
+              <div class="image__overlay"><p class="desc">Eye is likewise greatly included with the nerve system, which permits the brain to take in information from the eyes and make the proper choices on how to act on this info.</p> </div></li>          
+            <li class="clr" id="eyes"><img src="/images/parts/nose.png"><h1 class="i2">Nose</h1>
+              <div class="image__overlay"><p class="desc">Nose is the body’s primary organ of smell and also functions as part of the body’s respiratory system . Air comes into the body through the nose.</p> </div></li>          
               </div>
-            <h2 class="t">Shoulder Part</h2>
+    
+            <h1 class="t">Shoulder Part</h1>
               <div class="pri">
-            <li class="clr" id="head"><img src="/images/parts/shoulder.png"><h1 class="i2" id="color">Shoulder</h1></li>
-            <li class="clr" id="eyes"><img src="/images/parts/arm.png"><h1 class="i2">Arm</h1></li>
-            <li class="clr" id="eyes"><img src="/images/parts/elbow.png"><h1 class="i2">Elbow</h1></li>
-            <li class="clr" id="head"><img src="/images/parts/hand.png"><h1 class="i2">Hand</h1></li>
+            <li class="clr" id="head"><img src="/images/parts/shoulder.png"><h1 class="i2" id="color">Shoulder</h1>
+              <div class="image__overlay"><p class="desc">Shoulder joint comprises the part of the body where the humerus attaches to the scapula, and the head sits in the glenoid cavity. The shoulder is the group of structures in the region of the joint.</p> </div></li>          
+            <li class="clr" id="eyes"><img src="/images/parts/arm.png"><h1 class="i2">Arm</h1>
+              <div class="image__overlay"><p class="desc">Arm is the part of the upper limb between the glenohumeral joint (shoulder joint) and the elbow joint. In common usage, the arm extends to the hand.</p> </div></li> 
+            <li class="clr" id="eyes"><img src="/images/parts/elbow.png"><h1 class="i2">Elbow</h1>
+              <div class="image__overlay"><p class="desc">Elbow is the visible joint between the upper and lower parts of the arm. It includes prominent landmarks such as the olecranon, the elbow pit, the lateral and medial epicondyles, and the elbow joint.</p> </div></li>          
+            <li class="clr" id="head"><img src="/images/parts/hand.png"><h1 class="i2">Hand</h1>
+              <div class="image__overlay"><p class="desc">Hand, grasping organ at the end of the forelimb of certain vertebrates that exhibits great mobility and flexibility in the digits and in the whole organ.</p> </div></li>          
                 </div>
-            <h2 class="t">Stomach Part</h2>
+    
+            <h1 class="t">Stomach Part</h1>
               <div class="pri">
-            <li class="clr" id="head"><img src="/images/parts/stomach.png"><h1 class="i2" id="color">Stomach</h1></li>
-            <li class="clr" id="eyes"><img src="/images/parts/chest.png"><h1 class="i2">Chest</h1></li>
+            <li class="clr" id="head"><img src="/images/parts/stomach.png"><h1 class="i2" id="color">Stomach</h1>
+              <div class="image__overlay"><p class="desc">Stomach is a sac-like organ that holds food and starts to digest it by secreting gastric juice.</p> </div></li>          
+            <li class="clr" id="eyes"><img src="/images/parts/chest.png"><h1 class="i2">Chest</h1>
+              <div class="image__overlay"><p class="desc">Chest is the area of origin for many of the body’s systems as it houses organs such as the heart, esophagus, trachea, lungs, and thoracic diaphragm.</p> </div></li>          
                 </div>
-            <h2 class="t">Knee Part</h2>
+    
+            <h1 class="t">Knee Part</h1>
                <div class="pri">
-            <li class="clr" id="head"><img src="/images/parts/knee.png"><h1 class="i2" id="color">Knee</h1></li>
-            <li class="clr" id="eyes"><img src="/images/parts/thigh.png"><h1 class="i2">Thigh</h1></li>
-            <li class="clr" id="eyes"><img src="/images/parts/leg.png"><h1 class="i2">Leg</h1></li>
-            <li class="clr" id="head"><img src="/images/parts/feet.png"><h1 class="i2">Feet</h1></li>
+            <li class="clr" id="head"><img src="/images/parts/knee.png"><h1 class="i2" id="color">Knee</h1>
+              <div class="image__overlay"><p class="desc">Knee is one of the largest and most complex joints in the body. The knee joins the thigh bone (femur) to the shin bone (tibia). The smaller bone that runs alongside the tibia (fibula) and the kneecap (patella) are the other bones that make the knee joint.</p> </div></li>          
+            <li class="clr" id="eyes"><img src="/images/parts/thigh.png"><h1 class="i2">Thigh</h1>
+              <div class="image__overlay"><p class="desc">Thigh is the area between the hip ( pelvis) and the knee. Anatomically, it is part of the lower limb. The single bone in the thigh is called the femur.</p> </div></li>          
+            <li class="clr" id="eyes"><img src="/images/parts/leg.png"><h1 class="i2">Leg</h1>
+              <div class="image__overlay"><p class="desc">Leg, in the general word sense, is the entire lower limb of the human body, including the foot, thigh and even the hip or gluteal region.</p> </div></li>          
+            <li class="clr" id="head"><img src="/images/parts/feet.png"><h1 class="i2">Feet</h1>
+              <div class="image__overlay"><p class="desc">Foot is the lowermost point of the human leg. The foot’s shape, along with the body’s natural balance-keeping systems, make humans capable of not only walking, but also running, climbing, and countless other activities.</p> </div></li>          
                 </div>
            </div>
 

@@ -16,56 +16,111 @@
         font-family: "Bree Serif", serif;
         color: #424951;
       }
-      .container {
-        width: 100%;
-        height: fit-content;
-        margin: 10px auto;
-      }
-      .pri,
-      .second,
-      .inter,
-      .basic,
-      .neut {
-        display: flex;
-        flex-wrap: wrap;
-        padding: 10px;
-        box-sizing: border-box;
-      }
-
-      .container li {
-        margin: 10px 5px;
-        width: 200px;
-      }
-      img {
-        width: 230px;
-        height: 200px;
-        margin-top: 10px;
-        border-radius: 25px;
-      }
-      .container .clr {
-        position: relative;
-        box-shadow: 8px 10px 18px #615858;
-        border: 4px solid #f3f3f3;
-        padding: 1px 1px 1px;
-        text-align: center;
-        overflow: hidden;
-        border-radius: 25px;
-        list-style: none;
-        border-radius: 25px;
-      }
-      .t {
-        margin-top: 50px;
-      }
-      .header {
-        border-radius: 30px;
-        line-height: 55px;
-        margin-top: 150px;
-        font-size: 35px;
-        background: 50px #f3f3f3;
-        font-size: 32px;
-      }
+      .container{
+    width: 100%;
+    height: auto;
+    margin: 10px auto;
+}
+      .pri{
+    display: flex;
+    flex-wrap: wrap;
+}
+img{
+    width: 280px;
+    height: 250px;
+    margin-top: 10px;
+}
+.container .clr{
+  width: 260px;
+  height: 250px;
+  margin: 10px 10px 10px 0px;
+    background-color: #F3F3F3;
+    position: relative;
+    box-shadow: 8px 10px 18px #615858;
+    border: 2px solid #F3F3F3;
+    padding: 10px 1px 1px;
+    text-align: center;
+    overflow: hidden;
+    border-radius: 20px;
+    list-style: none;
+    border-radius: 20px;
+}
+.i2{
+    margin-top: 1px;
+    font-size: 32px;
+    margin-bottom: 0px;
+}
+.image__overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.6);
+    color: #F3F3F3;
+    font-size: 32px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    opacity: 0;
+    transition: opacity 0.75s;
+}
+.image__overlay--blur {
+    backdrop-filter: blur(90px);
+}
+.image__overlay > * {
+    transform: translateY(20px);
+    transition: transform 0.75s;
+}
+.image__overlay:hover {
+    opacity: 1;
+}
+.image__overlay:hover > * {
+    transform: translateY(0);
+}
+.color {
+   font-size: 50px;
+  -webkit-text-stroke:2px #3c4146;
+  -webkit-text-fill-color:#F3F3F3;
+}
+.mixed {
+    font-size: 30px;
+    margin-top: 3px;
+    -webkit-text-stroke:1.5px #3c4146;
+    -webkit-text-fill-color:#F3F3F3;
+}
+.div-style{
+  width: 220px; 
+  height: 190px; 
+  margin: 0 auto; 
+  text-align: center; 
+}
+.image__overlay--primaryA { background: red; }
+.image__overlay--primaryB { background: yellow; }
+.image__overlay--primaryC { background: blue; }
+.image__overlay--primaryD { background: orange; }
+.image__overlay--primaryE { background: purple; }
+.image__overlay--primaryF { background: green; }
+.image__overlay--primaryG { background: #FACC2E; }
+.image__overlay--primaryH { background: #FF4000; }
+.image__overlay--primaryI { background: magenta; }
+.image__overlay--primaryJ { background: violet; }
+.image__overlay--primaryK { background: teal; }
+.image__overlay--primaryL { background: chartreuse; }
+.image__overlay--primaryM { background: white; }
+.image__overlay--primaryN { background: black; }
+.image__overlay--primaryO { background: #F5ECCE; }
+.image__overlay--primaryP { background: #61380B; }
+.image__overlay--primaryQ { background: #F3E2A9; }
+.image__overlay--primaryR { background: #C19A6B; }
+.image__overlay--primaryS { background: #F5F5DC; }
+.image__overlay--primaryT { background: #ADA96E; }
+.image__overlay--primaryU { background: #000080; }
+.image__overlay--primaryV { background: #34282C; }
+.image__overlay--primaryW { background: #493D26; }
     </style>
-    <script>
+    <!-- <script>
       document.addEventListener("contextmenu", function (LibraryV2) {
         LibraryV2.preventDefault();
       });
@@ -73,7 +128,7 @@
       var link = "colors";
       link.split(".html")[0];
       window.history.replaceState(null, null, link);
-    </script>
+    </script> -->
   </head>
   <body class="is-preload">
     <!-- Wrapper -->
@@ -99,76 +154,93 @@
 
           <!-- Content -->
           <div class="container">
-            <h2>Primary Colors</h2>
+            <h1>Primary Colors</h1>
             <div class="pri">
-              <li class="clr" style="background-color: yellow">
-                <div class="header" id="yellow">Yellow</div>
-              </li>
-              <li class="clr" style="background-color: red">
-                <div class="header" id="red">Red</div>
-              </li>
-              <li class="clr" style="background-color: blue">
-                <div class="header" id="blue">Blue</div>
-              </li>
-            </div>
-            <h2 class="t">Secondary Colors</h2>
-            <div class="second">
-              <li class="clr" style="background-color: orange">
-                <div class="header" id="orange">Orange</div>
-              </li>
-              <li class="clr" style="background-color: violet">
-                <div class="header" id="violet">Violet</div>
-              </li>
-              <li class="clr" style="background-color: green">
-                <div class="header" id="green">Green</div>
-              </li>
-            </div>
-            <h2 class="t">Tertiary Colors</h2>
-            <div class="inter">
-              <li class="clr" style="background-color: #ffae42">
-                <div class="header" id="amber">Amber</div>
-              </li>
-              <li class="clr" style="background-color: #ff5349">
-                <div class="header" id="vermilion">Vermilion</div>
-              </li>
-              <li class="clr" style="background-color: magenta">
-                <div class="header" id="magenta">Magenta</div>
-              </li>
-              <li class="clr" style="background-color: indigo">
-                <div class="header" id="indigo">Indigo</div>
-              </li>
-              <li class="clr" style="background-color: teal">
-                <div class="header" id="teal">Teal</div>
-              </li>
-              <li class="clr" style="background-color: chartreuse">
-                <div class="header" id="charts">Chartreuse</div>
-              </li>
-            </div>
-            <h2 class="t">Neutral Colors</h2>
-            <div class="neut">
-              <li class="clr" style="background-color: white">
-                <div class="header" id="white">White</div>
-              </li>
-              <li class="clr" style="background-color: beige">
-                <div class="header" id="beige">Beige</div>
-              </li>
-              <li class="clr" style="background-color: tan">
-                <div class="header" id="tan">Tan</div>
-              </li>
-              <li class="clr" style="background-color: #887464">
-                <div class="header" id="taupe">Taupe</div>
-              </li>
-              <li class="clr" style="background-color: gray">
-                <div class="header" id="gray">Gray</div>
-              </li>
-              <li class="clr" style="background-color: brown">
-                <div class="header" id="brwn">Brown</div>
-              </li>
-              <li class="clr" style="background-color: black">
-                <div class="header" id="black">Black</div>
-              </li>
-            </div>
+            <li class="clr"><div class="div-style" style="background-color: red;"></div><h1 class="i2">Red</h1>
+              <div class="image__overlay image__overlay--primaryA">
+                <div class="color">Red</div> <p class="mixed">Magenta + Yellow</p> </div></li>
+            <li class="clr"><div class="div-style" style="background-color: yellow;"></div><h1 class="i2">Yellow</h1>
+              <div class="image__overlay image__overlay--primaryB">
+                <div class="color">Yellow</div> <p class="mixed">Red + Light Green</p> </div></li>
+            <li class="clr"><div class="div-style" style="background-color: blue;"></div><h1 class="i2">Blue</h1>
+              <div class="image__overlay image__overlay--primaryC">
+                <div class="color">Blue</div> <p class="mixed">Magenta + Aqua</p> </div></li>
           </div>
+            
+            <h1 class="t">Secondary Colors</h1>
+              <div class="pri">
+                <li class="clr"><div class="div-style" style="background-color: orange;"></div><h1 class="i2">Orange</h1>
+                  <div class="image__overlay image__overlay--primaryD">
+                    <div class="color">Orange</div> <p class="mixed">Red + Yellow</p> </div></li>
+                <li class="clr"><div class="div-style" style="background-color: purple;"></div><h1 class="i2">Purple</h1>
+                  <div class="image__overlay image__overlay--primaryE">
+                    <div class="color">Purple</div> <p class="mixed">Red + Blue</p> </div></li>
+                <li class="clr"><div class="div-style" style="background-color: green;"></div><h1 class="i2">Green</h1>
+                  <div class="image__overlay image__overlay--primaryF">
+                    <div class="color">Green</div> <p class="mixed">Yellow + Blue</p> </div></li>
+                </div>
+    
+            <h1 class="t">Tertiary Colors</h1>
+              <div class="pri">
+                <li class="clr"><div class="div-style" style="background-color: #FACC2E;"></div><h1 class="i2">Amber</h1>
+                  <div class="image__overlay image__overlay--primaryG">
+                    <div class="color">Amber</div> <p class="mixed">Yellow + Orange</p> </div></li>
+                <li class="clr"><div class="div-style" style="background-color: #FF4000;"></div><h1 class="i2">Vermilion</h1>
+                  <div class="image__overlay image__overlay--primaryH">
+                    <div class="color">Vermilion</div> <p class="mixed">Red + Orange</p> </div></li>
+                <li class="clr"><div class="div-style" style="background-color: magenta;"></div><h1 class="i2">Magenta</h1>
+                  <div class="image__overlay image__overlay--primaryI">
+                  <div class="color">Magenta</div> <p class="mixed">Red + Purple</p> </div></li>
+                <li class="clr"><div class="div-style" style="background-color: violet;"></div><h1 class="i2">Teal</h1>
+                  <div class="image__overlay image__overlay--primaryK">
+                    <div class="color">Teal</div> <p class="mixed">Blue + Green</p> </div></li>
+                <li class="clr"><div class="div-style" style="background-color: teal;"></div><h1 class="i2">Chartreuse</h1>
+                  <div class="image__overlay image__overlay--primaryL">
+                    <div class="color">Chartreuse</div> <p class="mixed">Yellow + Green</p> </div></li>
+                <li class="clr"><div class="div-style" style="background-color: chartreuse;"></div><h1 class="i2">Violet</h1>
+                  <div class="image__overlay image__overlay--primaryJ">
+                    <div class="color">Violet</div>  <p class="mixed">Red + Blue</p> </div></li>
+                </div>
+                
+            <h1 class="t">Neutral Colors</h1>
+               <div class="pri">
+                <li class="clr"><div class="div-style" style="background-color: white;"></div><h1 class="i2">White</h1>
+                  <div class="image__overlay image__overlay--primaryM">
+                    <div class="color">White</div></div></li>
+                <li class="clr"><div class="div-style" style="background-color: black;"></div><h1 class="i2">Black</h1>
+                  <div class="image__overlay image__overlay--primaryN">
+                    <div class="color">Black</div> </div></li>
+                <li class="clr"><div class="div-style" style="background-color: #F5ECCE;"></div><h1 class="i2">Cream</h1>
+                  <div class="image__overlay image__overlay--primaryO">
+                    <div class="color">Cream</div> <p class="mixed">White + Yellow</p> </div></li>
+                <li class="clr"><div class="div-style" style="background-color: #61380B;"></div><h1 class="i2">Brown</h1>
+                  <div class="image__overlay image__overlay--primaryP">
+                  <div class="color">Brown</div> <p class="mixed">Blue + Orange</p> </div></li>
+                <li class="clr"><div class="div-style" style="background-color: #F3E2A9;"></div><h1 class="i2">Tan</h1>
+                  <div class="image__overlay image__overlay--primaryQ">
+                    <div class="color">Tan</div> <p class="mixed">Brown + White</p> </div></li>
+                <li class="clr"><div class="div-style" style="background-color: #C19A6B;"></div><h1 class="i2">Camel</h1>
+                  <div class="image__overlay image__overlay--primaryR">
+                    <div class="color">Camel</div> <p class="mixed">Brown + Amber</p> </div></li>
+                <li class="clr"><div class="div-style" style="background-color: #F5F5DC;"></div><h1 class="i2">Beige</h1>
+                  <div class="image__overlay image__overlay--primaryS">
+                  <div class="color">Beige</div> <p class="mixed">Brown + White</p> </div></li>
+                <li class="clr"><div class="div-style" style="background-color: #ADA96E;"></div><h1 class="i2">Khaki</h1>
+                  <div class="image__overlay image__overlay--primaryT">
+                    <div class="color">Khaki</div> <p class="mixed">Brown + White</p> </div></li>
+                <li class="clr"><div class="div-style" style="background-color: #000080;"></div><h1 class="i2">Navy</h1>
+                  <div class="image__overlay image__overlay--primaryU">
+                    <div class="color">Navy</div> <p class="mixed">Black + Blue</p> </div></li>
+                <li class="clr"><div class="div-style" style="background-color: #34282C;"></div><h1 class="i2">Charcoal</h1>
+                  <div class="image__overlay image__overlay--primaryV">
+                    <div class="color">Charcoal</div> <p class="mixed">Black + White</p> </div></li>
+                <li class="clr"><div class="div-style" style="background-color: #493D26;"></div><h1 class="i2">Mocha</h1>
+                  <div class="image__overlay image__overlay--primaryW">
+                    <div class="color">Mocha</div> <p class="mixed">Brown + White</p> </div></li>
+                </div>
+           </div>
+
+
         </div>
       </div>
 
