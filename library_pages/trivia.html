@@ -46,7 +46,7 @@
         }
       }
     </style>
-    <script>
+    <!-- <script>
       document.addEventListener("contextmenu", function (LibraryV2) {
         LibraryV2.preventDefault();
       });
@@ -54,7 +54,7 @@
       var link = "trivia";
       link.split(".html")[0];
       window.history.replaceState(null, null, link);
-    </script>
+    </script> -->
   </head>
   <body class="is-preload">
     <!-- Wrapper -->
@@ -90,30 +90,35 @@
               <h3>Cats</h3>
               <p id="current_fact1">Cats have 230 bones, a whopping 24 more bones than humans.</p>
               <button id="new_fact1">Next</button>
+              <button id="P1" style="float: left;">Previous</button>
             </div>
 
             <div class="trivias-div">
               <h3>Dinosaur</h3>
               <p id="current_fact2">Dinosaurs were reptiles that lived on Earth from about 230 million years ago to about 65 million years ago.</p>
               <button id="new_fact2">Next</button>
+              <button id="P2" style="float: left;">Previous</button>
             </div>
 
             <div class="trivias-div">
               <h3>Earth</h3>
               <p id="current_fact3">Mother Earth has a generous waistline: At the equator, the circumference of the globe is 24,901 miles (40,075 kilometers).</p>
               <button id="new_fact3">Next</button>
+              <button id="P3" style="float: left;">Previous</button>
             </div>
 
             <div class="trivias-div">
               <h3>Numbers</h3>
               <p id="current_fact4"></p>
               <button id="new_fact4">Next</button>
+              <button id="P4" style="float: left;">Previous</button>
             </div>
 
             <div class="trivias-div">
               <h3>People</h3>
               <p id="current_fact5"></p>
               <button id="new_fact5">Next</button>
+              <button id="P5" style="float: left;">Previous</button>
             </div>
           </section>
         </div>
@@ -234,9 +239,17 @@
           $("#current_fact1").text(getFact1());
         });
 
+        $("#P1").on("click", function () {
+          $("#current_fact1").text(getP1());
+        });
+
         $("#current_fact2").text(getFact2());
         $("#new_fact2").on("click", function () {
           $("#current_fact2").text(getFact2());
+        });
+
+        $("#P2").on("click", function () {
+          $("#current_fact2").text(getP2());
         });
 
         $("#current_fact3").text(getFact3());
@@ -244,44 +257,30 @@
           $("#current_fact3").text(getFact3());
         });
 
+        $("#P3").on("click", function () {
+          $("#current_fact3").text(getP3());
+        });
+
         $("#current_fact4").text(getFact4());
         $("#new_fact4").on("click", function () {
           $("#current_fact4").text(getFact4());
+        });
+
+        $("#P4").on("click", function () {
+          $("#current_fact4").text(getP4());
         });
 
         $("#current_fact5").text(getFact5());
         $("#new_fact5").on("click", function () {
           $("#current_fact5").text(getFact5());
         });
+
+        $("#P5").on("click", function () {
+          $("#current_fact5").text(getP5());
+        });
       });
 
-      // Function that picks a random fact from the factList
-      var chosenFact = [];
-      var getFact1 = function () {
-        chosenFact = factList1[Math.floor(Math.random() * factList1.length)];
-        return chosenFact;
-      };
-
-      var getFact2 = function () {
-        chosenFact = factList2[Math.floor(Math.random() * factList2.length)];
-        return chosenFact;
-      };
-
-      var getFact3 = function () {
-        chosenFact = factList3[Math.floor(Math.random() * factList3.length)];
-        return chosenFact;
-      };
-
-      var getFact4 = function () {
-        chosenFact = factList4[Math.floor(Math.random() * factList4.length)];
-        return chosenFact;
-      };
-
-      var getFact5 = function () {
-        chosenFact = factList5[Math.floor(Math.random() * factList5.length)];
-        return chosenFact;
-      };
-
+     
       // List of Facts
       var factList1 = [
         "Frequently cats stare with their mouth hanging open because they have an extra organ that tastes scents in the air.",
@@ -434,6 +433,74 @@
         "Extraocular muscles in the eye are the body’s fastest muscles. They allow both of your eyes to flick in the same direction in a single 50-millisecond movement.",
         "Hair grows fast—about 6 inches per year. The only thing in the body that grows faster is bone marrow.",
       ];
+
+       // Function that picks a random fact from the factList
+       var chosenFact = [];
+       var randomVal1= Math.floor(Math.random() * factList1.length);
+      var getFact1 = function () {
+        chosenFact = factList1[randomVal1];
+        randomVal1++;
+        return chosenFact;
+      };
+
+      var getP1 = function () {
+        randomVal1 --;
+        chosenFact = factList1[randomVal1 - 1];
+        return chosenFact;
+      };
+
+      var randomVal2= Math.floor(Math.random() * factList2.length);
+      var getFact2 = function () {
+        chosenFact = factList2[randomVal2];
+        randomVal2++;
+        return chosenFact;
+      };
+
+      var getP2 = function () {
+        randomVal2 --;
+        chosenFact = factList2[randomVal2 - 1];
+        return chosenFact;
+      };
+
+      var randomVal3= Math.floor(Math.random() * factList3.length);
+      var getFact3 = function () {
+        chosenFact = factList3[randomVal3];
+        randomVal3++;
+        return chosenFact;
+      };
+
+      var getP3 = function () {
+        randomVal3 --;
+        chosenFact = factList3[randomVal3 - 1];
+        return chosenFact;
+      };
+
+      var randomVal4= Math.floor(Math.random() * factList4.length);
+      var getFact4 = function () {
+        chosenFact = factList4[randomVal4];
+        randomVal4++;
+        return chosenFact;
+      };
+
+      var getP4 = function () {
+        randomVal4 --;
+        chosenFact = factList4[randomVal4 - 1];
+        return chosenFact;
+      };
+
+      var randomVal5= Math.floor(Math.random() * factList5.length);
+      var getFact5 = function () {
+        chosenFact = factList5[randomVal5];
+        randomVal5++;
+        return chosenFact;
+      };
+
+      var getP5 = function () {
+        randomVal5 --;
+        chosenFact = factList5[randomVal5 - 1];
+        return chosenFact;
+      };
+
     </script>
   </body>
 </html>
