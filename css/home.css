@@ -3317,7 +3317,7 @@ header.sticky .dropdown-menu.show {
 
 @media screen and (max-width: 1680px) {
   .admin-form #header {
-    padding-top: 5em;
+    padding-top: 2em;
   }
 }
 
@@ -3556,10 +3556,12 @@ header.sticky .dropdown-menu.show {
   padding-top: 0;
 }
 
+.admin-form a.bbutton {
+  border-bottom: none !important;
+}
+
 .admin-form .home-back-button {
-  padding-bottom: 6px !important;
-  margin-bottom: 10px !important;
-  background: #f5f6f7;
+  background: #ffffff;
   font-family: "Roboto Slab", serif;
   font-size: 15px;
   color: #303335;

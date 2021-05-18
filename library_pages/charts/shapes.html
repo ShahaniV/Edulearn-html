@@ -9,6 +9,9 @@
     <link rel="stylesheet" href="/css/library.css" />
     <link rel="preconnect" href="https://fonts.gstatic.com" />
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;800&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/modernizr/2.8.3/modernizr.min.js" type="text/javascript"></script>
+
     <style>
       .shapes {
         padding: 2em;
@@ -66,10 +69,6 @@
         background-color: lightsalmon;
         height: 125px;
         width: 125px;
-      }
-      .square:hover {
-        height: 150px;
-        width: 150px;
       }
 
       .rectangle {
@@ -346,7 +345,7 @@
       /*            REFERENCE END             */
       /****************************************/
     </style>
-    <script>
+    <!-- <script>
       document.addEventListener("contextmenu", function (LibraryV2) {
         LibraryV2.preventDefault();
       });
@@ -354,7 +353,7 @@
       var link = "shapes";
       link.split(".html")[0];
       window.history.replaceState(null, null, link);
-    </script>
+    </script> -->
   </head>
   <body class="is-preload">
     <!-- Wrapper -->
@@ -364,7 +363,10 @@
         <div class="inner">
           <!-- Header -->
           <header id="header">
-            <a href="/library.html" class="logo"><strong>Library</strong></a>
+             <!-- Home Back Button -->
+           <a href="home.html" class="bbutton"
+           ><div class="home-back-button"><i class="fa fa-chevron-left fa-fw" aria-hidden="true"></i>Back</div></a> 
+
             <div class="main-cont">
               <div id="time-i">
                 <h1>Time</h1>
@@ -379,110 +381,115 @@
           </header>
 
           <!-- Content -->
+          <header class="main">
+            <h2 style="margin-bottom: 0 !important; text-align: center; margin-top: 30px;">Shapes</h2>
+            <p style="text-align: center">Let's learn the Different Shapes!</p>
+          </header>
           <div class="shapes">
-            <section>
+            <section class="popmodal">
               <h2>Square</h2>
-              <div class="square"></div>
+                <div class="square pop" data-original-title="Square" data-animation="false" data-easein="bounce"  rel="popover" data-placement="top" data-content="A square is closed, two-dimensional shape with 4 equal sides. A square is a quadrilateral.">
+                </div>
             </section>
-
+            
             <section>
               <h2>Rectangle</h2>
-              <div class="rectangle"></div>
+              <div class="rectangle pop" data-original-title="Rectangle" data-animation="false" data-easein="bounce"  rel="popover" data-placement="top" data-content="Rectangle is a type of quadrilateral that has its parallel sides equal to each other. Also called an equiangular quadrilateral."></div>
             </section>
 
             <section>
               <h2>Circle</h2>
-              <div class="circle"></div>
+              <div class="circle pop" data-original-title="Circle" data-animation="false" data-easein="bounce"  rel="popover" data-placement="top" data-content="Circle is a basic 2D shape which is measured in terms of its radius."></div>
             </section>
 
             <section>
               <h2>Semi-circle</h2>
-              <div class="semi-circle"></div>
+              <div class="semi-circle pop" data-original-title="Semi-circle" data-animation="false" data-easein="bounce"  rel="popover" data-placement="top" data-content="Semi Circle Shape is a circle that cut into two halves or when the circumference of a circle is divided by 2, we get semicircular shape."></div>
             </section>
 
             <section>
               <h2>Ellipse</h2>
-              <div class="ellipse"></div>
+              <div class="ellipse pop" data-original-title="Ellipse" data-animation="false" data-easein="bounce"  rel="popover" data-placement="top" data-content="Ellipse is a two-dimensional shape, that is defined along its axes."></div>
             </section>
 
             <section>
               <h2>Pill</h2>
-              <div class="pill"></div>
+              <div class="pill pop" data-original-title="Pill" data-animation="false" data-easein="bounce"  rel="popover" data-placement="top" data-content="Pill shape is a Capsule-shape."></div>
             </section>
 
             <section>
               <h2>Equilateral Triangle</h2>
-              <div class="equilateral-triangle"></div>
+              <div class="equilateral-triangle pop" data-original-title="Equilateral Triangle" data-animation="false" data-easein="bounce"  rel="popover" data-placement="top" data-content="Equilateral triangle is a triangle in which all three sides have the same length."></div>
             </section>
 
             <section>
               <h2>Isosceles Triangle</h2>
-              <div class="isosceles-triangle"></div>
+              <div class="isosceles-triangle pop" data-original-title="Isosceles Triangle" data-animation="false" data-easein="bounce"  rel="popover" data-placement="top" data-content="Scalene Triangle is a triangle that has all its sides of different lengths."></div>
             </section>
 
             <section>
               <h2>Scalene Triangle</h2>
-              <div class="scalene-triangle"></div>
+              <div class="scalene-triangle pop" data-original-title="Scalene Triangle" data-animation="false" data-easein="bounce"  rel="popover" data-placement="top" data-content="Scalene Triangle is a triangle that has all its sides of different lengths."></div>
             </section>
 
             <section>
               <h2>Right Trianagle</h2>
-              <div class="right-triangle"></div>
+              <div class="right-triangle pop" data-original-title="Right Trianagle" data-animation="false" data-easein="bounce"  rel="popover" data-placement="top" data-content="Right triangle, a triangle in which one of the interior angles is 90° is called a right triangle."></div>
             </section>
 
             <section>
               <h2>Trapezium</h2>
-              <div class="trapezium"></div>
+              <div class="trapezium pop" data-original-title="Trapezium" data-animation="false" data-easein="bounce"  rel="popover" data-placement="top" data-content="Trapezium is a 2d shape and a type of quadrilateral, which has only two parallel sides and the other two sides are non-parallel."></div>
             </section>
 
             <section>
               <h2>Parallelogram</h2>
-              <div class="parallelogram"></div>
+              <div class="parallelogram pop" data-original-title="Parallelogram" data-animation="false" data-easein="bounce"  rel="popover" data-placement="top" data-content="Parallelogram is a flat 2d shape which has four angles."></div>
             </section>
 
             <section>
               <h2>Rhombus</h2>
-              <div class="rhombus"></div>
+              <div class="rhombus pop" data-original-title="Rhombus" data-animation="false" data-easein="bounce"  rel="popover" data-placement="top" data-content="Rhombus is a quadrilateral (plane figure, closed shape, four sides) with four equal-length sides and opposite sides parallel to each other."></div>
             </section>
 
             <section>
               <h2>Six-point Star</h2>
-              <div class="sixpoint-star"></div>
+              <div class="sixpoint-star pop" data-original-title="Six-point Star" data-animation="false" data-easein="bounce"  rel="popover" data-placement="top" data-content="Six-point star or hexagram is a simple geometric shape consisting of the intersection of two equilateral triangles."></div>
             </section>
 
             <section>
               <h2>Pentagon</h2>
-              <div class="pentagon"></div>
+              <div class="pentagon pop" data-original-title="Pentagon" data-animation="false" data-easein="bounce"  rel="popover" data-placement="top" data-content="Pentagon is a geometrical shape, which has five sides and five angles."></div>
             </section>
 
             <section>
               <h2>Hexagon</h2>
-              <div class="hexagon"></div>
+              <div class="hexagon pop" data-original-title="Hexagon" data-animation="false" data-easein="bounce"  rel="popover" data-placement="top" data-content="Hexagon is a six-sided polygon or 6-gon."></div>
             </section>
 
             <section>
               <h2>Heart</h2>
-              <div class="heart"></div>
+              <div class="heart pop" data-original-title="Heart" data-animation="false" data-easein="bounce"  rel="popover" data-placement="top" data-content="Heart-shaped is a stylized heart with a double rounded top."></div>
             </section>
 
             <section>
               <h2>Diamond</h2>
-              <div class="diamond"></div>
+              <div class="diamond pop" data-original-title="Diamond" data-animation="false" data-easein="bounce"  rel="popover" data-placement="top" data-content="Diamond shape refers to the geometric appearance of a diamond."></div>
             </section>
 
             <section>
               <h2>Egg</h2>
-              <div class="egg"></div>
+              <div class="egg pop" data-original-title="Egg" data-animation="false" data-easein="bounce"  rel="popover" data-placement="top" data-content="Egg shape is the shape of an egg is approximated by the 'long' half of a prolate spheroid, joined to a 'short' half of a roughly spherical ellipsoid."></div>
             </section>
 
             <section>
               <h2>Cross</h2>
-              <div class="cross"></div>
+              <div class="cross pop" data-original-title="Cross" data-animation="false" data-easein="bounce"  rel="popover" data-placement="top" data-content="Cross shapes are either a t- or x-like figure, where one line crosses another at a perpendicular angle."></div>
             </section>
 
             <section>
               <h2>Infinity</h2>
-              <div class="infinity"></div>
+              <div class="infinity pop" data-original-title="Infinity" data-animation="false" data-easein="bounce"  rel="popover" data-placement="top" data-content="Infinity symbol, a figure eight on its side, variously signifies the concept of limitlessness or eternity."></div>
             </section>
           </div>
         </div>
@@ -491,10 +498,7 @@
       <!-- Sidebar -->
       <div id="sidebar">
         <div class="inner">
-          <!-- Home Back Button -->
-          <a href="/home.html"
-            ><div class="home-back-button"><i class="fa fa-arrow-left fa-fw" aria-hidden="true"></i>Back</div></a
-          >
+        
 
           <!-- Menu -->
           <nav id="menu">
@@ -570,5 +574,67 @@
     <script src="/js/breakpoints.min.js"></script>
     <script src="/js/util.js"></script>
     <script src="/library.js"></script>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.2.0/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/velocity/1.2.2/velocity.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/velocity/1.2.2/velocity.ui.min.js"></script>
+    <script>
+      
+    
+
+// add the animation to the popover
+$('div[rel=popover]').popover().click(function(e) {
+        e.preventDefault();        
+         var open = $(this).attr('data-easein');
+        if(open == 'shake') {
+                  $(this).next().velocity('callout.' + open);
+            } else if(open == 'pulse') {
+              $(this).next().velocity('callout.' + open);
+            } else if(open == 'tada') {
+                $(this).next().velocity('callout.' + open);
+            } else if(open == 'flash') {
+                  $(this).next().velocity('callout.' + open);
+            }  else if(open == 'bounce') {
+                 $(this).next().velocity('callout.' + open);
+            } else if(open == 'swing') {
+                 $(this).next().velocity('callout.' + open);
+            }else {
+             $(this).next().velocity('transition.' + open); 
+            }
+      
+      
+                
+    });
+   // add the animation to the modal
+$( ".modal" ).each(function(index) {
+   $(this).on('show.bs.modal', function (e) {
+ var open = $(this).attr('data-easein');
+     if(open == 'shake') {
+                 $('.modal-dialog').velocity('callout.' + open);
+            } else if(open == 'pulse') {
+                 $('.modal-dialog').velocity('callout.' + open);
+            } else if(open == 'tada') {
+                 $('.modal-dialog').velocity('callout.' + open);
+            } else if(open == 'flash') {
+                 $('.modal-dialog').velocity('callout.' + open);
+            }  else if(open == 'bounce') {
+                 $('.modal-dialog').velocity('callout.' + open);
+            } else if(open == 'swing') {
+                 $('.modal-dialog').velocity('callout.' + open);
+            }else {
+              $('.modal-dialog').velocity('transition.' + open);
+            }
+             
+}); 
+});
+
+$('.pop').hover(
+  function(){
+    $(this).click();
+  }
+);
+
+    </script>
   </body>
 </html>

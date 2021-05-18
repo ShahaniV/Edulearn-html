@@ -55,7 +55,7 @@
         color: #424951;
       }
     </style>
-    <script>
+    <!-- <script>
       document.addEventListener("contextmenu", function (LibraryV2) {
         LibraryV2.preventDefault();
       });
@@ -63,7 +63,7 @@
       var link = "numbers";
       link.split(".html")[0];
       window.history.replaceState(null, null, link);
-    </script>
+    </script> -->
   </head>
   <body class="is-preload">
     <!-- Wrapper -->
@@ -73,7 +73,9 @@
         <div class="inner">
           <!-- Header -->
           <header id="header">
-            <a class="logo"><strong>Numbers Chart</strong></a>
+            <!-- Home Back Button -->
+            <a href="home.html" class="bbutton"
+            ><div class="home-back-button"><i class="fa fa-chevron-left fa-fw" aria-hidden="true"></i>Back</div></a> 
             <div class="main-cont">
               <div id="time-i">
                 <h1>Time</h1>
@@ -88,6 +90,10 @@
           </header>
 
           <!-- Content -->
+          <header class="main">
+            <h2 style="margin-bottom: 0 !important; text-align: center">Numbers Chart</h2>
+            <p style="text-align: center">You have to be Odd to be Number 1</p>
+          </header>
           <div class="container">
             <div class="numb">
               <img src="/images/numbers/1.png" />
@@ -505,10 +511,6 @@
       <!-- Sidebar -->
       <div id="sidebar">
         <div class="inner">
-          <!-- Home Back Button -->
-          <a href="/home.html"
-            ><div class="home-back-button"><i class="fa fa-arrow-left fa-fw" aria-hidden="true"></i>Back</div></a
-          >
 
           <!-- Menu -->
           <nav id="menu">
