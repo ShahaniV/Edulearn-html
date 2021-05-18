@@ -87,11 +87,20 @@ h1 {
   font-size: 34px;
 }
 
+.skin {
+  background: var(--skin-color);
+  color: var(--skin-color);
+}
+
+.MainSkin {
+  background: var(--secondColor);
+  color: var(--secondColor);
+}
+
 .square {
   height: 12px;
   width: 12px;
   display: inline-block;
-  background: var(--secondColor);
   margin: 15px 0;
 }
 

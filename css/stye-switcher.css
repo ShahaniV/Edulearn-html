@@ -67,19 +67,19 @@ h1{
   border-radius: 50%;
 }
 .style-switcher .color-1 {
-  background-color: #2f5061;
+  background-color: #ff9017;
 }
 .style-switcher .color-2 {
-  background-color: #e57f84;
+  background-color: #f9e500;
 }
 .style-switcher .color-3 {
-  background-color: #f8ea8c;
+  background-color: #00c39f;
 }
 .style-switcher .color-4 {
-  background-color: #4297a0;
+  background-color: #ef60a8;
 }
 .style-switcher .color-5 {
-  background-color: rgb(247, 126, 78);
+  background-color: #9d00ff;
 }
 
 @media (max-width: 991px) {
